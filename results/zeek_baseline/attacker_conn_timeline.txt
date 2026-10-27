@@ -1,0 +1,58 @@
+# minute (ADT, conn start) | connections by proto:conn_state | cumulative distinct failed (port, proto)
+11:47 | tcp:SF=3 | 0
+11:53 | tcp:SF=3 | 0
+12:37 | tcp:SF=1 | 0
+13:05 | tcp:SF=3 | 0
+13:06 | tcp:SF=1 | 0
+13:52 | tcp:SF=1 | 0
+13:55 | tcp:REJ=15, tcp:RSTO=15 | 5
+13:56 | tcp:REJ=18, tcp:RSTO=27 | 5
+13:57 | tcp:REJ=14, tcp:RSTO=15 | 5
+13:58 | tcp:REJ=5, tcp:RSTO=6 | 5
+13:59 | tcp:REJ=27, tcp:RSTO=35 | 5
+14:00 | tcp:REJ=20, tcp:RSTO=29 | 5
+14:14 | tcp:REJ=17, tcp:RSTO=33, tcp:SF=10 | 5
+14:15 | tcp:REJ=14, tcp:RSTO=30, tcp:SF=10 | 5
+14:16 | tcp:REJ=1, tcp:SF=3 | 5
+14:17 | udp:S0=18 | 7
+14:18 | udp:S0=18 | 7
+14:19 | udp:S0=3 | 7
+14:51 | icmp:OTH=1, tcp:REJ=10855, tcp:RSTO=55, tcp:S0=57, tcp:SF=4 | 999
+14:52 | tcp:REJ=43383, tcp:RSTO=220, tcp:RSTRH=11, tcp:S0=265 | 999
+14:53 | tcp:REJ=3937, tcp:RSTO=20, tcp:RSTRH=1, tcp:S0=31 | 999
+14:54 | tcp:REJ=34504, tcp:RSTO=175, tcp:RSTRH=6, tcp:S0=217 | 1000
+14:55 | tcp:REJ=44368, tcp:RSTO=225, tcp:RSTRH=7, tcp:S0=272 | 1000
+14:56 | tcp:REJ=986, tcp:RSTO=5, tcp:S0=6 | 1000
+15:03 | tcp:SF=2 | 1000
+15:08 | tcp:REJ=4940, tcp:RSTO=38, tcp:RSTRH=3, tcp:S0=38, tcp:SF=24 | 1001
+15:09 | tcp:REJ=3972, tcp:RSTO=32, tcp:RSTRH=1, tcp:S0=12, tcp:SF=20 | 1001
+15:10 | tcp:REJ=1983, tcp:RSTO=15, tcp:RSTRH=1, tcp:S0=9, tcp:SF=11 | 1001
+15:11 | udp:S0=155 | 1052
+15:12 | icmp:OTH=1, udp:S0=39, udp:SF=1 | 1082
+15:13 | icmp:OTH=1, udp:S0=15, unknown_transport:OTH=1 | 1083
+15:14 | udp:S0=17 | 1083
+15:15 | udp:S0=1 | 1083
+15:21 | icmp:OTH=1, udp:S0=1, unknown_transport:OTH=1 | 1083
+15:22 | tcp:REJ=4954, tcp:RSTO=38, tcp:S0=24, tcp:SF=24 | 1083
+15:23 | tcp:REJ=3957, tcp:RSTO=32, tcp:RSTRH=1, tcp:S0=27, tcp:SF=20 | 1083
+15:56 | tcp:RSTO=1355 | 1083
+15:57 | tcp:RSTO=4930 | 1083
+15:58 | tcp:RSTO=4873 | 1083
+15:59 | tcp:RSTO=4853 | 1083
+16:00 | tcp:RSTO=4890 | 1083
+16:01 | tcp:RSTO=4970 | 1083
+16:02 | tcp:RSTO=4911 | 1083
+16:03 | tcp:RSTO=4921 | 1083
+16:04 | tcp:RSTO=4831 | 1083
+16:05 | tcp:RSTO=4866 | 1083
+16:06 | tcp:RSTO=5085 | 1083
+16:07 | tcp:RSTO=4924 | 1083
+16:08 | tcp:RSTO=4857 | 1083
+16:09 | tcp:RSTO=4882 | 1083
+16:10 | tcp:RSTO=4939 | 1083
+16:11 | tcp:RSTO=4891 | 1083
+16:12 | tcp:RSTO=4947 | 1083
+16:13 | tcp:RSTO=4926 | 1083
+16:14 | tcp:RSTO=4903 | 1083
+16:15 | tcp:RSTO=4860 | 1083
+16:16 | tcp:RSTO=1069 | 1083

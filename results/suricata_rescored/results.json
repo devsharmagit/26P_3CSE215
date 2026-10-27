@@ -1,0 +1,375 @@
+{
+ "ET Open (52,768 rules), every alert": {
+  "alerts_total": 1412662,
+  "no_src": 7279,
+  "scored": 1405383,
+  "detections": 1405383,
+  "fp_by_rule": {
+   "SURICATA STREAM CLOSEWAIT FIN out of window": 1145,
+   "SURICATA TCPv4 invalid checksum": 1390304,
+   "SURICATA STREAM FIN out of window": 718,
+   "SURICATA SMB file overlap": 6,
+   "SURICATA Kerberos 5 weak encryption parameters": 569,
+   "SURICATA Applayer Detect protocol only one direction": 202,
+   "ET INFO NTLM Session Setup Request - Negotiate": 33,
+   "ET INFO NTLMv1 Session Setup Response - Challenge": 33,
+   "ET INFO NTLM Session Setup Request - Auth": 33,
+   "ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent": 192,
+   "ET INFO Windows OS Submitting USB Metadata to Microsoft": 17,
+   "SURICATA HTTP Response excessive header repetition": 7571,
+   "ET DNS Query for .to TLD": 181,
+   "SURICATA STREAM excessive retransmissions": 101,
+   "SURICATA FRAG IPv4 Fragmentation overlap": 2,
+   "ET INFO GNU/Linux APT User-Agent Outbound likely related to package management": 343,
+   "ET INFO TLS Handshake Failure": 186,
+   "ET INFO Vulnerable Java Version 1.8.x Detected": 5,
+   "SURICATA HTTP unable to match response to request": 235,
+   "SURICATA Applayer Wrong direction first Data": 44,
+   "SURICATA UDPv6 invalid checksum": 122,
+   "ET INFO Session Traversal Utilities for NAT (STUN Binding Request On Non-Standard High Port)": 10,
+   "ET INFO Observed DNS Query to .biz TLD": 98,
+   "ET DNS Query for .cc TLD": 67,
+   "SURICATA STREAM Packet with invalid ack": 9,
+   "SURICATA STREAM SHUTDOWN RST invalid ack": 2,
+   "SURICATA STREAM ESTABLISHED invalid ack": 6,
+   "SURICATA STREAM ESTABLISHED packet out of window": 7,
+   "SURICATA STREAM reassembly overlap with different data": 99,
+   "ET INFO Suspicious Domain (polyfill .io) in DNS Lookup": 8,
+   "ET INFO Suspicious Domain (polyfill .io) in TLS SNI": 4,
+   "ET INFO PE EXE or DLL Windows file download HTTP": 3,
+   "ET INFO EXE - Served Inline HTTP": 1,
+   "ET INFO Session Traversal Utilities for NAT (STUN Binding Request)": 92,
+   "ET INFO Session Traversal Utilities for NAT (STUN Binding Response)": 2,
+   "ET INFO HTTP Request to a *.tw domain": 2,
+   "ET INFO Dropbox.com Offsite File Backup in Use": 9,
+   "SURICATA HTTP invalid response chunk len": 12,
+   "ET INFO DropBox User Content Domain (dl .dropboxusercontent .com in TLS SNI)": 1,
+   "ET INFO DNS Query For XXX Adult Site Top Level Domain": 14,
+   "ET INFO OpenSSL Demo CA - Internet Widgits Pty (O)": 4,
+   "SURICATA HTTP Request abnormal Content-Encoding header": 3,
+   "ET INFO Python-urllib/ Suspicious User Agent": 1,
+   "SURICATA STREAM ESTABLISHED SYNACK resend": 2,
+   "SURICATA HTTP too many warnings": 3,
+   "ET INFO JAVA - ClassID": 1,
+   "ET INFO External IP Lookup Domain (freegeiop .net in DNS lookup)": 32,
+   "ET INFO Tencent Cloud Storage Domain in DNS Lookup (myqcloud .com)": 9,
+   "ET INFO Abused Hosting Domain in DNS Lookup (azurewebsites .net)": 7,
+   "SURICATA STREAM TIMEWAIT ACK with wrong seq": 2,
+   "SURICATA Applayer Mismatch protocol both directions": 2,
+   "SURICATA HTTP invalid Range header value": 2,
+   "SURICATA STREAM 3way handshake wrong seq wrong ack": 49,
+   "SURICATA STREAM FIN invalid ack": 1,
+   "ET INFO External IP Lookup Domain (ipify .org) in DNS Lookup": 35,
+   "ET INFO External IP Address Lookup Domain (ipify .org) in TLS SNI": 10,
+   "ET INFO Possible IP Check api.ipify.org": 10,
+   "GPL ICMP PING Cisco Type.x": 10,
+   "ET INFO Pastebin-like Service Domain in DNS Lookup (jsfiddle .net)": 7,
+   "ET DNS Query to a *.pw domain - Likely Hostile": 56,
+   "ET DNS Query for .su TLD (Soviet Union) Often Malware Related": 12,
+   "ET INFO Observed Telegram Domain in DNS Lookup (telegram .me)": 10,
+   "SURICATA STREAM Packet with invalid timestamp": 1,
+   "ET HUNTING [TW] Likely Javascript-Obfuscator Usage Observed M1": 2,
+   "SURICATA STREAM 3way handshake SYNACK with wrong ack": 1,
+   "ET INFO Observed RMM Domain in DNS Lookup (pubnub .com)": 10,
+   "ET INFO Observed RMM Domain in TLS SNI (pubnub .com)": 2
+  },
+  "fp_hosts": 6034,
+  "fp_benign_hosts": 6034,
+  "fp_top_sources": [
+   [
+    "192.168.10.50",
+    1313
+   ],
+   [
+    "192.168.10.9",
+    1071
+   ],
+   [
+    "192.168.10.5",
+    897
+   ],
+   [
+    "192.168.10.16",
+    845
+   ],
+   [
+    "173.241.242.220",
+    841
+   ],
+   [
+    "192.168.10.15",
+    750
+   ],
+   [
+    "192.168.10.14",
+    723
+   ],
+   [
+    "13.107.4.50",
+    709
+   ]
+  ],
+  "windows": {
+   "PortScan": {
+    "positives": 594,
+    "covered": 57,
+    "recall": 0.09595959595959595,
+    "ttd": 57.949429988861084
+   },
+   "DDoS": {
+    "positives": 1095,
+    "covered": 277,
+    "recall": 0.25296803652968036,
+    "ttd": 42.264535903930664
+   }
+  },
+  "segments": {
+   "dev": {
+    "tp": 57,
+    "positives": 594,
+    "fp_secs": 10260,
+    "fp_per_hour": 1538.3792123933563,
+    "precision": 0.0055248618784530384,
+    "recall": 0.09595959595959595,
+    "f1": 0.010448171569975254
+   },
+   "test": {
+    "tp": 277,
+    "positives": 1095,
+    "fp_secs": 2300,
+    "fp_per_hour": 1668.9614524108617,
+    "precision": 0.10748932867675592,
+    "recall": 0.25296803652968036,
+    "f1": 0.1508714596949891
+   }
+  }
+ },
+ "ET Open, ET signatures only": {
+  "alerts_total": 1412662,
+  "no_src": 7279,
+  "scored": 1749,
+  "detections": 1749,
+  "fp_by_rule": {
+   "ET INFO NTLM Session Setup Request - Negotiate": 33,
+   "ET INFO NTLMv1 Session Setup Response - Challenge": 33,
+   "ET INFO NTLM Session Setup Request - Auth": 33,
+   "ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent": 192,
+   "ET INFO Windows OS Submitting USB Metadata to Microsoft": 17,
+   "ET DNS Query for .to TLD": 181,
+   "ET INFO GNU/Linux APT User-Agent Outbound likely related to package management": 343,
+   "ET INFO TLS Handshake Failure": 186,
+   "ET INFO Vulnerable Java Version 1.8.x Detected": 5,
+   "ET INFO Session Traversal Utilities for NAT (STUN Binding Request On Non-Standard High Port)": 10,
+   "ET INFO Observed DNS Query to .biz TLD": 98,
+   "ET DNS Query for .cc TLD": 67,
+   "ET INFO Suspicious Domain (polyfill .io) in DNS Lookup": 8,
+   "ET INFO Suspicious Domain (polyfill .io) in TLS SNI": 4,
+   "ET INFO PE EXE or DLL Windows file download HTTP": 3,
+   "ET INFO EXE - Served Inline HTTP": 1,
+   "ET INFO Session Traversal Utilities for NAT (STUN Binding Request)": 92,
+   "ET INFO Session Traversal Utilities for NAT (STUN Binding Response)": 2,
+   "ET INFO HTTP Request to a *.tw domain": 2,
+   "ET INFO Dropbox.com Offsite File Backup in Use": 9,
+   "ET INFO DropBox User Content Domain (dl .dropboxusercontent .com in TLS SNI)": 1,
+   "ET INFO DNS Query For XXX Adult Site Top Level Domain": 14,
+   "ET INFO OpenSSL Demo CA - Internet Widgits Pty (O)": 4,
+   "ET INFO Python-urllib/ Suspicious User Agent": 1,
+   "ET INFO JAVA - ClassID": 1,
+   "ET INFO External IP Lookup Domain (freegeiop .net in DNS lookup)": 32,
+   "ET INFO Tencent Cloud Storage Domain in DNS Lookup (myqcloud .com)": 9,
+   "ET INFO Abused Hosting Domain in DNS Lookup (azurewebsites .net)": 7,
+   "ET INFO External IP Lookup Domain (ipify .org) in DNS Lookup": 35,
+   "ET INFO External IP Address Lookup Domain (ipify .org) in TLS SNI": 10,
+   "ET INFO Possible IP Check api.ipify.org": 10,
+   "ET INFO Pastebin-like Service Domain in DNS Lookup (jsfiddle .net)": 7,
+   "ET DNS Query to a *.pw domain - Likely Hostile": 56,
+   "ET DNS Query for .su TLD (Soviet Union) Often Malware Related": 12,
+   "ET INFO Observed Telegram Domain in DNS Lookup (telegram .me)": 10,
+   "ET HUNTING [TW] Likely Javascript-Obfuscator Usage Observed M1": 2,
+   "ET INFO Observed RMM Domain in DNS Lookup (pubnub .com)": 10,
+   "ET INFO Observed RMM Domain in TLS SNI (pubnub .com)": 2
+  },
+  "fp_hosts": 52,
+  "fp_benign_hosts": 52,
+  "fp_top_sources": [
+   [
+    "192.168.10.3",
+    102
+   ],
+   [
+    "192.168.10.8",
+    39
+   ],
+   [
+    "192.168.10.15",
+    31
+   ],
+   [
+    "192.168.10.14",
+    25
+   ],
+   [
+    "104.31.91.87",
+    24
+   ],
+   [
+    "192.168.10.5",
+    20
+   ],
+   [
+    "192.168.10.19",
+    18
+   ],
+   [
+    "192.168.10.17",
+    14
+   ]
+  ],
+  "windows": {
+   "PortScan": {
+    "positives": 594,
+    "covered": 51,
+    "recall": 0.08585858585858586,
+    "ttd": 57.949429988861084
+   },
+   "DDoS": {
+    "positives": 1095,
+    "covered": 20,
+    "recall": 0.0182648401826484,
+    "ttd": 49.80116891860962
+   }
+  },
+  "segments": {
+   "dev": {
+    "tp": 51,
+    "positives": 594,
+    "fp_secs": 244,
+    "fp_per_hour": 36.58523663001744,
+    "precision": 0.17288135593220338,
+    "recall": 0.08585858585858586,
+    "f1": 0.11473565804274466
+   },
+   "test": {
+    "tp": 20,
+    "positives": 1095,
+    "fp_secs": 25,
+    "fp_per_hour": 18.140885352291978,
+    "precision": 0.4444444444444444,
+    "recall": 0.0182648401826484,
+    "f1": 0.03508771929824561
+   }
+  }
+ },
+ "ET Open, ET SCAN / ET DOS signatures only": {
+  "alerts_total": 1412662,
+  "no_src": 7279,
+  "scored": 207,
+  "detections": 207,
+  "fp_by_rule": {},
+  "fp_hosts": 0,
+  "fp_benign_hosts": 0,
+  "fp_top_sources": [],
+  "windows": {
+   "PortScan": {
+    "positives": 594,
+    "covered": 51,
+    "recall": 0.08585858585858586,
+    "ttd": 57.949429988861084
+   },
+   "DDoS": {
+    "positives": 1095,
+    "covered": 20,
+    "recall": 0.0182648401826484,
+    "ttd": 49.80116891860962
+   }
+  },
+  "segments": {
+   "dev": {
+    "tp": 51,
+    "positives": 594,
+    "fp_secs": 0,
+    "fp_per_hour": 0.0,
+    "precision": 1.0,
+    "recall": 0.08585858585858586,
+    "f1": 0.15813953488372093
+   },
+   "test": {
+    "tp": 20,
+    "positives": 1095,
+    "fp_secs": 0,
+    "fp_per_hour": 0.0,
+    "precision": 1.0,
+    "recall": 0.0182648401826484,
+    "f1": 0.03587443946188341
+   }
+  }
+ },
+ "custom threshold rules (4)": {
+  "alerts_total": 9481,
+  "no_src": 0,
+  "scored": 9481,
+  "detections": 9481,
+  "fp_by_rule": {
+   "CUSTOM victim connection flood": 5,
+   "CUSTOM SYN flood per source": 1
+  },
+  "fp_hosts": 5,
+  "fp_benign_hosts": 5,
+  "fp_top_sources": [
+   [
+    "192.168.10.8",
+    2
+   ],
+   [
+    "192.168.10.5",
+    1
+   ],
+   [
+    "192.168.10.9",
+    1
+   ],
+   [
+    "192.168.10.19",
+    1
+   ],
+   [
+    "192.168.10.14",
+    1
+   ]
+  ],
+  "windows": {
+   "PortScan": {
+    "positives": 594,
+    "covered": 168,
+    "recall": 0.2828282828282828,
+    "ttd": 3405.45703291893
+   },
+   "DDoS": {
+    "positives": 1095,
+    "covered": 902,
+    "recall": 0.8237442922374429,
+    "ttd": 45.689614057540894
+   }
+  },
+  "segments": {
+   "dev": {
+    "tp": 168,
+    "positives": 594,
+    "fp_secs": 4,
+    "fp_per_hour": 0.5997579775412696,
+    "precision": 0.9767441860465116,
+    "recall": 0.2828282828282828,
+    "f1": 0.4386422976501306
+   },
+   "test": {
+    "tp": 902,
+    "positives": 1095,
+    "fp_secs": 2,
+    "fp_per_hour": 1.4512708281833582,
+    "precision": 0.9977876106194691,
+    "recall": 0.8237442922374429,
+    "f1": 0.9024512256128064
+   }
+  }
+ }
+}

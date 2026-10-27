@@ -1,0 +1,102 @@
+{
+ "out_et/eve.json": {
+  "alerts": 1412662,
+  "no_src": 7279,
+  "ttd": {
+   "portscan": 57.949429988861084,
+   "ddos": 49.80116891860962
+  },
+  "sig_tp": [
+   [
+    "ET SCAN Suspicious inbound to mySQL port 3306",
+    40
+   ],
+   [
+    "ET SCAN Suspicious inbound to MSSQL port 1433",
+    40
+   ],
+   [
+    "ET SCAN Suspicious inbound to Oracle SQL port 1521",
+    40
+   ],
+   [
+    "ET SCAN Suspicious inbound to PostgreSQL port 5432",
+    40
+   ],
+   [
+    "ET DOS Terse HTTP GET Likely AnonMafiaIC DDoS tool",
+    20
+   ],
+   [
+    "ET SCAN Potential VNC Scan 5800-5820",
+    9
+   ]
+  ],
+  "sig_fp": [
+   [
+    "ET INFO GNU/Linux APT User-Agent Outbound likely related to package management",
+    343
+   ],
+   [
+    "ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent",
+    192
+   ],
+   [
+    "ET INFO TLS Handshake Failure",
+    186
+   ],
+   [
+    "ET DNS Query for .to TLD",
+    181
+   ],
+   [
+    "ET INFO Observed DNS Query to .biz TLD",
+    98
+   ],
+   [
+    "ET INFO Session Traversal Utilities for NAT (STUN Binding Request)",
+    92
+   ]
+  ],
+  "fp_src": [
+   [
+    "192.168.10.15",
+    216
+   ],
+   [
+    "192.168.10.14",
+    184
+   ],
+   [
+    "192.168.10.3",
+    163
+   ],
+   [
+    "192.168.10.17",
+    162
+   ],
+   [
+    "192.168.10.19",
+    161
+   ]
+  ],
+  "dev": {
+   "precision": 0.17288135593220338,
+   "recall": 0.08528428093645485,
+   "f1": 0.11422172452407614,
+   "fp_secs": 244,
+   "fp_per_hour": 36.58523663001744,
+   "tp": 51,
+   "pos": 598
+  },
+  "test": {
+   "precision": 0.4444444444444444,
+   "recall": 0.018198362147406732,
+   "f1": 0.03496503496503496,
+   "fp_secs": 25,
+   "fp_per_hour": 18.140885352291978,
+   "tp": 20,
+   "pos": 1099
+  }
+ }
+}

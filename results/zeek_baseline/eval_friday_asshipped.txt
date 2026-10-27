@@ -1,0 +1,23 @@
+| Config | Conversion | DEV P | DEV R | DEV F1 | DEV FP/h | TEST P | TEST R | TEST F1 | TEST FP/h | PortScan recall | DDoS recall | TTD PortScan (s) | TTD DDoS (s) | notices attacker / others |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| default_asshipped | strict | 33.3 | 0.2 | 0.3 | 0.3 | 0.0 | 0.0 | 0.0 | 1.5 | 0.2 | 0.0 | 3405 | - | 1 / 4 |
+| default_asshipped | epoch | 1.2 | 1.7 | 1.4 | 119.2 | 0.0 | 0.0 | 0.0 | 174.9 | 1.7 | 0.0 | 3405 | - | 1 / 4 |
+| matched_asshipped | strict | 33.3 | 0.2 | 0.3 | 0.3 | 0.0 | 0.0 | 0.0 | 1.5 | 0.2 | 0.0 | 3405 | - | 1 / 4 |
+| matched_asshipped | epoch | 1.2 | 1.7 | 1.4 | 119.2 | 0.0 | 0.0 | 0.0 | 174.9 | 1.7 | 0.0 | 3405 | - | 1 / 4 |
+
+Our rows, copied programmatically from results/friday/results.md (line number = file line) and ttd from results/friday/results.json (by_score["1"].windows):
+results.md:13 | count / fixed | 99.3 | 23.7 | 38.3 | 0.1 | 98.7 | 78.1 | 87.2 | 8.0 | 23.7 | 78.1 |  ttd PortScan=3405 s, DDoS=44 s
+results.md:15 | behaviour / fixed | 100.0 | 84.7 | 91.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 84.7 | 0.0 |  ttd PortScan=51 s, DDoS=- s
+results.md:41 | only port_sweep | 100.0 | 23.7 | 38.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 23.7 | 0.0 |  ttd PortScan=3405 s, DDoS=- s
+results.md:46 | only rejected_probes | 100.0 | 84.7 | 91.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 84.7 | 0.0 |  ttd PortScan=52 s, DDoS=- s
+
+default_asshipped: notices by type {'Scan::Address_Scan': 4, 'Scan::Port_Scan': 1}; suppressed 0 (attacker 0, others 0, by type {})
+  notice sources: {'192.168.10.9': 1, '192.168.10.12': 1, '172.16.0.1': 1, '192.168.10.5': 1, '192.168.10.25': 1}
+  attacker notice 1499449905.454 Scan::Port_Scan 172.16.0.1 scanned at least 15 unique ports of host 192.168.10.50 in 56m13s
+  [strict] fp_top_sources=[('192.168.10.9', 1), ('192.168.10.12', 1), ('192.168.10.5', 1), ('192.168.10.25', 1)] windows={'PortScan': {'positives': 594, 'covered': 1, 'recall': 0.0016835016835016834, 'ttd': 3405.45360994339}, 'DDoS': {'positives': 1095, 'covered': 0, 'recall': 0.0, 'ttd': None}}
+  [epoch] fp_top_sources=[('192.168.10.9', 301), ('192.168.10.12', 301), ('192.168.10.5', 301), ('192.168.10.25', 301)] windows={'PortScan': {'positives': 594, 'covered': 10, 'recall': 0.016835016835016835, 'ttd': 3105.45360994339}, 'DDoS': {'positives': 1095, 'covered': 0, 'recall': 0.0, 'ttd': None}}
+matched_asshipped: notices by type {'Scan::Address_Scan': 4, 'Scan::Port_Scan': 1}; suppressed 0 (attacker 0, others 0, by type {})
+  notice sources: {'192.168.10.9': 1, '192.168.10.12': 1, '172.16.0.1': 1, '192.168.10.5': 1, '192.168.10.25': 1}
+  attacker notice 1499449905.451 Scan::Port_Scan 172.16.0.1 scanned at least 10 unique ports of host 192.168.10.50 in 56m13s
+  [strict] fp_top_sources=[('192.168.10.9', 1), ('192.168.10.12', 1), ('192.168.10.5', 1), ('192.168.10.25', 1)] windows={'PortScan': {'positives': 594, 'covered': 1, 'recall': 0.0016835016835016834, 'ttd': 3405.4508879184723}, 'DDoS': {'positives': 1095, 'covered': 0, 'recall': 0.0, 'ttd': None}}
+  [epoch] fp_top_sources=[('192.168.10.9', 301), ('192.168.10.12', 301), ('192.168.10.5', 301), ('192.168.10.25', 301)] windows={'PortScan': {'positives': 594, 'covered': 10, 'recall': 0.016835016835016835, 'ttd': 3345.4508879184723}, 'DDoS': {'positives': 1095, 'covered': 0, 'recall': 0.0, 'ttd': None}}

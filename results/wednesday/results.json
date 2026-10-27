@@ -1,0 +1,7970 @@
+{
+ "day": "wednesday",
+ "capture": "wednesday.cache",
+ "note": "Held-out day: never used to choose a threshold. Attacker 172.16.0.1 -> 192.168.10.50; windows verified in the capture.",
+ "positives": {
+  "DoS slowloris": 1303,
+  "DoS Slowhttptest": 825,
+  "DoS Hulk": 500,
+  "DoS GoldenEye": 422
+ },
+ "hours": {
+  "all": 8.459021231664552
+ },
+ "results": [
+  {
+   "label": "count / fixed",
+   "group": "grid",
+   "seconds": 49.064635038375854,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 477,
+     "fp_by_rule": {
+      "syn_flood": 3,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 2,
+     "fp_benign_hosts": 1,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 5,
+       "recall": 0.003837298541826554,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 111,
+       "recall": 0.13454545454545455,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 251,
+       "recall": 0.502,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 85,
+       "recall": 0.2014218009478673,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 452,
+       "positives": 3050,
+       "fp_secs": 3,
+       "fp_per_hour": 0.3546509599444125,
+       "precision": 0.9934065934065934,
+       "recall": 0.1481967213114754,
+       "f1": 0.2579172610556348
+      }
+     }
+    },
+    "2": {
+     "detections": 381,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 96,
+       "recall": 0.11636363636363636,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 242,
+       "recall": 0.484,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 19,
+       "recall": 0.045023696682464455,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 357,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9944289693593314,
+       "recall": 0.11704918032786885,
+       "f1": 0.20944558521560572
+      }
+     }
+    },
+    "3": {
+     "detections": 268,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 19,
+       "recall": 0.02303030303030303,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 207,
+       "recall": 0.414,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 244,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.991869918699187,
+       "recall": 0.08,
+       "f1": 0.14805825242718448
+      }
+     }
+    }
+   },
+   "detections": 477,
+   "fp_by_rule": {
+    "syn_flood": 3,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 111,
+     "recall": 0.13454545454545455,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 251,
+     "recall": 0.502,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 452,
+     "positives": 3050,
+     "fp_secs": 3,
+     "fp_per_hour": 0.3546509599444125,
+     "precision": 0.9934065934065934,
+     "recall": 0.1481967213114754,
+     "f1": 0.2579172610556348
+    }
+   }
+  },
+  {
+   "label": "count / adaptive",
+   "group": "grid",
+   "seconds": 49.582664251327515,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 477,
+     "fp_by_rule": {
+      "syn_flood": 3,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 2,
+     "fp_benign_hosts": 1,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 5,
+       "recall": 0.003837298541826554,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 111,
+       "recall": 0.13454545454545455,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 251,
+       "recall": 0.502,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 85,
+       "recall": 0.2014218009478673,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 452,
+       "positives": 3050,
+       "fp_secs": 3,
+       "fp_per_hour": 0.3546509599444125,
+       "precision": 0.9934065934065934,
+       "recall": 0.1481967213114754,
+       "f1": 0.2579172610556348
+      }
+     }
+    },
+    "2": {
+     "detections": 381,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 96,
+       "recall": 0.11636363636363636,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 242,
+       "recall": 0.484,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 19,
+       "recall": 0.045023696682464455,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 357,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9944289693593314,
+       "recall": 0.11704918032786885,
+       "f1": 0.20944558521560572
+      }
+     }
+    },
+    "3": {
+     "detections": 268,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 19,
+       "recall": 0.02303030303030303,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 207,
+       "recall": 0.414,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 244,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.991869918699187,
+       "recall": 0.08,
+       "f1": 0.14805825242718448
+      }
+     }
+    }
+   },
+   "detections": 477,
+   "fp_by_rule": {
+    "syn_flood": 3,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 111,
+     "recall": 0.13454545454545455,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 251,
+     "recall": 0.502,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 452,
+     "positives": 3050,
+     "fp_secs": 3,
+     "fp_per_hour": 0.3546509599444125,
+     "precision": 0.9934065934065934,
+     "recall": 0.1481967213114754,
+     "f1": 0.2579172610556348
+    }
+   }
+  },
+  {
+   "label": "behaviour / fixed",
+   "group": "grid",
+   "seconds": 53.43669009208679,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 286,
+     "fp_by_rule": {
+      "half_open": 7
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 1,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       7
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 277,
+       "recall": 0.33575757575757575,
+       "ttd": 4.806382894515991
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 1,
+       "recall": 0.002,
+       "ttd": 1083.8853149414062
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 278,
+       "positives": 3050,
+       "fp_secs": 7,
+       "fp_per_hour": 0.8275189065369625,
+       "precision": 0.9754385964912281,
+       "recall": 0.09114754098360656,
+       "f1": 0.16671664167916042
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 286,
+   "fp_by_rule": {
+    "half_open": 7
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 277,
+     "recall": 0.33575757575757575,
+     "ttd": 4.806382894515991
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 1,
+     "recall": 0.002,
+     "ttd": 1083.8853149414062
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 278,
+     "positives": 3050,
+     "fp_secs": 7,
+     "fp_per_hour": 0.8275189065369625,
+     "precision": 0.9754385964912281,
+     "recall": 0.09114754098360656,
+     "f1": 0.16671664167916042
+    }
+   }
+  },
+  {
+   "label": "behaviour / adaptive",
+   "group": "grid",
+   "seconds": 53.38150191307068,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 222,
+     "fp_by_rule": {
+      "half_open": 4
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 1,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       4
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 218,
+       "recall": 0.2642424242424242,
+       "ttd": 4.806382894515991
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 218,
+       "positives": 3050,
+       "fp_secs": 4,
+       "fp_per_hour": 0.47286794659255,
+       "precision": 0.9819819819819819,
+       "recall": 0.07147540983606557,
+       "f1": 0.13325183374083127
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 222,
+   "fp_by_rule": {
+    "half_open": 4
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     4
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 218,
+     "recall": 0.2642424242424242,
+     "ttd": 4.806382894515991
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 218,
+     "positives": 3050,
+     "fp_secs": 4,
+     "fp_per_hour": 0.47286794659255,
+     "precision": 0.9819819819819819,
+     "recall": 0.07147540983606557,
+     "f1": 0.13325183374083127
+    }
+   }
+  },
+  {
+   "label": "all / fixed",
+   "group": "grid",
+   "seconds": 57.40724587440491,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 716,
+     "fp_by_rule": {
+      "half_open": 7,
+      "syn_flood": 3,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 3,
+     "fp_benign_hosts": 2,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       7
+      ],
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 5,
+       "recall": 0.003837298541826554,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 341,
+       "recall": 0.41333333333333333,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 252,
+       "recall": 0.504,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 85,
+       "recall": 0.2014218009478673,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 683,
+       "positives": 3050,
+       "fp_secs": 10,
+       "fp_per_hour": 1.182169866481375,
+       "precision": 0.9855699855699855,
+       "recall": 0.2239344262295082,
+       "f1": 0.3649479027518034
+      }
+     }
+    },
+    "2": {
+     "detections": 389,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 104,
+       "recall": 0.12606060606060607,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 242,
+       "recall": 0.484,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 19,
+       "recall": 0.045023696682464455,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 365,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9945504087193461,
+       "recall": 0.11967213114754098,
+       "f1": 0.21363769388352358
+      }
+     }
+    },
+    "3": {
+     "detections": 303,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 54,
+       "recall": 0.06545454545454546,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 207,
+       "recall": 0.414,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 279,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9928825622775801,
+       "recall": 0.09147540983606557,
+       "f1": 0.16751726208345843
+      }
+     }
+    }
+   },
+   "detections": 716,
+   "fp_by_rule": {
+    "half_open": 7,
+    "syn_flood": 3,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 3,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ],
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 341,
+     "recall": 0.41333333333333333,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 252,
+     "recall": 0.504,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 683,
+     "positives": 3050,
+     "fp_secs": 10,
+     "fp_per_hour": 1.182169866481375,
+     "precision": 0.9855699855699855,
+     "recall": 0.2239344262295082,
+     "f1": 0.3649479027518034
+    }
+   }
+  },
+  {
+   "label": "all / adaptive",
+   "group": "grid",
+   "seconds": 57.162505865097046,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 658,
+     "fp_by_rule": {
+      "half_open": 4,
+      "syn_flood": 3,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 3,
+     "fp_benign_hosts": 2,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       4
+      ],
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 5,
+       "recall": 0.003837298541826554,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 288,
+       "recall": 0.3490909090909091,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 251,
+       "recall": 0.502,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 85,
+       "recall": 0.2014218009478673,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 629,
+       "positives": 3050,
+       "fp_secs": 7,
+       "fp_per_hour": 0.8275189065369625,
+       "precision": 0.9889937106918238,
+       "recall": 0.2062295081967213,
+       "f1": 0.3412913727618014
+      }
+     }
+    },
+    "2": {
+     "detections": 387,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 102,
+       "recall": 0.12363636363636364,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 242,
+       "recall": 0.484,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 19,
+       "recall": 0.045023696682464455,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 363,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9945205479452055,
+       "recall": 0.11901639344262295,
+       "f1": 0.21259150805270863
+      }
+     }
+    },
+    "3": {
+     "detections": 299,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 50,
+       "recall": 0.06060606060606061,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 207,
+       "recall": 0.414,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 275,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9927797833935018,
+       "recall": 0.09016393442622951,
+       "f1": 0.16531409678388936
+      }
+     }
+    }
+   },
+   "detections": 658,
+   "fp_by_rule": {
+    "half_open": 4,
+    "syn_flood": 3,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 3,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     4
+    ],
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 288,
+     "recall": 0.3490909090909091,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 251,
+     "recall": 0.502,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 629,
+     "positives": 3050,
+     "fp_secs": 7,
+     "fp_per_hour": 0.8275189065369625,
+     "precision": 0.9889937106918238,
+     "recall": 0.2062295081967213,
+     "f1": 0.3412913727618014
+    }
+   }
+  },
+  {
+   "label": "all / adaptive, no freeze",
+   "group": "safeguard",
+   "seconds": 56.93034911155701,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 564,
+     "fp_by_rule": {
+      "half_open": 3,
+      "syn_flood": 3,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 3,
+     "fp_benign_hosts": 2,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       3
+      ],
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 2,
+       "recall": 0.0015349194167306216,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 233,
+       "recall": 0.2824242424242424,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 251,
+       "recall": 0.502,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 50,
+       "recall": 0.11848341232227488,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 536,
+       "positives": 3050,
+       "fp_secs": 6,
+       "fp_per_hour": 0.709301919888825,
+       "precision": 0.988929889298893,
+       "recall": 0.17573770491803278,
+       "f1": 0.29844097995545654
+      }
+     }
+    },
+    "2": {
+     "detections": 385,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 100,
+       "recall": 0.12121212121212122,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 242,
+       "recall": 0.484,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 19,
+       "recall": 0.045023696682464455,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 361,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9944903581267218,
+       "recall": 0.11836065573770492,
+       "f1": 0.21154409610313507
+      }
+     }
+    },
+    "3": {
+     "detections": 294,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 45,
+       "recall": 0.05454545454545454,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 207,
+       "recall": 0.414,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 270,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9926470588235294,
+       "recall": 0.08852459016393442,
+       "f1": 0.1625526791089705
+      }
+     }
+    }
+   },
+   "detections": 564,
+   "fp_by_rule": {
+    "half_open": 3,
+    "syn_flood": 3,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 3,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     3
+    ],
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 2,
+     "recall": 0.0015349194167306216,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 233,
+     "recall": 0.2824242424242424,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 251,
+     "recall": 0.502,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 50,
+     "recall": 0.11848341232227488,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 536,
+     "positives": 3050,
+     "fp_secs": 6,
+     "fp_per_hour": 0.709301919888825,
+     "precision": 0.988929889298893,
+     "recall": 0.17573770491803278,
+     "f1": 0.29844097995545654
+    }
+   }
+  },
+  {
+   "label": "only syn_flood",
+   "group": "single",
+   "seconds": 45.63552713394165,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 349,
+     "fp_by_rule": {
+      "syn_flood": 3
+     },
+     "fp_hosts": 2,
+     "fp_benign_hosts": 1,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 96,
+       "recall": 0.11636363636363636,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 210,
+       "recall": 0.42,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 324,
+       "positives": 3050,
+       "fp_secs": 3,
+       "fp_per_hour": 0.3546509599444125,
+       "precision": 0.9908256880733946,
+       "recall": 0.1062295081967213,
+       "f1": 0.1918862896061593
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 349,
+   "fp_by_rule": {
+    "syn_flood": 3
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 96,
+     "recall": 0.11636363636363636,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 210,
+     "recall": 0.42,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 18,
+     "recall": 0.04265402843601896,
+     "ttd": 166.84744691848755
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 324,
+     "positives": 3050,
+     "fp_secs": 3,
+     "fp_per_hour": 0.3546509599444125,
+     "precision": 0.9908256880733946,
+     "recall": 0.1062295081967213,
+     "f1": 0.1918862896061593
+    }
+   }
+  },
+  {
+   "label": "only icmp_flood",
+   "group": "single",
+   "seconds": 44.63933706283569,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "only port_sweep",
+   "group": "single",
+   "seconds": 44.40623998641968,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "only victim_packet_flood",
+   "group": "single",
+   "seconds": 48.930477142333984,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 318,
+     "fp_by_rule": {
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 1,
+       "recall": 0.0007674597083653108,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 21,
+       "recall": 0.025454545454545455,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 239,
+       "recall": 0.478,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 33,
+       "recall": 0.07819905213270142,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 294,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9932432432432432,
+       "recall": 0.09639344262295083,
+       "f1": 0.17573221757322177
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 318,
+   "fp_by_rule": {
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     2
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 1,
+     "recall": 0.0007674597083653108,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 21,
+     "recall": 0.025454545454545455,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 239,
+     "recall": 0.478,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 33,
+     "recall": 0.07819905213270142,
+     "ttd": 166.84744691848755
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 294,
+     "positives": 3050,
+     "fp_secs": 2,
+     "fp_per_hour": 0.236433973296275,
+     "precision": 0.9932432432432432,
+     "recall": 0.09639344262295083,
+     "f1": 0.17573221757322177
+    }
+   }
+  },
+  {
+   "label": "only victim_conn_flood",
+   "group": "single",
+   "seconds": 48.63102984428406,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 459,
+     "fp_by_rule": {
+      "victim_conn_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 4,
+       "recall": 0.0030698388334612432,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 109,
+       "recall": 0.1321212121212121,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 251,
+       "recall": 0.502,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 71,
+       "recall": 0.16824644549763032,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 435,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9954233409610984,
+       "recall": 0.14262295081967213,
+       "f1": 0.24949813593346717
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 459,
+   "fp_by_rule": {
+    "victim_conn_flood": 2
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     2
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 4,
+     "recall": 0.0030698388334612432,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 109,
+     "recall": 0.1321212121212121,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 251,
+     "recall": 0.502,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 71,
+     "recall": 0.16824644549763032,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 435,
+     "positives": 3050,
+     "fp_secs": 2,
+     "fp_per_hour": 0.236433973296275,
+     "precision": 0.9954233409610984,
+     "recall": 0.14262295081967213,
+     "f1": 0.24949813593346717
+    }
+   }
+  },
+  {
+   "label": "only half_open",
+   "group": "single",
+   "seconds": 53.00359487533569,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 286,
+     "fp_by_rule": {
+      "half_open": 7
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 1,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       7
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 277,
+       "recall": 0.33575757575757575,
+       "ttd": 4.806382894515991
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 1,
+       "recall": 0.002,
+       "ttd": 1083.8853149414062
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 278,
+       "positives": 3050,
+       "fp_secs": 7,
+       "fp_per_hour": 0.8275189065369625,
+       "precision": 0.9754385964912281,
+       "recall": 0.09114754098360656,
+       "f1": 0.16671664167916042
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 286,
+   "fp_by_rule": {
+    "half_open": 7
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 277,
+     "recall": 0.33575757575757575,
+     "ttd": 4.806382894515991
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 1,
+     "recall": 0.002,
+     "ttd": 1083.8853149414062
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 278,
+     "positives": 3050,
+     "fp_secs": 7,
+     "fp_per_hour": 0.8275189065369625,
+     "precision": 0.9754385964912281,
+     "recall": 0.09114754098360656,
+     "f1": 0.16671664167916042
+    }
+   }
+  },
+  {
+   "label": "only port_entropy",
+   "group": "single",
+   "seconds": 45.20451807975769,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "only rejected_probes",
+   "group": "single",
+   "seconds": 46.96218800544739,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "all minus syn_flood",
+   "group": "minus",
+   "seconds": 59.216044902801514,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 715,
+     "fp_by_rule": {
+      "half_open": 7,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 2,
+     "fp_benign_hosts": 1,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       7
+      ],
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 5,
+       "recall": 0.003837298541826554,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 341,
+       "recall": 0.41333333333333333,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 252,
+       "recall": 0.504,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 85,
+       "recall": 0.2014218009478673,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 683,
+       "positives": 3050,
+       "fp_secs": 9,
+       "fp_per_hour": 1.0639528798332374,
+       "precision": 0.9869942196531792,
+       "recall": 0.2239344262295082,
+       "f1": 0.3650454302512026
+      }
+     }
+    },
+    "2": {
+     "detections": 344,
+     "fp_by_rule": {
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 62,
+       "recall": 0.07515151515151515,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 239,
+       "recall": 0.478,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 19,
+       "recall": 0.045023696682464455,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 320,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9937888198757764,
+       "recall": 0.10491803278688525,
+       "f1": 0.18979833926453143
+      }
+     }
+    },
+    "3": {
+     "detections": 4,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 4,
+       "recall": 0.0048484848484848485,
+       "ttd": 4.806382894515991
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 4,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 1.0,
+       "recall": 0.0013114754098360656,
+       "f1": 0.0026195153896529143
+      }
+     }
+    }
+   },
+   "detections": 715,
+   "fp_by_rule": {
+    "half_open": 7,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ],
+    [
+     "172.16.0.1",
+     2
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 341,
+     "recall": 0.41333333333333333,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 252,
+     "recall": 0.504,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 683,
+     "positives": 3050,
+     "fp_secs": 9,
+     "fp_per_hour": 1.0639528798332374,
+     "precision": 0.9869942196531792,
+     "recall": 0.2239344262295082,
+     "f1": 0.3650454302512026
+    }
+   }
+  },
+  {
+   "label": "all minus icmp_flood",
+   "group": "minus",
+   "seconds": 58.160906076431274,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 716,
+     "fp_by_rule": {
+      "half_open": 7,
+      "syn_flood": 3,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 3,
+     "fp_benign_hosts": 2,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       7
+      ],
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 5,
+       "recall": 0.003837298541826554,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 341,
+       "recall": 0.41333333333333333,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 252,
+       "recall": 0.504,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 85,
+       "recall": 0.2014218009478673,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 683,
+       "positives": 3050,
+       "fp_secs": 10,
+       "fp_per_hour": 1.182169866481375,
+       "precision": 0.9855699855699855,
+       "recall": 0.2239344262295082,
+       "f1": 0.3649479027518034
+      }
+     }
+    },
+    "2": {
+     "detections": 389,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 104,
+       "recall": 0.12606060606060607,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 242,
+       "recall": 0.484,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 19,
+       "recall": 0.045023696682464455,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 365,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9945504087193461,
+       "recall": 0.11967213114754098,
+       "f1": 0.21363769388352358
+      }
+     }
+    },
+    "3": {
+     "detections": 303,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 54,
+       "recall": 0.06545454545454546,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 207,
+       "recall": 0.414,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 279,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9928825622775801,
+       "recall": 0.09147540983606557,
+       "f1": 0.16751726208345843
+      }
+     }
+    }
+   },
+   "detections": 716,
+   "fp_by_rule": {
+    "half_open": 7,
+    "syn_flood": 3,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 3,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ],
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 341,
+     "recall": 0.41333333333333333,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 252,
+     "recall": 0.504,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 683,
+     "positives": 3050,
+     "fp_secs": 10,
+     "fp_per_hour": 1.182169866481375,
+     "precision": 0.9855699855699855,
+     "recall": 0.2239344262295082,
+     "f1": 0.3649479027518034
+    }
+   }
+  },
+  {
+   "label": "all minus port_sweep",
+   "group": "minus",
+   "seconds": 57.23192024230957,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 716,
+     "fp_by_rule": {
+      "half_open": 7,
+      "syn_flood": 3,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 3,
+     "fp_benign_hosts": 2,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       7
+      ],
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 5,
+       "recall": 0.003837298541826554,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 341,
+       "recall": 0.41333333333333333,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 252,
+       "recall": 0.504,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 85,
+       "recall": 0.2014218009478673,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 683,
+       "positives": 3050,
+       "fp_secs": 10,
+       "fp_per_hour": 1.182169866481375,
+       "precision": 0.9855699855699855,
+       "recall": 0.2239344262295082,
+       "f1": 0.3649479027518034
+      }
+     }
+    },
+    "2": {
+     "detections": 389,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 104,
+       "recall": 0.12606060606060607,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 242,
+       "recall": 0.484,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 19,
+       "recall": 0.045023696682464455,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 365,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9945504087193461,
+       "recall": 0.11967213114754098,
+       "f1": 0.21363769388352358
+      }
+     }
+    },
+    "3": {
+     "detections": 303,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 54,
+       "recall": 0.06545454545454546,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 207,
+       "recall": 0.414,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 279,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9928825622775801,
+       "recall": 0.09147540983606557,
+       "f1": 0.16751726208345843
+      }
+     }
+    }
+   },
+   "detections": 716,
+   "fp_by_rule": {
+    "half_open": 7,
+    "syn_flood": 3,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 3,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ],
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 341,
+     "recall": 0.41333333333333333,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 252,
+     "recall": 0.504,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 683,
+     "positives": 3050,
+     "fp_secs": 10,
+     "fp_per_hour": 1.182169866481375,
+     "precision": 0.9855699855699855,
+     "recall": 0.2239344262295082,
+     "f1": 0.3649479027518034
+    }
+   }
+  },
+  {
+   "label": "all minus victim_packet_flood",
+   "group": "minus",
+   "seconds": 56.33718800544739,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 699,
+     "fp_by_rule": {
+      "half_open": 7,
+      "syn_flood": 3,
+      "victim_conn_flood": 2
+     },
+     "fp_hosts": 3,
+     "fp_benign_hosts": 2,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       7
+      ],
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 4,
+       "recall": 0.0030698388334612432,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 339,
+       "recall": 0.4109090909090909,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 252,
+       "recall": 0.504,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 71,
+       "recall": 0.16824644549763032,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 666,
+       "positives": 3050,
+       "fp_secs": 10,
+       "fp_per_hour": 1.182169866481375,
+       "precision": 0.985207100591716,
+       "recall": 0.2183606557377049,
+       "f1": 0.357487922705314
+      }
+     }
+    },
+    "2": {
+     "detections": 356,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 104,
+       "recall": 0.12606060606060607,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 210,
+       "recall": 0.42,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 332,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9940119760479041,
+       "recall": 0.10885245901639344,
+       "f1": 0.19621749408983452
+      }
+     }
+    },
+    "3": {
+     "detections": 39,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 39,
+       "recall": 0.04727272727272727,
+       "ttd": 4.806382894515991
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 39,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 1.0,
+       "recall": 0.012786885245901639,
+       "f1": 0.025250890255746193
+      }
+     }
+    }
+   },
+   "detections": 699,
+   "fp_by_rule": {
+    "half_open": 7,
+    "syn_flood": 3,
+    "victim_conn_flood": 2
+   },
+   "fp_hosts": 3,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ],
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 4,
+     "recall": 0.0030698388334612432,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 339,
+     "recall": 0.4109090909090909,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 252,
+     "recall": 0.504,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 71,
+     "recall": 0.16824644549763032,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 666,
+     "positives": 3050,
+     "fp_secs": 10,
+     "fp_per_hour": 1.182169866481375,
+     "precision": 0.985207100591716,
+     "recall": 0.2183606557377049,
+     "f1": 0.357487922705314
+    }
+   }
+  },
+  {
+   "label": "all minus victim_conn_flood",
+   "group": "minus",
+   "seconds": 55.375203132629395,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 646,
+     "fp_by_rule": {
+      "half_open": 7,
+      "syn_flood": 3,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 3,
+     "fp_benign_hosts": 2,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       7
+      ],
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 1,
+       "recall": 0.0007674597083653108,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 336,
+       "recall": 0.4072727272727273,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 243,
+       "recall": 0.486,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 33,
+       "recall": 0.07819905213270142,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 613,
+       "positives": 3050,
+       "fp_secs": 10,
+       "fp_per_hour": 1.182169866481375,
+       "precision": 0.9839486356340289,
+       "recall": 0.20098360655737704,
+       "f1": 0.3337870950176967
+      }
+     }
+    },
+    "2": {
+     "detections": 303,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 54,
+       "recall": 0.06545454545454546,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 207,
+       "recall": 0.414,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 279,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9928825622775801,
+       "recall": 0.09147540983606557,
+       "f1": 0.16751726208345843
+      }
+     }
+    },
+    "3": {
+     "detections": 4,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 4,
+       "recall": 0.0048484848484848485,
+       "ttd": 4.806382894515991
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 4,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 1.0,
+       "recall": 0.0013114754098360656,
+       "f1": 0.0026195153896529143
+      }
+     }
+    }
+   },
+   "detections": 646,
+   "fp_by_rule": {
+    "half_open": 7,
+    "syn_flood": 3,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 3,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ],
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 1,
+     "recall": 0.0007674597083653108,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 336,
+     "recall": 0.4072727272727273,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 243,
+     "recall": 0.486,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 33,
+     "recall": 0.07819905213270142,
+     "ttd": 166.84744691848755
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 613,
+     "positives": 3050,
+     "fp_secs": 10,
+     "fp_per_hour": 1.182169866481375,
+     "precision": 0.9839486356340289,
+     "recall": 0.20098360655737704,
+     "f1": 0.3337870950176967
+    }
+   }
+  },
+  {
+   "label": "all minus half_open",
+   "group": "minus",
+   "seconds": 48.94677400588989,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 477,
+     "fp_by_rule": {
+      "syn_flood": 3,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 2,
+     "fp_benign_hosts": 1,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 5,
+       "recall": 0.003837298541826554,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 111,
+       "recall": 0.13454545454545455,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 251,
+       "recall": 0.502,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 85,
+       "recall": 0.2014218009478673,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 452,
+       "positives": 3050,
+       "fp_secs": 3,
+       "fp_per_hour": 0.3546509599444125,
+       "precision": 0.9934065934065934,
+       "recall": 0.1481967213114754,
+       "f1": 0.2579172610556348
+      }
+     }
+    },
+    "2": {
+     "detections": 381,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 96,
+       "recall": 0.11636363636363636,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 242,
+       "recall": 0.484,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 19,
+       "recall": 0.045023696682464455,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 357,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9944289693593314,
+       "recall": 0.11704918032786885,
+       "f1": 0.20944558521560572
+      }
+     }
+    },
+    "3": {
+     "detections": 268,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 19,
+       "recall": 0.02303030303030303,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 207,
+       "recall": 0.414,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 244,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.991869918699187,
+       "recall": 0.08,
+       "f1": 0.14805825242718448
+      }
+     }
+    }
+   },
+   "detections": 477,
+   "fp_by_rule": {
+    "syn_flood": 3,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 111,
+     "recall": 0.13454545454545455,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 251,
+     "recall": 0.502,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 452,
+     "positives": 3050,
+     "fp_secs": 3,
+     "fp_per_hour": 0.3546509599444125,
+     "precision": 0.9934065934065934,
+     "recall": 0.1481967213114754,
+     "f1": 0.2579172610556348
+    }
+   }
+  },
+  {
+   "label": "all minus port_entropy",
+   "group": "minus",
+   "seconds": 55.4066276550293,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 716,
+     "fp_by_rule": {
+      "half_open": 7,
+      "syn_flood": 3,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 3,
+     "fp_benign_hosts": 2,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       7
+      ],
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 5,
+       "recall": 0.003837298541826554,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 341,
+       "recall": 0.41333333333333333,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 252,
+       "recall": 0.504,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 85,
+       "recall": 0.2014218009478673,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 683,
+       "positives": 3050,
+       "fp_secs": 10,
+       "fp_per_hour": 1.182169866481375,
+       "precision": 0.9855699855699855,
+       "recall": 0.2239344262295082,
+       "f1": 0.3649479027518034
+      }
+     }
+    },
+    "2": {
+     "detections": 389,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 104,
+       "recall": 0.12606060606060607,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 242,
+       "recall": 0.484,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 19,
+       "recall": 0.045023696682464455,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 365,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9945504087193461,
+       "recall": 0.11967213114754098,
+       "f1": 0.21363769388352358
+      }
+     }
+    },
+    "3": {
+     "detections": 303,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 54,
+       "recall": 0.06545454545454546,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 207,
+       "recall": 0.414,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 279,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9928825622775801,
+       "recall": 0.09147540983606557,
+       "f1": 0.16751726208345843
+      }
+     }
+    }
+   },
+   "detections": 716,
+   "fp_by_rule": {
+    "half_open": 7,
+    "syn_flood": 3,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 3,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ],
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 341,
+     "recall": 0.41333333333333333,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 252,
+     "recall": 0.504,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 683,
+     "positives": 3050,
+     "fp_secs": 10,
+     "fp_per_hour": 1.182169866481375,
+     "precision": 0.9855699855699855,
+     "recall": 0.2239344262295082,
+     "f1": 0.3649479027518034
+    }
+   }
+  },
+  {
+   "label": "all minus rejected_probes",
+   "group": "minus",
+   "seconds": 54.06897163391113,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 716,
+     "fp_by_rule": {
+      "half_open": 7,
+      "syn_flood": 3,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 3,
+     "fp_benign_hosts": 2,
+     "fp_top_sources": [
+      [
+       "192.168.10.15",
+       7
+      ],
+      [
+       "172.16.0.1",
+       2
+      ],
+      [
+       "192.168.10.17",
+       1
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 5,
+       "recall": 0.003837298541826554,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 341,
+       "recall": 0.41333333333333333,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 252,
+       "recall": 0.504,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 85,
+       "recall": 0.2014218009478673,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 683,
+       "positives": 3050,
+       "fp_secs": 10,
+       "fp_per_hour": 1.182169866481375,
+       "precision": 0.9855699855699855,
+       "recall": 0.2239344262295082,
+       "f1": 0.3649479027518034
+      }
+     }
+    },
+    "2": {
+     "detections": 389,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 104,
+       "recall": 0.12606060606060607,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 242,
+       "recall": 0.484,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 19,
+       "recall": 0.045023696682464455,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 365,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9945504087193461,
+       "recall": 0.11967213114754098,
+       "f1": 0.21363769388352358
+      }
+     }
+    },
+    "3": {
+     "detections": 303,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 54,
+       "recall": 0.06545454545454546,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 207,
+       "recall": 0.414,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 279,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9928825622775801,
+       "recall": 0.09147540983606557,
+       "f1": 0.16751726208345843
+      }
+     }
+    }
+   },
+   "detections": 716,
+   "fp_by_rule": {
+    "half_open": 7,
+    "syn_flood": 3,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 3,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ],
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 341,
+     "recall": 0.41333333333333333,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 252,
+     "recall": 0.504,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 683,
+     "positives": 3050,
+     "fp_secs": 10,
+     "fp_per_hour": 1.182169866481375,
+     "precision": 0.9855699855699855,
+     "recall": 0.2239344262295082,
+     "f1": 0.3649479027518034
+    }
+   }
+  },
+  {
+   "label": "legacy AdaptiveRuleEngine",
+   "group": "reference",
+   "seconds": 53.90927314758301,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 796,
+     "fp_by_rule": {
+      "syn_flood": 83,
+      "half_open": 7,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 12,
+     "fp_benign_hosts": 11,
+     "fp_top_sources": [
+      [
+       "192.168.10.8",
+       15
+      ],
+      [
+       "192.168.10.12",
+       15
+      ],
+      [
+       "192.168.10.17",
+       10
+      ],
+      [
+       "192.168.10.14",
+       10
+      ],
+      [
+       "192.168.10.15",
+       8
+      ],
+      [
+       "192.168.10.9",
+       7
+      ],
+      [
+       "192.168.10.19",
+       6
+      ],
+      [
+       "192.168.10.25",
+       5
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 5,
+       "recall": 0.003837298541826554,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 341,
+       "recall": 0.41333333333333333,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 252,
+       "recall": 0.504,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 85,
+       "recall": 0.2014218009478673,
+       "ttd": 6.2278220653533936
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 683,
+       "positives": 3050,
+       "fp_secs": 90,
+       "fp_per_hour": 10.639528798332375,
+       "precision": 0.8835705045278137,
+       "recall": 0.2239344262295082,
+       "f1": 0.35731101229400997
+      }
+     }
+    },
+    "2": {
+     "detections": 399,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 109,
+       "recall": 0.1321212121212121,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 243,
+       "recall": 0.486,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 23,
+       "recall": 0.054502369668246446,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 375,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9946949602122016,
+       "recall": 0.12295081967213115,
+       "f1": 0.21885030639042896
+      }
+     }
+    },
+    "3": {
+     "detections": 336,
+     "fp_by_rule": {
+      "syn_flood": 2,
+      "victim_conn_flood": 2,
+      "victim_packet_flood": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": 7.806519031524658
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 60,
+       "recall": 0.07272727272727272,
+       "ttd": 0.7968258857727051
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 234,
+       "recall": 0.468,
+       "ttd": 0.12398910522460938
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 18,
+       "recall": 0.04265402843601896,
+       "ttd": 166.84744691848755
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 312,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.9936305732484076,
+       "recall": 0.10229508196721311,
+       "f1": 0.1854934601664685
+      }
+     }
+    }
+   },
+   "detections": 796,
+   "fp_by_rule": {
+    "syn_flood": 83,
+    "half_open": 7,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 11,
+   "fp_top_sources": [
+    [
+     "192.168.10.8",
+     15
+    ],
+    [
+     "192.168.10.12",
+     15
+    ],
+    [
+     "192.168.10.17",
+     10
+    ],
+    [
+     "192.168.10.14",
+     10
+    ],
+    [
+     "192.168.10.15",
+     8
+    ],
+    [
+     "192.168.10.9",
+     7
+    ],
+    [
+     "192.168.10.19",
+     6
+    ],
+    [
+     "192.168.10.25",
+     5
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 341,
+     "recall": 0.41333333333333333,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 252,
+     "recall": 0.504,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 683,
+     "positives": 3050,
+     "fp_secs": 90,
+     "fp_per_hour": 10.639528798332375,
+     "precision": 0.8835705045278137,
+     "recall": 0.2239344262295082,
+     "f1": 0.35731101229400997
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 3 in 30 s",
+   "group": "sensitivity",
+   "seconds": 43.364938259124756,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 5 in 30 s",
+   "group": "sensitivity",
+   "seconds": 42.42760920524597,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 10 in 30 s",
+   "group": "sensitivity",
+   "seconds": 42.49140691757202,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 20 in 30 s",
+   "group": "sensitivity",
+   "seconds": 42.8306827545166,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 40 in 30 s",
+   "group": "sensitivity",
+   "seconds": 42.741682052612305,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 3 in 60 s",
+   "group": "sensitivity",
+   "seconds": 42.86319589614868,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 2,
+     "fp_by_rule": {
+      "rejected_probes": 2
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       2
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 2,
+       "fp_per_hour": 0.236433973296275,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 2,
+   "fp_by_rule": {
+    "rejected_probes": 2
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     2
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 2,
+     "fp_per_hour": 0.236433973296275,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 5 in 60 s",
+   "group": "sensitivity",
+   "seconds": 42.2568039894104,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 10 in 60 s",
+   "group": "sensitivity",
+   "seconds": 42.63127398490906,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 20 in 60 s",
+   "group": "sensitivity",
+   "seconds": 41.45879411697388,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 40 in 60 s",
+   "group": "sensitivity",
+   "seconds": 40.63035321235657,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 3 in 120 s",
+   "group": "sensitivity",
+   "seconds": 40.500351428985596,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 62,
+     "fp_by_rule": {
+      "rejected_probes": 62
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       62
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 62,
+       "fp_per_hour": 7.329453172184525,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 62,
+   "fp_by_rule": {
+    "rejected_probes": 62
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     62
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 62,
+     "fp_per_hour": 7.329453172184525,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 5 in 120 s",
+   "group": "sensitivity",
+   "seconds": 40.29327607154846,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 9,
+     "fp_by_rule": {
+      "rejected_probes": 9
+     },
+     "fp_hosts": 1,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [
+      [
+       "172.16.0.1",
+       9
+      ]
+     ],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 9,
+       "fp_per_hour": 1.0639528798332374,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 9,
+   "fp_by_rule": {
+    "rejected_probes": 9
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     9
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 9,
+     "fp_per_hour": 1.0639528798332374,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 10 in 120 s",
+   "group": "sensitivity",
+   "seconds": 39.395660638809204,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 20 in 120 s",
+   "group": "sensitivity",
+   "seconds": 38.34068298339844,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "label": "rejected_probes > 40 in 120 s",
+   "group": "sensitivity",
+   "seconds": 38.182535886764526,
+   "packets": 13705535,
+   "by_score": {
+    "1": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "2": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "3": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  }
+ ]
+}

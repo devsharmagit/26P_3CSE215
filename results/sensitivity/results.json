@@ -1,0 +1,5792 @@
+{
+ "day": "friday",
+ "scales": [
+  0.25,
+  0.5,
+  0.75,
+  1,
+  1.5,
+  2,
+  3
+ ],
+ "floors": [
+  0.25,
+  0.5,
+  1
+ ],
+ "mult_count": [
+  1.5,
+  2,
+  3,
+  4,
+  6
+ ],
+ "mult_ratio": [
+  1.05,
+  1.1,
+  1.25,
+  1.5,
+  2
+ ],
+ "results": [
+  {
+   "family": "count",
+   "policy": "fixed",
+   "scale": 0.25,
+   "label": "count / fixed s=0.25",
+   "thresholds": {
+    "syn_flood": {
+     "value": 25.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 25.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 5.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 100.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 8.0,
+     "multiplier": null
+    }
+   },
+   "detections": 2353,
+   "fp_by_rule": {
+    "victim_conn_flood": 64,
+    "victim_packet_flood": 673,
+    "port_sweep": 2,
+    "syn_flood": 756
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 12,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     152
+    ],
+    [
+     "192.168.10.15",
+     147
+    ],
+    [
+     "192.168.10.14",
+     136
+    ],
+    [
+     "192.168.10.5",
+     123
+    ],
+    [
+     "192.168.10.9",
+     122
+    ],
+    [
+     "192.168.10.19",
+     113
+    ],
+    [
+     "192.168.10.8",
+     105
+    ],
+    [
+     "192.168.10.16",
+     89
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 158,
+     "recall": 0.265993265993266,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 988,
+     "recall": 0.902283105022831,
+     "ttd": 31.006728887557983
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 158,
+     "positives": 594,
+     "fp_secs": 933,
+     "fp_per_hour": 139.8935482615011,
+     "precision": 0.14482126489459213,
+     "recall": 0.265993265993266,
+     "f1": 0.18753709198813057
+    },
+    "test": {
+     "tp": 988,
+     "positives": 1095,
+     "fp_secs": 163,
+     "fp_per_hour": 118.27857249694368,
+     "precision": 0.8583840139009556,
+     "recall": 0.902283105022831,
+     "f1": 0.8797862867319679
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "fixed",
+   "scale": 0.5,
+   "label": "count / fixed s=0.5",
+   "thresholds": {
+    "syn_flood": {
+     "value": 50.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 50.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 10.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 200.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 16.0,
+     "multiplier": null
+    }
+   },
+   "detections": 1312,
+   "fp_by_rule": {
+    "victim_conn_flood": 7,
+    "victim_packet_flood": 100,
+    "syn_flood": 72
+   },
+   "fp_hosts": 10,
+   "fp_benign_hosts": 10,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     30
+    ],
+    [
+     "192.168.10.14",
+     23
+    ],
+    [
+     "192.168.10.15",
+     22
+    ],
+    [
+     "192.168.10.5",
+     21
+    ],
+    [
+     "192.168.10.19",
+     19
+    ],
+    [
+     "192.168.10.8",
+     13
+    ],
+    [
+     "192.168.10.9",
+     12
+    ],
+    [
+     "192.168.10.17",
+     8
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 926,
+     "recall": 0.845662100456621,
+     "ttd": 41.53897500038147
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 125,
+     "fp_per_hour": 18.742436798164672,
+     "precision": 0.5300751879699248,
+     "recall": 0.23737373737373738,
+     "f1": 0.32790697674418606
+    },
+    "test": {
+     "tp": 926,
+     "positives": 1095,
+     "fp_secs": 32,
+     "fp_per_hour": 23.22033325093373,
+     "precision": 0.9665970772442589,
+     "recall": 0.845662100456621,
+     "f1": 0.9020944958597176
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "fixed",
+   "scale": 0.75,
+   "label": "count / fixed s=0.75",
+   "thresholds": {
+    "syn_flood": {
+     "value": 75.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 75.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 15.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 300.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 24.0,
+     "multiplier": null
+    }
+   },
+   "detections": 1152,
+   "fp_by_rule": {
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 22,
+    "syn_flood": 3
+   },
+   "fp_hosts": 8,
+   "fp_benign_hosts": 8,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     15
+    ],
+    [
+     "192.168.10.8",
+     2
+    ],
+    [
+     "192.168.10.15",
+     2
+    ],
+    [
+     "192.168.10.9",
+     2
+    ],
+    [
+     "192.168.10.5",
+     2
+    ],
+    [
+     "192.168.10.14",
+     2
+    ],
+    [
+     "192.168.10.19",
+     1
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 899,
+     "recall": 0.8210045662100457,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 12,
+     "fp_per_hour": 1.7992739326238085,
+     "precision": 0.9215686274509803,
+     "recall": 0.23737373737373738,
+     "f1": 0.37751004016064255
+    },
+    "test": {
+     "tp": 899,
+     "positives": 1095,
+     "fp_secs": 15,
+     "fp_per_hour": 10.884531211375187,
+     "precision": 0.9835886214442013,
+     "recall": 0.8210045662100457,
+     "f1": 0.8949726231956198
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "fixed",
+   "scale": 1,
+   "label": "count / fixed s=1",
+   "thresholds": {
+    "syn_flood": {
+     "value": 100.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 100.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 20.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 400.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 32.0,
+     "multiplier": null
+    }
+   },
+   "detections": 1089,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 11
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     11
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 855,
+     "recall": 0.7808219178082192,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9929577464788732,
+     "recall": 0.23737373737373738,
+     "f1": 0.38315217391304346
+    },
+    "test": {
+     "tp": 855,
+     "positives": 1095,
+     "fp_secs": 11,
+     "fp_per_hour": 7.98198955500847,
+     "precision": 0.9872979214780601,
+     "recall": 0.7808219178082192,
+     "f1": 0.8720040795512495
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "fixed",
+   "scale": 1.5,
+   "label": "count / fixed s=1.5",
+   "thresholds": {
+    "syn_flood": {
+     "value": 150.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 150.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 30.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 600.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 48.0,
+     "multiplier": null
+    }
+   },
+   "detections": 985,
+   "fp_by_rule": {
+    "victim_packet_flood": 4
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     4
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 771,
+     "recall": 0.7041095890410959,
+     "ttd": 45.55071306228638
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.23737373737373738,
+     "f1": 0.3836734693877551
+    },
+    "test": {
+     "tp": 771,
+     "positives": 1095,
+     "fp_secs": 4,
+     "fp_per_hour": 2.9025416563667163,
+     "precision": 0.9948387096774194,
+     "recall": 0.7041095890410959,
+     "f1": 0.8245989304812834
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "fixed",
+   "scale": 2,
+   "label": "count / fixed s=2",
+   "thresholds": {
+    "syn_flood": {
+     "value": 200.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 200.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 40.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 800.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 64.0,
+     "multiplier": null
+    }
+   },
+   "detections": 878,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 670,
+     "recall": 0.6118721461187214,
+     "ttd": 46.55213689804077
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.23737373737373738,
+     "f1": 0.3836734693877551
+    },
+    "test": {
+     "tp": 670,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6118721461187214,
+     "f1": 0.7592067988668555
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "fixed",
+   "scale": 3,
+   "label": "count / fixed s=3",
+   "thresholds": {
+    "syn_flood": {
+     "value": 300.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 300.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 60.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 1200.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 96.0,
+     "multiplier": null
+    }
+   },
+   "detections": 657,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 140,
+     "recall": 0.2356902356902357,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 461,
+     "recall": 0.42100456621004567,
+     "ttd": 53.615041971206665
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 140,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.2356902356902357,
+     "f1": 0.3814713896457766
+    },
+    "test": {
+     "tp": 461,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.42100456621004567,
+     "f1": 0.5925449871465296
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 1,
+   "label": "count / adaptive floor=0.25 m-level=1",
+   "thresholds": {
+    "syn_flood": {
+     "value": 25.0,
+     "multiplier": 1.5
+    },
+    "icmp_flood": {
+     "value": 25.0,
+     "multiplier": 1.5
+    },
+    "port_sweep": {
+     "value": 5.0,
+     "multiplier": 1.5
+    },
+    "victim_packet_flood": {
+     "value": 100.0,
+     "multiplier": 1.5
+    },
+    "victim_conn_flood": {
+     "value": 8.0,
+     "multiplier": 1.5
+    }
+   },
+   "detections": 2353,
+   "fp_by_rule": {
+    "victim_conn_flood": 64,
+    "victim_packet_flood": 673,
+    "port_sweep": 2,
+    "syn_flood": 756
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 12,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     152
+    ],
+    [
+     "192.168.10.15",
+     147
+    ],
+    [
+     "192.168.10.14",
+     136
+    ],
+    [
+     "192.168.10.5",
+     123
+    ],
+    [
+     "192.168.10.9",
+     122
+    ],
+    [
+     "192.168.10.19",
+     113
+    ],
+    [
+     "192.168.10.8",
+     105
+    ],
+    [
+     "192.168.10.16",
+     89
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 158,
+     "recall": 0.265993265993266,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 988,
+     "recall": 0.902283105022831,
+     "ttd": 31.006728887557983
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 158,
+     "positives": 594,
+     "fp_secs": 933,
+     "fp_per_hour": 139.8935482615011,
+     "precision": 0.14482126489459213,
+     "recall": 0.265993265993266,
+     "f1": 0.18753709198813057
+    },
+    "test": {
+     "tp": 988,
+     "positives": 1095,
+     "fp_secs": 163,
+     "fp_per_hour": 118.27857249694368,
+     "precision": 0.8583840139009556,
+     "recall": 0.902283105022831,
+     "f1": 0.8797862867319679
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 2,
+   "label": "count / adaptive floor=0.25 m-level=2",
+   "thresholds": {
+    "syn_flood": {
+     "value": 25.0,
+     "multiplier": 2
+    },
+    "icmp_flood": {
+     "value": 25.0,
+     "multiplier": 2
+    },
+    "port_sweep": {
+     "value": 5.0,
+     "multiplier": 2
+    },
+    "victim_packet_flood": {
+     "value": 100.0,
+     "multiplier": 2
+    },
+    "victim_conn_flood": {
+     "value": 8.0,
+     "multiplier": 2
+    }
+   },
+   "detections": 2352,
+   "fp_by_rule": {
+    "victim_conn_flood": 64,
+    "victim_packet_flood": 671,
+    "port_sweep": 2,
+    "syn_flood": 755
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 12,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     152
+    ],
+    [
+     "192.168.10.15",
+     147
+    ],
+    [
+     "192.168.10.14",
+     136
+    ],
+    [
+     "192.168.10.5",
+     123
+    ],
+    [
+     "192.168.10.9",
+     122
+    ],
+    [
+     "192.168.10.19",
+     113
+    ],
+    [
+     "192.168.10.8",
+     105
+    ],
+    [
+     "192.168.10.17",
+     88
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 158,
+     "recall": 0.265993265993266,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 988,
+     "recall": 0.902283105022831,
+     "ttd": 31.006728887557983
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 158,
+     "positives": 594,
+     "fp_secs": 933,
+     "fp_per_hour": 139.8935482615011,
+     "precision": 0.14482126489459213,
+     "recall": 0.265993265993266,
+     "f1": 0.18753709198813057
+    },
+    "test": {
+     "tp": 988,
+     "positives": 1095,
+     "fp_secs": 162,
+     "fp_per_hour": 117.55293708285201,
+     "precision": 0.8591304347826086,
+     "recall": 0.902283105022831,
+     "f1": 0.8801781737193763
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 3,
+   "label": "count / adaptive floor=0.25 m-level=3",
+   "thresholds": {
+    "syn_flood": {
+     "value": 25.0,
+     "multiplier": 3
+    },
+    "icmp_flood": {
+     "value": 25.0,
+     "multiplier": 3
+    },
+    "port_sweep": {
+     "value": 5.0,
+     "multiplier": 3
+    },
+    "victim_packet_flood": {
+     "value": 100.0,
+     "multiplier": 3
+    },
+    "victim_conn_flood": {
+     "value": 8.0,
+     "multiplier": 3
+    }
+   },
+   "detections": 2278,
+   "fp_by_rule": {
+    "victim_conn_flood": 64,
+    "victim_packet_flood": 626,
+    "port_sweep": 2,
+    "syn_flood": 685
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 12,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     140
+    ],
+    [
+     "192.168.10.12",
+     139
+    ],
+    [
+     "192.168.10.14",
+     133
+    ],
+    [
+     "192.168.10.9",
+     117
+    ],
+    [
+     "192.168.10.5",
+     115
+    ],
+    [
+     "192.168.10.19",
+     108
+    ],
+    [
+     "192.168.10.8",
+     99
+    ],
+    [
+     "192.168.10.17",
+     83
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 158,
+     "recall": 0.265993265993266,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 988,
+     "recall": 0.902283105022831,
+     "ttd": 31.006728887557983
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 158,
+     "positives": 594,
+     "fp_secs": 876,
+     "fp_per_hour": 131.34699708153803,
+     "precision": 0.1528046421663443,
+     "recall": 0.265993265993266,
+     "f1": 0.19410319410319413
+    },
+    "test": {
+     "tp": 988,
+     "positives": 1095,
+     "fp_secs": 149,
+     "fp_per_hour": 108.11967669966018,
+     "precision": 0.8689533861037819,
+     "recall": 0.902283105022831,
+     "f1": 0.8853046594982079
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 4,
+   "label": "count / adaptive floor=0.25 m-level=4",
+   "thresholds": {
+    "syn_flood": {
+     "value": 25.0,
+     "multiplier": 4
+    },
+    "icmp_flood": {
+     "value": 25.0,
+     "multiplier": 4
+    },
+    "port_sweep": {
+     "value": 5.0,
+     "multiplier": 4
+    },
+    "victim_packet_flood": {
+     "value": 100.0,
+     "multiplier": 4
+    },
+    "victim_conn_flood": {
+     "value": 8.0,
+     "multiplier": 4
+    }
+   },
+   "detections": 2145,
+   "fp_by_rule": {
+    "victim_conn_flood": 63,
+    "victim_packet_flood": 518,
+    "port_sweep": 2,
+    "syn_flood": 577
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 12,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     126
+    ],
+    [
+     "192.168.10.14",
+     111
+    ],
+    [
+     "192.168.10.9",
+     107
+    ],
+    [
+     "192.168.10.5",
+     105
+    ],
+    [
+     "192.168.10.12",
+     105
+    ],
+    [
+     "192.168.10.19",
+     99
+    ],
+    [
+     "192.168.10.8",
+     93
+    ],
+    [
+     "192.168.10.17",
+     68
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 158,
+     "recall": 0.265993265993266,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 988,
+     "recall": 0.902283105022831,
+     "ttd": 31.006728887557983
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 158,
+     "positives": 594,
+     "fp_secs": 761,
+     "fp_per_hour": 114.10395522722654,
+     "precision": 0.1719260065288357,
+     "recall": 0.265993265993266,
+     "f1": 0.20885657633840052
+    },
+    "test": {
+     "tp": 988,
+     "positives": 1095,
+     "fp_secs": 135,
+     "fp_per_hour": 97.96078090237667,
+     "precision": 0.8797862867319679,
+     "recall": 0.902283105022831,
+     "f1": 0.890892696122633
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 5,
+   "label": "count / adaptive floor=0.25 m-level=5",
+   "thresholds": {
+    "syn_flood": {
+     "value": 25.0,
+     "multiplier": 6
+    },
+    "icmp_flood": {
+     "value": 25.0,
+     "multiplier": 6
+    },
+    "port_sweep": {
+     "value": 5.0,
+     "multiplier": 6
+    },
+    "victim_packet_flood": {
+     "value": 100.0,
+     "multiplier": 6
+    },
+    "victim_conn_flood": {
+     "value": 8.0,
+     "multiplier": 6
+    }
+   },
+   "detections": 1862,
+   "fp_by_rule": {
+    "victim_conn_flood": 62,
+    "victim_packet_flood": 348,
+    "port_sweep": 2,
+    "syn_flood": 383
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 12,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     88
+    ],
+    [
+     "192.168.10.14",
+     87
+    ],
+    [
+     "192.168.10.9",
+     86
+    ],
+    [
+     "192.168.10.15",
+     86
+    ],
+    [
+     "192.168.10.8",
+     81
+    ],
+    [
+     "192.168.10.5",
+     66
+    ],
+    [
+     "192.168.10.19",
+     58
+    ],
+    [
+     "192.168.10.16",
+     40
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 988,
+     "recall": 0.902283105022831,
+     "ttd": 31.006728887557983
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 529,
+     "fp_per_hour": 79.31799252983289,
+     "precision": 0.21044776119402986,
+     "recall": 0.23737373737373738,
+     "f1": 0.22310126582278483
+    },
+    "test": {
+     "tp": 988,
+     "positives": 1095,
+     "fp_secs": 110,
+     "fp_per_hour": 79.8198955500847,
+     "precision": 0.8998178506375227,
+     "recall": 0.902283105022831,
+     "f1": 0.9010487916096671
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 1,
+   "label": "count / adaptive floor=0.5 m-level=1",
+   "thresholds": {
+    "syn_flood": {
+     "value": 50.0,
+     "multiplier": 1.5
+    },
+    "icmp_flood": {
+     "value": 50.0,
+     "multiplier": 1.5
+    },
+    "port_sweep": {
+     "value": 10.0,
+     "multiplier": 1.5
+    },
+    "victim_packet_flood": {
+     "value": 200.0,
+     "multiplier": 1.5
+    },
+    "victim_conn_flood": {
+     "value": 16.0,
+     "multiplier": 1.5
+    }
+   },
+   "detections": 1312,
+   "fp_by_rule": {
+    "victim_conn_flood": 7,
+    "victim_packet_flood": 100,
+    "syn_flood": 72
+   },
+   "fp_hosts": 10,
+   "fp_benign_hosts": 10,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     30
+    ],
+    [
+     "192.168.10.14",
+     23
+    ],
+    [
+     "192.168.10.15",
+     22
+    ],
+    [
+     "192.168.10.5",
+     21
+    ],
+    [
+     "192.168.10.19",
+     19
+    ],
+    [
+     "192.168.10.8",
+     13
+    ],
+    [
+     "192.168.10.9",
+     12
+    ],
+    [
+     "192.168.10.17",
+     8
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 926,
+     "recall": 0.845662100456621,
+     "ttd": 41.53897500038147
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 125,
+     "fp_per_hour": 18.742436798164672,
+     "precision": 0.5300751879699248,
+     "recall": 0.23737373737373738,
+     "f1": 0.32790697674418606
+    },
+    "test": {
+     "tp": 926,
+     "positives": 1095,
+     "fp_secs": 32,
+     "fp_per_hour": 23.22033325093373,
+     "precision": 0.9665970772442589,
+     "recall": 0.845662100456621,
+     "f1": 0.9020944958597176
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 2,
+   "label": "count / adaptive floor=0.5 m-level=2",
+   "thresholds": {
+    "syn_flood": {
+     "value": 50.0,
+     "multiplier": 2
+    },
+    "icmp_flood": {
+     "value": 50.0,
+     "multiplier": 2
+    },
+    "port_sweep": {
+     "value": 10.0,
+     "multiplier": 2
+    },
+    "victim_packet_flood": {
+     "value": 200.0,
+     "multiplier": 2
+    },
+    "victim_conn_flood": {
+     "value": 16.0,
+     "multiplier": 2
+    }
+   },
+   "detections": 1312,
+   "fp_by_rule": {
+    "victim_conn_flood": 7,
+    "victim_packet_flood": 100,
+    "syn_flood": 72
+   },
+   "fp_hosts": 10,
+   "fp_benign_hosts": 10,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     30
+    ],
+    [
+     "192.168.10.14",
+     23
+    ],
+    [
+     "192.168.10.15",
+     22
+    ],
+    [
+     "192.168.10.5",
+     21
+    ],
+    [
+     "192.168.10.19",
+     19
+    ],
+    [
+     "192.168.10.8",
+     13
+    ],
+    [
+     "192.168.10.9",
+     12
+    ],
+    [
+     "192.168.10.17",
+     8
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 926,
+     "recall": 0.845662100456621,
+     "ttd": 41.53897500038147
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 125,
+     "fp_per_hour": 18.742436798164672,
+     "precision": 0.5300751879699248,
+     "recall": 0.23737373737373738,
+     "f1": 0.32790697674418606
+    },
+    "test": {
+     "tp": 926,
+     "positives": 1095,
+     "fp_secs": 32,
+     "fp_per_hour": 23.22033325093373,
+     "precision": 0.9665970772442589,
+     "recall": 0.845662100456621,
+     "f1": 0.9020944958597176
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 3,
+   "label": "count / adaptive floor=0.5 m-level=3",
+   "thresholds": {
+    "syn_flood": {
+     "value": 50.0,
+     "multiplier": 3
+    },
+    "icmp_flood": {
+     "value": 50.0,
+     "multiplier": 3
+    },
+    "port_sweep": {
+     "value": 10.0,
+     "multiplier": 3
+    },
+    "victim_packet_flood": {
+     "value": 200.0,
+     "multiplier": 3
+    },
+    "victim_conn_flood": {
+     "value": 16.0,
+     "multiplier": 3
+    }
+   },
+   "detections": 1233,
+   "fp_by_rule": {
+    "victim_conn_flood": 7,
+    "victim_packet_flood": 89,
+    "syn_flood": 65
+   },
+   "fp_hosts": 10,
+   "fp_benign_hosts": 10,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     30
+    ],
+    [
+     "192.168.10.14",
+     21
+    ],
+    [
+     "192.168.10.5",
+     21
+    ],
+    [
+     "192.168.10.15",
+     20
+    ],
+    [
+     "192.168.10.19",
+     15
+    ],
+    [
+     "192.168.10.8",
+     12
+    ],
+    [
+     "192.168.10.9",
+     9
+    ],
+    [
+     "192.168.10.16",
+     8
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 865,
+     "recall": 0.7899543378995434,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 112,
+     "fp_per_hour": 16.79322337115555,
+     "precision": 0.5573122529644269,
+     "recall": 0.23737373737373738,
+     "f1": 0.33293978748524206
+    },
+    "test": {
+     "tp": 865,
+     "positives": 1095,
+     "fp_secs": 32,
+     "fp_per_hour": 23.22033325093373,
+     "precision": 0.9643255295429208,
+     "recall": 0.7899543378995434,
+     "f1": 0.8684738955823293
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 4,
+   "label": "count / adaptive floor=0.5 m-level=4",
+   "thresholds": {
+    "syn_flood": {
+     "value": 50.0,
+     "multiplier": 4
+    },
+    "icmp_flood": {
+     "value": 50.0,
+     "multiplier": 4
+    },
+    "port_sweep": {
+     "value": 10.0,
+     "multiplier": 4
+    },
+    "victim_packet_flood": {
+     "value": 200.0,
+     "multiplier": 4
+    },
+    "victim_conn_flood": {
+     "value": 16.0,
+     "multiplier": 4
+    }
+   },
+   "detections": 300,
+   "fp_by_rule": {
+    "victim_conn_flood": 7,
+    "victim_packet_flood": 78,
+    "syn_flood": 55
+   },
+   "fp_hosts": 10,
+   "fp_benign_hosts": 10,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     28
+    ],
+    [
+     "192.168.10.14",
+     20
+    ],
+    [
+     "192.168.10.15",
+     18
+    ],
+    [
+     "192.168.10.5",
+     15
+    ],
+    [
+     "192.168.10.8",
+     11
+    ],
+    [
+     "192.168.10.19",
+     11
+    ],
+    [
+     "192.168.10.9",
+     9
+    ],
+    [
+     "192.168.10.16",
+     7
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 1,
+     "recall": 0.0009132420091324201,
+     "ttd": 636.309741973877
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 95,
+     "fp_per_hour": 14.244251966605152,
+     "precision": 0.597457627118644,
+     "recall": 0.23737373737373738,
+     "f1": 0.3397590361445783
+    },
+    "test": {
+     "tp": 1,
+     "positives": 1095,
+     "fp_secs": 30,
+     "fp_per_hour": 21.769062422750373,
+     "precision": 0.03225806451612903,
+     "recall": 0.0009132420091324201,
+     "f1": 0.0017761989342806393
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 5,
+   "label": "count / adaptive floor=0.5 m-level=5",
+   "thresholds": {
+    "syn_flood": {
+     "value": 50.0,
+     "multiplier": 6
+    },
+    "icmp_flood": {
+     "value": 50.0,
+     "multiplier": 6
+    },
+    "port_sweep": {
+     "value": 10.0,
+     "multiplier": 6
+    },
+    "victim_packet_flood": {
+     "value": 200.0,
+     "multiplier": 6
+    },
+    "victim_conn_flood": {
+     "value": 16.0,
+     "multiplier": 6
+    }
+   },
+   "detections": 250,
+   "fp_by_rule": {
+    "victim_conn_flood": 7,
+    "victim_packet_flood": 44,
+    "syn_flood": 34
+   },
+   "fp_hosts": 9,
+   "fp_benign_hosts": 9,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     26
+    ],
+    [
+     "192.168.10.14",
+     11
+    ],
+    [
+     "192.168.10.5",
+     10
+    ],
+    [
+     "192.168.10.19",
+     9
+    ],
+    [
+     "192.168.10.15",
+     8
+    ],
+    [
+     "192.168.10.8",
+     5
+    ],
+    [
+     "192.168.10.9",
+     4
+    ],
+    [
+     "192.168.10.17",
+     2
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 53,
+     "fp_per_hour": 7.946793202421821,
+     "precision": 0.7268041237113402,
+     "recall": 0.23737373737373738,
+     "f1": 0.35786802030456855
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 23,
+     "fp_per_hour": 16.689614524108617,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 1,
+   "label": "count / adaptive floor=1 m-level=1",
+   "thresholds": {
+    "syn_flood": {
+     "value": 100.0,
+     "multiplier": 1.5
+    },
+    "icmp_flood": {
+     "value": 100.0,
+     "multiplier": 1.5
+    },
+    "port_sweep": {
+     "value": 20.0,
+     "multiplier": 1.5
+    },
+    "victim_packet_flood": {
+     "value": 400.0,
+     "multiplier": 1.5
+    },
+    "victim_conn_flood": {
+     "value": 32.0,
+     "multiplier": 1.5
+    }
+   },
+   "detections": 1089,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 11
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     11
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 855,
+     "recall": 0.7808219178082192,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9929577464788732,
+     "recall": 0.23737373737373738,
+     "f1": 0.38315217391304346
+    },
+    "test": {
+     "tp": 855,
+     "positives": 1095,
+     "fp_secs": 11,
+     "fp_per_hour": 7.98198955500847,
+     "precision": 0.9872979214780601,
+     "recall": 0.7808219178082192,
+     "f1": 0.8720040795512495
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 2,
+   "label": "count / adaptive floor=1 m-level=2",
+   "thresholds": {
+    "syn_flood": {
+     "value": 100.0,
+     "multiplier": 2
+    },
+    "icmp_flood": {
+     "value": 100.0,
+     "multiplier": 2
+    },
+    "port_sweep": {
+     "value": 20.0,
+     "multiplier": 2
+    },
+    "victim_packet_flood": {
+     "value": 400.0,
+     "multiplier": 2
+    },
+    "victim_conn_flood": {
+     "value": 32.0,
+     "multiplier": 2
+    }
+   },
+   "detections": 1089,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 11
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     11
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 855,
+     "recall": 0.7808219178082192,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9929577464788732,
+     "recall": 0.23737373737373738,
+     "f1": 0.38315217391304346
+    },
+    "test": {
+     "tp": 855,
+     "positives": 1095,
+     "fp_secs": 11,
+     "fp_per_hour": 7.98198955500847,
+     "precision": 0.9872979214780601,
+     "recall": 0.7808219178082192,
+     "f1": 0.8720040795512495
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 3,
+   "label": "count / adaptive floor=1 m-level=3",
+   "thresholds": {
+    "syn_flood": {
+     "value": 100.0,
+     "multiplier": 3
+    },
+    "icmp_flood": {
+     "value": 100.0,
+     "multiplier": 3
+    },
+    "port_sweep": {
+     "value": 20.0,
+     "multiplier": 3
+    },
+    "victim_packet_flood": {
+     "value": 400.0,
+     "multiplier": 3
+    },
+    "victim_conn_flood": {
+     "value": 32.0,
+     "multiplier": 3
+    }
+   },
+   "detections": 1087,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 11
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     11
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 854,
+     "recall": 0.7799086757990867,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9929577464788732,
+     "recall": 0.23737373737373738,
+     "f1": 0.38315217391304346
+    },
+    "test": {
+     "tp": 854,
+     "positives": 1095,
+     "fp_secs": 11,
+     "fp_per_hour": 7.98198955500847,
+     "precision": 0.9872832369942196,
+     "recall": 0.7799086757990867,
+     "f1": 0.8714285714285714
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 4,
+   "label": "count / adaptive floor=1 m-level=4",
+   "thresholds": {
+    "syn_flood": {
+     "value": 100.0,
+     "multiplier": 4
+    },
+    "icmp_flood": {
+     "value": 100.0,
+     "multiplier": 4
+    },
+    "port_sweep": {
+     "value": 20.0,
+     "multiplier": 4
+    },
+    "victim_packet_flood": {
+     "value": 400.0,
+     "multiplier": 4
+    },
+    "victim_conn_flood": {
+     "value": 32.0,
+     "multiplier": 4
+    }
+   },
+   "detections": 187,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 11
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     11
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 1,
+     "recall": 0.0009132420091324201,
+     "ttd": 636.309741973877
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9929577464788732,
+     "recall": 0.23737373737373738,
+     "f1": 0.38315217391304346
+    },
+    "test": {
+     "tp": 1,
+     "positives": 1095,
+     "fp_secs": 11,
+     "fp_per_hour": 7.98198955500847,
+     "precision": 0.08333333333333333,
+     "recall": 0.0009132420091324201,
+     "f1": 0.0018066847335140015
+    }
+   }
+  },
+  {
+   "family": "count",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 5,
+   "label": "count / adaptive floor=1 m-level=5",
+   "thresholds": {
+    "syn_flood": {
+     "value": 100.0,
+     "multiplier": 6
+    },
+    "icmp_flood": {
+     "value": 100.0,
+     "multiplier": 6
+    },
+    "port_sweep": {
+     "value": 20.0,
+     "multiplier": 6
+    },
+    "victim_packet_flood": {
+     "value": 400.0,
+     "multiplier": 6
+    },
+    "victim_conn_flood": {
+     "value": 32.0,
+     "multiplier": 6
+    }
+   },
+   "detections": 185,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 10
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     10
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9929577464788732,
+     "recall": 0.23737373737373738,
+     "f1": 0.38315217391304346
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 10,
+     "fp_per_hour": 7.25635414091679,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "fixed",
+   "scale": 0.25,
+   "label": "behaviour / fixed s=0.25",
+   "thresholds": {
+    "half_open": {
+     "value": 0.5,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 1.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 2.5,
+     "multiplier": null
+    }
+   },
+   "detections": 1563,
+   "fp_by_rule": {
+    "half_open": 28
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.17",
+     27
+    ],
+    [
+     "192.168.10.12",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 548,
+     "recall": 0.9225589225589226,
+     "ttd": 34.25477910041809
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 548,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.9225589225589226,
+     "f1": 0.9597197898423818
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 28,
+     "fp_per_hour": 20.317791594567012,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "fixed",
+   "scale": 0.5,
+   "label": "behaviour / fixed s=0.5",
+   "thresholds": {
+    "half_open": {
+     "value": 0.6,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 2.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 5.0,
+     "multiplier": null
+    }
+   },
+   "detections": 1458,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 535,
+     "recall": 0.9006734006734006,
+     "ttd": 40.36965203285217
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 535,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.9006734006734006,
+     "f1": 0.9477413640389726
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "fixed",
+   "scale": 0.75,
+   "label": "behaviour / fixed s=0.75",
+   "thresholds": {
+    "half_open": {
+     "value": 0.7333,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 3.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 7.5,
+     "multiplier": null
+    }
+   },
+   "detections": 1400,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 524,
+     "recall": 0.8821548821548821,
+     "ttd": 46.80168795585632
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 524,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.8821548821548821,
+     "f1": 0.9373881932021467
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "fixed",
+   "scale": 1,
+   "label": "behaviour / fixed s=1",
+   "thresholds": {
+    "half_open": {
+     "value": 0.8,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 4.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 10.0,
+     "multiplier": null
+    }
+   },
+   "detections": 1317,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 503,
+     "recall": 0.8468013468013468,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 503,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.8468013468013468,
+     "f1": 0.9170464904284411
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "fixed",
+   "scale": 1.5,
+   "label": "behaviour / fixed s=1.5",
+   "thresholds": {
+    "half_open": {
+     "value": 0.8667,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 6.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 15.0,
+     "multiplier": null
+    }
+   },
+   "detections": 1119,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 449,
+     "recall": 0.7558922558922558,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 449,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.7558922558922558,
+     "f1": 0.8609779482262704
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "fixed",
+   "scale": 2,
+   "label": "behaviour / fixed s=2",
+   "thresholds": {
+    "half_open": {
+     "value": 0.9,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 8.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 20.0,
+     "multiplier": null
+    }
+   },
+   "detections": 922,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 380,
+     "recall": 0.6397306397306397,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 380,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6397306397306397,
+     "f1": 0.7802874743326489
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "fixed",
+   "scale": 3,
+   "label": "behaviour / fixed s=3",
+   "thresholds": {
+    "half_open": {
+     "value": 0.9333,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 12.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 30.0,
+     "multiplier": null
+    }
+   },
+   "detections": 852,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 345,
+     "recall": 0.5808080808080808,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 345,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.5808080808080808,
+     "f1": 0.7348242811501596
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 1,
+   "label": "behaviour / adaptive floor=0.25 m-level=1",
+   "thresholds": {
+    "half_open": {
+     "value": 0.5,
+     "multiplier": 1.05
+    },
+    "port_entropy": {
+     "value": 1.0,
+     "multiplier": 1.05
+    },
+    "rejected_probes": {
+     "value": 2.5,
+     "multiplier": 1.5
+    }
+   },
+   "detections": 1563,
+   "fp_by_rule": {
+    "half_open": 28
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.17",
+     27
+    ],
+    [
+     "192.168.10.12",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 548,
+     "recall": 0.9225589225589226,
+     "ttd": 34.25477910041809
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 548,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.9225589225589226,
+     "f1": 0.9597197898423818
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 28,
+     "fp_per_hour": 20.317791594567012,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 2,
+   "label": "behaviour / adaptive floor=0.25 m-level=2",
+   "thresholds": {
+    "half_open": {
+     "value": 0.5,
+     "multiplier": 1.1
+    },
+    "port_entropy": {
+     "value": 1.0,
+     "multiplier": 1.1
+    },
+    "rejected_probes": {
+     "value": 2.5,
+     "multiplier": 2
+    }
+   },
+   "detections": 1563,
+   "fp_by_rule": {
+    "half_open": 28
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.17",
+     27
+    ],
+    [
+     "192.168.10.12",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 548,
+     "recall": 0.9225589225589226,
+     "ttd": 34.25477910041809
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 548,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.9225589225589226,
+     "f1": 0.9597197898423818
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 28,
+     "fp_per_hour": 20.317791594567012,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 3,
+   "label": "behaviour / adaptive floor=0.25 m-level=3",
+   "thresholds": {
+    "half_open": {
+     "value": 0.5,
+     "multiplier": 1.25
+    },
+    "port_entropy": {
+     "value": 1.0,
+     "multiplier": 1.25
+    },
+    "rejected_probes": {
+     "value": 2.5,
+     "multiplier": 3
+    }
+   },
+   "detections": 1563,
+   "fp_by_rule": {
+    "half_open": 28
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.17",
+     27
+    ],
+    [
+     "192.168.10.12",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 548,
+     "recall": 0.9225589225589226,
+     "ttd": 34.25477910041809
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 548,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.9225589225589226,
+     "f1": 0.9597197898423818
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 28,
+     "fp_per_hour": 20.317791594567012,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 4,
+   "label": "behaviour / adaptive floor=0.25 m-level=4",
+   "thresholds": {
+    "half_open": {
+     "value": 0.5,
+     "multiplier": 1.5
+    },
+    "port_entropy": {
+     "value": 1.0,
+     "multiplier": 1.5
+    },
+    "rejected_probes": {
+     "value": 2.5,
+     "multiplier": 4
+    }
+   },
+   "detections": 1219,
+   "fp_by_rule": {
+    "half_open": 28
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.17",
+     27
+    ],
+    [
+     "192.168.10.12",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 469,
+     "recall": 0.7895622895622896,
+     "ttd": 34.25477910041809
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 469,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.7895622895622896,
+     "f1": 0.8824082784571966
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 28,
+     "fp_per_hour": 20.317791594567012,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 5,
+   "label": "behaviour / adaptive floor=0.25 m-level=5",
+   "thresholds": {
+    "half_open": {
+     "value": 0.5,
+     "multiplier": 2
+    },
+    "port_entropy": {
+     "value": 1.0,
+     "multiplier": 2
+    },
+    "rejected_probes": {
+     "value": 2.5,
+     "multiplier": 6
+    }
+   },
+   "detections": 951,
+   "fp_by_rule": {
+    "half_open": 28
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.17",
+     27
+    ],
+    [
+     "192.168.10.12",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 379,
+     "recall": 0.6380471380471381,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 379,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6380471380471381,
+     "f1": 0.7790339157245633
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 28,
+     "fp_per_hour": 20.317791594567012,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 1,
+   "label": "behaviour / adaptive floor=0.5 m-level=1",
+   "thresholds": {
+    "half_open": {
+     "value": 0.6,
+     "multiplier": 1.05
+    },
+    "port_entropy": {
+     "value": 2.0,
+     "multiplier": 1.05
+    },
+    "rejected_probes": {
+     "value": 5.0,
+     "multiplier": 1.5
+    }
+   },
+   "detections": 1434,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 534,
+     "recall": 0.898989898989899,
+     "ttd": 40.36965203285217
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 534,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.898989898989899,
+     "f1": 0.9468085106382979
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 2,
+   "label": "behaviour / adaptive floor=0.5 m-level=2",
+   "thresholds": {
+    "half_open": {
+     "value": 0.6,
+     "multiplier": 1.1
+    },
+    "port_entropy": {
+     "value": 2.0,
+     "multiplier": 1.1
+    },
+    "rejected_probes": {
+     "value": 5.0,
+     "multiplier": 2
+    }
+   },
+   "detections": 1017,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 412,
+     "recall": 0.6936026936026936,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 412,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6936026936026936,
+     "f1": 0.8190854870775347
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 3,
+   "label": "behaviour / adaptive floor=0.5 m-level=3",
+   "thresholds": {
+    "half_open": {
+     "value": 0.6,
+     "multiplier": 1.25
+    },
+    "port_entropy": {
+     "value": 2.0,
+     "multiplier": 1.25
+    },
+    "rejected_probes": {
+     "value": 5.0,
+     "multiplier": 3
+    }
+   },
+   "detections": 1002,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 407,
+     "recall": 0.6851851851851852,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 407,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6851851851851852,
+     "f1": 0.8131868131868133
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 4,
+   "label": "behaviour / adaptive floor=0.5 m-level=4",
+   "thresholds": {
+    "half_open": {
+     "value": 0.6,
+     "multiplier": 1.5
+    },
+    "port_entropy": {
+     "value": 2.0,
+     "multiplier": 1.5
+    },
+    "rejected_probes": {
+     "value": 5.0,
+     "multiplier": 4
+    }
+   },
+   "detections": 984,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 400,
+     "recall": 0.6734006734006734,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 400,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6734006734006734,
+     "f1": 0.8048289738430584
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 5,
+   "label": "behaviour / adaptive floor=0.5 m-level=5",
+   "thresholds": {
+    "half_open": {
+     "value": 0.6,
+     "multiplier": 2
+    },
+    "port_entropy": {
+     "value": 2.0,
+     "multiplier": 2
+    },
+    "rejected_probes": {
+     "value": 5.0,
+     "multiplier": 6
+    }
+   },
+   "detections": 923,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 379,
+     "recall": 0.6380471380471381,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 379,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6380471380471381,
+     "f1": 0.7790339157245633
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 1,
+   "label": "behaviour / adaptive floor=1 m-level=1",
+   "thresholds": {
+    "half_open": {
+     "value": 0.8,
+     "multiplier": 1.05
+    },
+    "port_entropy": {
+     "value": 4.0,
+     "multiplier": 1.05
+    },
+    "rejected_probes": {
+     "value": 10.0,
+     "multiplier": 1.5
+    }
+   },
+   "detections": 968,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 393,
+     "recall": 0.6616161616161617,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 393,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6616161616161617,
+     "f1": 0.7963525835866261
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 2,
+   "label": "behaviour / adaptive floor=1 m-level=2",
+   "thresholds": {
+    "half_open": {
+     "value": 0.8,
+     "multiplier": 1.1
+    },
+    "port_entropy": {
+     "value": 4.0,
+     "multiplier": 1.1
+    },
+    "rejected_probes": {
+     "value": 10.0,
+     "multiplier": 2
+    }
+   },
+   "detections": 968,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 393,
+     "recall": 0.6616161616161617,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 393,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6616161616161617,
+     "f1": 0.7963525835866261
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 3,
+   "label": "behaviour / adaptive floor=1 m-level=3",
+   "thresholds": {
+    "half_open": {
+     "value": 0.8,
+     "multiplier": 1.25
+    },
+    "port_entropy": {
+     "value": 4.0,
+     "multiplier": 1.25
+    },
+    "rejected_probes": {
+     "value": 10.0,
+     "multiplier": 3
+    }
+   },
+   "detections": 968,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 393,
+     "recall": 0.6616161616161617,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 393,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6616161616161617,
+     "f1": 0.7963525835866261
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 4,
+   "label": "behaviour / adaptive floor=1 m-level=4",
+   "thresholds": {
+    "half_open": {
+     "value": 0.8,
+     "multiplier": 1.5
+    },
+    "port_entropy": {
+     "value": 4.0,
+     "multiplier": 1.5
+    },
+    "rejected_probes": {
+     "value": 10.0,
+     "multiplier": 4
+    }
+   },
+   "detections": 968,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 393,
+     "recall": 0.6616161616161617,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 393,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6616161616161617,
+     "f1": 0.7963525835866261
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "behaviour",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 5,
+   "label": "behaviour / adaptive floor=1 m-level=5",
+   "thresholds": {
+    "half_open": {
+     "value": 0.8,
+     "multiplier": 2
+    },
+    "port_entropy": {
+     "value": 4.0,
+     "multiplier": 2
+    },
+    "rejected_probes": {
+     "value": 10.0,
+     "multiplier": 6
+    }
+   },
+   "detections": 923,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 379,
+     "recall": 0.6380471380471381,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 379,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6380471380471381,
+     "f1": 0.7790339157245633
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "fixed",
+   "scale": 0.25,
+   "label": "all / fixed s=0.25",
+   "thresholds": {
+    "syn_flood": {
+     "value": 25.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 25.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 5.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 100.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 8.0,
+     "multiplier": null
+    },
+    "half_open": {
+     "value": 0.5,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 1.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 2.5,
+     "multiplier": null
+    }
+   },
+   "detections": 3721,
+   "fp_by_rule": {
+    "victim_conn_flood": 64,
+    "victim_packet_flood": 673,
+    "port_sweep": 2,
+    "syn_flood": 756,
+    "half_open": 28
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 12,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     153
+    ],
+    [
+     "192.168.10.15",
+     147
+    ],
+    [
+     "192.168.10.14",
+     136
+    ],
+    [
+     "192.168.10.5",
+     123
+    ],
+    [
+     "192.168.10.9",
+     122
+    ],
+    [
+     "192.168.10.17",
+     115
+    ],
+    [
+     "192.168.10.19",
+     113
+    ],
+    [
+     "192.168.10.8",
+     105
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 548,
+     "recall": 0.9225589225589226,
+     "ttd": 34.25477910041809
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 988,
+     "recall": 0.902283105022831,
+     "ttd": 31.006728887557983
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 548,
+     "positives": 594,
+     "fp_secs": 933,
+     "fp_per_hour": 139.8935482615011,
+     "precision": 0.3700202565833896,
+     "recall": 0.9225589225589226,
+     "f1": 0.5281927710843373
+    },
+    "test": {
+     "tp": 988,
+     "positives": 1095,
+     "fp_secs": 191,
+     "fp_per_hour": 138.5963640915107,
+     "precision": 0.8379983036471587,
+     "recall": 0.902283105022831,
+     "f1": 0.8689533861037819
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "fixed",
+   "scale": 0.5,
+   "label": "all / fixed s=0.5",
+   "thresholds": {
+    "syn_flood": {
+     "value": 50.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 50.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 10.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 200.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 16.0,
+     "multiplier": null
+    },
+    "half_open": {
+     "value": 0.6,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 2.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 5.0,
+     "multiplier": null
+    }
+   },
+   "detections": 2596,
+   "fp_by_rule": {
+    "victim_conn_flood": 7,
+    "victim_packet_flood": 100,
+    "syn_flood": 72
+   },
+   "fp_hosts": 10,
+   "fp_benign_hosts": 10,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     30
+    ],
+    [
+     "192.168.10.14",
+     23
+    ],
+    [
+     "192.168.10.15",
+     22
+    ],
+    [
+     "192.168.10.5",
+     21
+    ],
+    [
+     "192.168.10.19",
+     19
+    ],
+    [
+     "192.168.10.8",
+     13
+    ],
+    [
+     "192.168.10.9",
+     12
+    ],
+    [
+     "192.168.10.17",
+     8
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 535,
+     "recall": 0.9006734006734006,
+     "ttd": 40.36965203285217
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 926,
+     "recall": 0.845662100456621,
+     "ttd": 41.53897500038147
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 535,
+     "positives": 594,
+     "fp_secs": 125,
+     "fp_per_hour": 18.742436798164672,
+     "precision": 0.8106060606060606,
+     "recall": 0.9006734006734006,
+     "f1": 0.8532695374800638
+    },
+    "test": {
+     "tp": 926,
+     "positives": 1095,
+     "fp_secs": 32,
+     "fp_per_hour": 23.22033325093373,
+     "precision": 0.9665970772442589,
+     "recall": 0.845662100456621,
+     "f1": 0.9020944958597176
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "fixed",
+   "scale": 0.75,
+   "label": "all / fixed s=0.75",
+   "thresholds": {
+    "syn_flood": {
+     "value": 75.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 75.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 15.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 300.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 24.0,
+     "multiplier": null
+    },
+    "half_open": {
+     "value": 0.7333,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 3.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 7.5,
+     "multiplier": null
+    }
+   },
+   "detections": 2378,
+   "fp_by_rule": {
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 22,
+    "syn_flood": 3
+   },
+   "fp_hosts": 8,
+   "fp_benign_hosts": 8,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     15
+    ],
+    [
+     "192.168.10.8",
+     2
+    ],
+    [
+     "192.168.10.15",
+     2
+    ],
+    [
+     "192.168.10.9",
+     2
+    ],
+    [
+     "192.168.10.5",
+     2
+    ],
+    [
+     "192.168.10.14",
+     2
+    ],
+    [
+     "192.168.10.19",
+     1
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 524,
+     "recall": 0.8821548821548821,
+     "ttd": 46.80168795585632
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 899,
+     "recall": 0.8210045662100457,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 524,
+     "positives": 594,
+     "fp_secs": 12,
+     "fp_per_hour": 1.7992739326238085,
+     "precision": 0.9776119402985075,
+     "recall": 0.8821548821548821,
+     "f1": 0.9274336283185841
+    },
+    "test": {
+     "tp": 899,
+     "positives": 1095,
+     "fp_secs": 15,
+     "fp_per_hour": 10.884531211375187,
+     "precision": 0.9835886214442013,
+     "recall": 0.8210045662100457,
+     "f1": 0.8949726231956198
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "fixed",
+   "scale": 1,
+   "label": "all / fixed s=1",
+   "thresholds": {
+    "syn_flood": {
+     "value": 100.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 100.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 20.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 400.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 32.0,
+     "multiplier": null
+    },
+    "half_open": {
+     "value": 0.8,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 4.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 10.0,
+     "multiplier": null
+    }
+   },
+   "detections": 2232,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 11
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     11
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 503,
+     "recall": 0.8468013468013468,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 855,
+     "recall": 0.7808219178082192,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 503,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.998015873015873,
+     "recall": 0.8468013468013468,
+     "f1": 0.9162112932604736
+    },
+    "test": {
+     "tp": 855,
+     "positives": 1095,
+     "fp_secs": 11,
+     "fp_per_hour": 7.98198955500847,
+     "precision": 0.9872979214780601,
+     "recall": 0.7808219178082192,
+     "f1": 0.8720040795512495
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "fixed",
+   "scale": 1.5,
+   "label": "all / fixed s=1.5",
+   "thresholds": {
+    "syn_flood": {
+     "value": 150.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 150.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 30.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 600.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 48.0,
+     "multiplier": null
+    },
+    "half_open": {
+     "value": 0.8667,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 6.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 15.0,
+     "multiplier": null
+    }
+   },
+   "detections": 1930,
+   "fp_by_rule": {
+    "victim_packet_flood": 4
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     4
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 449,
+     "recall": 0.7558922558922558,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 771,
+     "recall": 0.7041095890410959,
+     "ttd": 45.55071306228638
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 449,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.7558922558922558,
+     "f1": 0.8609779482262704
+    },
+    "test": {
+     "tp": 771,
+     "positives": 1095,
+     "fp_secs": 4,
+     "fp_per_hour": 2.9025416563667163,
+     "precision": 0.9948387096774194,
+     "recall": 0.7041095890410959,
+     "f1": 0.8245989304812834
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "fixed",
+   "scale": 2,
+   "label": "all / fixed s=2",
+   "thresholds": {
+    "syn_flood": {
+     "value": 200.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 200.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 40.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 800.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 64.0,
+     "multiplier": null
+    },
+    "half_open": {
+     "value": 0.9,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 8.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 20.0,
+     "multiplier": null
+    }
+   },
+   "detections": 1626,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 380,
+     "recall": 0.6397306397306397,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 670,
+     "recall": 0.6118721461187214,
+     "ttd": 46.55213689804077
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 380,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6397306397306397,
+     "f1": 0.7802874743326489
+    },
+    "test": {
+     "tp": 670,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.6118721461187214,
+     "f1": 0.7592067988668555
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "fixed",
+   "scale": 3,
+   "label": "all / fixed s=3",
+   "thresholds": {
+    "syn_flood": {
+     "value": 300.0,
+     "multiplier": null
+    },
+    "icmp_flood": {
+     "value": 300.0,
+     "multiplier": null
+    },
+    "port_sweep": {
+     "value": 60.0,
+     "multiplier": null
+    },
+    "victim_packet_flood": {
+     "value": 1200.0,
+     "multiplier": null
+    },
+    "victim_conn_flood": {
+     "value": 96.0,
+     "multiplier": null
+    },
+    "half_open": {
+     "value": 0.9333,
+     "multiplier": null
+    },
+    "port_entropy": {
+     "value": 12.0,
+     "multiplier": null
+    },
+    "rejected_probes": {
+     "value": 30.0,
+     "multiplier": null
+    }
+   },
+   "detections": 1336,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 345,
+     "recall": 0.5808080808080808,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 461,
+     "recall": 0.42100456621004567,
+     "ttd": 53.615041971206665
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 345,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.5808080808080808,
+     "f1": 0.7348242811501596
+    },
+    "test": {
+     "tp": 461,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.42100456621004567,
+     "f1": 0.5925449871465296
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 1,
+   "label": "all / adaptive floor=0.25 m-level=1",
+   "thresholds": {
+    "syn_flood": {
+     "value": 25.0,
+     "multiplier": 1.5
+    },
+    "icmp_flood": {
+     "value": 25.0,
+     "multiplier": 1.5
+    },
+    "port_sweep": {
+     "value": 5.0,
+     "multiplier": 1.5
+    },
+    "victim_packet_flood": {
+     "value": 100.0,
+     "multiplier": 1.5
+    },
+    "victim_conn_flood": {
+     "value": 8.0,
+     "multiplier": 1.5
+    },
+    "half_open": {
+     "value": 0.5,
+     "multiplier": 1.05
+    },
+    "port_entropy": {
+     "value": 1.0,
+     "multiplier": 1.05
+    },
+    "rejected_probes": {
+     "value": 2.5,
+     "multiplier": 1.5
+    }
+   },
+   "detections": 3721,
+   "fp_by_rule": {
+    "victim_conn_flood": 64,
+    "victim_packet_flood": 673,
+    "port_sweep": 2,
+    "syn_flood": 756,
+    "half_open": 28
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 12,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     153
+    ],
+    [
+     "192.168.10.15",
+     147
+    ],
+    [
+     "192.168.10.14",
+     136
+    ],
+    [
+     "192.168.10.5",
+     123
+    ],
+    [
+     "192.168.10.9",
+     122
+    ],
+    [
+     "192.168.10.17",
+     115
+    ],
+    [
+     "192.168.10.19",
+     113
+    ],
+    [
+     "192.168.10.8",
+     105
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 548,
+     "recall": 0.9225589225589226,
+     "ttd": 34.25477910041809
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 988,
+     "recall": 0.902283105022831,
+     "ttd": 31.006728887557983
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 548,
+     "positives": 594,
+     "fp_secs": 933,
+     "fp_per_hour": 139.8935482615011,
+     "precision": 0.3700202565833896,
+     "recall": 0.9225589225589226,
+     "f1": 0.5281927710843373
+    },
+    "test": {
+     "tp": 988,
+     "positives": 1095,
+     "fp_secs": 191,
+     "fp_per_hour": 138.5963640915107,
+     "precision": 0.8379983036471587,
+     "recall": 0.902283105022831,
+     "f1": 0.8689533861037819
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 2,
+   "label": "all / adaptive floor=0.25 m-level=2",
+   "thresholds": {
+    "syn_flood": {
+     "value": 25.0,
+     "multiplier": 2
+    },
+    "icmp_flood": {
+     "value": 25.0,
+     "multiplier": 2
+    },
+    "port_sweep": {
+     "value": 5.0,
+     "multiplier": 2
+    },
+    "victim_packet_flood": {
+     "value": 100.0,
+     "multiplier": 2
+    },
+    "victim_conn_flood": {
+     "value": 8.0,
+     "multiplier": 2
+    },
+    "half_open": {
+     "value": 0.5,
+     "multiplier": 1.1
+    },
+    "port_entropy": {
+     "value": 1.0,
+     "multiplier": 1.1
+    },
+    "rejected_probes": {
+     "value": 2.5,
+     "multiplier": 2
+    }
+   },
+   "detections": 3720,
+   "fp_by_rule": {
+    "victim_conn_flood": 64,
+    "victim_packet_flood": 671,
+    "port_sweep": 2,
+    "syn_flood": 755,
+    "half_open": 28
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 12,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     153
+    ],
+    [
+     "192.168.10.15",
+     147
+    ],
+    [
+     "192.168.10.14",
+     136
+    ],
+    [
+     "192.168.10.5",
+     123
+    ],
+    [
+     "192.168.10.9",
+     122
+    ],
+    [
+     "192.168.10.17",
+     115
+    ],
+    [
+     "192.168.10.19",
+     113
+    ],
+    [
+     "192.168.10.8",
+     105
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 548,
+     "recall": 0.9225589225589226,
+     "ttd": 34.25477910041809
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 988,
+     "recall": 0.902283105022831,
+     "ttd": 31.006728887557983
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 548,
+     "positives": 594,
+     "fp_secs": 933,
+     "fp_per_hour": 139.8935482615011,
+     "precision": 0.3700202565833896,
+     "recall": 0.9225589225589226,
+     "f1": 0.5281927710843373
+    },
+    "test": {
+     "tp": 988,
+     "positives": 1095,
+     "fp_secs": 190,
+     "fp_per_hour": 137.870728677419,
+     "precision": 0.8387096774193549,
+     "recall": 0.902283105022831,
+     "f1": 0.8693356797184338
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 3,
+   "label": "all / adaptive floor=0.25 m-level=3",
+   "thresholds": {
+    "syn_flood": {
+     "value": 25.0,
+     "multiplier": 3
+    },
+    "icmp_flood": {
+     "value": 25.0,
+     "multiplier": 3
+    },
+    "port_sweep": {
+     "value": 5.0,
+     "multiplier": 3
+    },
+    "victim_packet_flood": {
+     "value": 100.0,
+     "multiplier": 3
+    },
+    "victim_conn_flood": {
+     "value": 8.0,
+     "multiplier": 3
+    },
+    "half_open": {
+     "value": 0.5,
+     "multiplier": 1.25
+    },
+    "port_entropy": {
+     "value": 1.0,
+     "multiplier": 1.25
+    },
+    "rejected_probes": {
+     "value": 2.5,
+     "multiplier": 3
+    }
+   },
+   "detections": 3646,
+   "fp_by_rule": {
+    "victim_conn_flood": 64,
+    "victim_packet_flood": 626,
+    "port_sweep": 2,
+    "syn_flood": 685,
+    "half_open": 28
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 12,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     140
+    ],
+    [
+     "192.168.10.15",
+     140
+    ],
+    [
+     "192.168.10.14",
+     133
+    ],
+    [
+     "192.168.10.9",
+     117
+    ],
+    [
+     "192.168.10.5",
+     115
+    ],
+    [
+     "192.168.10.17",
+     110
+    ],
+    [
+     "192.168.10.19",
+     108
+    ],
+    [
+     "192.168.10.8",
+     99
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 548,
+     "recall": 0.9225589225589226,
+     "ttd": 34.25477910041809
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 988,
+     "recall": 0.902283105022831,
+     "ttd": 31.006728887557983
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 548,
+     "positives": 594,
+     "fp_secs": 876,
+     "fp_per_hour": 131.34699708153803,
+     "precision": 0.3848314606741573,
+     "recall": 0.9225589225589226,
+     "f1": 0.5431119920713577
+    },
+    "test": {
+     "tp": 988,
+     "positives": 1095,
+     "fp_secs": 177,
+     "fp_per_hour": 128.4374682942272,
+     "precision": 0.848068669527897,
+     "recall": 0.902283105022831,
+     "f1": 0.8743362831858407
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 4,
+   "label": "all / adaptive floor=0.25 m-level=4",
+   "thresholds": {
+    "syn_flood": {
+     "value": 25.0,
+     "multiplier": 4
+    },
+    "icmp_flood": {
+     "value": 25.0,
+     "multiplier": 4
+    },
+    "port_sweep": {
+     "value": 5.0,
+     "multiplier": 4
+    },
+    "victim_packet_flood": {
+     "value": 100.0,
+     "multiplier": 4
+    },
+    "victim_conn_flood": {
+     "value": 8.0,
+     "multiplier": 4
+    },
+    "half_open": {
+     "value": 0.5,
+     "multiplier": 1.5
+    },
+    "port_entropy": {
+     "value": 1.0,
+     "multiplier": 1.5
+    },
+    "rejected_probes": {
+     "value": 2.5,
+     "multiplier": 4
+    }
+   },
+   "detections": 3169,
+   "fp_by_rule": {
+    "victim_conn_flood": 63,
+    "victim_packet_flood": 518,
+    "port_sweep": 2,
+    "syn_flood": 577,
+    "half_open": 28
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 12,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     126
+    ],
+    [
+     "192.168.10.14",
+     111
+    ],
+    [
+     "192.168.10.9",
+     107
+    ],
+    [
+     "192.168.10.12",
+     106
+    ],
+    [
+     "192.168.10.5",
+     105
+    ],
+    [
+     "192.168.10.19",
+     99
+    ],
+    [
+     "192.168.10.17",
+     95
+    ],
+    [
+     "192.168.10.8",
+     93
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 469,
+     "recall": 0.7895622895622896,
+     "ttd": 34.25477910041809
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 988,
+     "recall": 0.902283105022831,
+     "ttd": 31.006728887557983
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 469,
+     "positives": 594,
+     "fp_secs": 761,
+     "fp_per_hour": 114.10395522722654,
+     "precision": 0.38130081300813007,
+     "recall": 0.7895622895622896,
+     "f1": 0.5142543859649122
+    },
+    "test": {
+     "tp": 988,
+     "positives": 1095,
+     "fp_secs": 163,
+     "fp_per_hour": 118.27857249694368,
+     "precision": 0.8583840139009556,
+     "recall": 0.902283105022831,
+     "f1": 0.8797862867319679
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 0.25,
+   "level": 5,
+   "label": "all / adaptive floor=0.25 m-level=5",
+   "thresholds": {
+    "syn_flood": {
+     "value": 25.0,
+     "multiplier": 6
+    },
+    "icmp_flood": {
+     "value": 25.0,
+     "multiplier": 6
+    },
+    "port_sweep": {
+     "value": 5.0,
+     "multiplier": 6
+    },
+    "victim_packet_flood": {
+     "value": 100.0,
+     "multiplier": 6
+    },
+    "victim_conn_flood": {
+     "value": 8.0,
+     "multiplier": 6
+    },
+    "half_open": {
+     "value": 0.5,
+     "multiplier": 2
+    },
+    "port_entropy": {
+     "value": 1.0,
+     "multiplier": 2
+    },
+    "rejected_probes": {
+     "value": 2.5,
+     "multiplier": 6
+    }
+   },
+   "detections": 2639,
+   "fp_by_rule": {
+    "victim_conn_flood": 62,
+    "victim_packet_flood": 348,
+    "port_sweep": 2,
+    "syn_flood": 383,
+    "half_open": 28
+   },
+   "fp_hosts": 12,
+   "fp_benign_hosts": 12,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     89
+    ],
+    [
+     "192.168.10.14",
+     87
+    ],
+    [
+     "192.168.10.9",
+     86
+    ],
+    [
+     "192.168.10.15",
+     86
+    ],
+    [
+     "192.168.10.8",
+     81
+    ],
+    [
+     "192.168.10.5",
+     66
+    ],
+    [
+     "192.168.10.17",
+     64
+    ],
+    [
+     "192.168.10.19",
+     58
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 379,
+     "recall": 0.6380471380471381,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 988,
+     "recall": 0.902283105022831,
+     "ttd": 31.006728887557983
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 379,
+     "positives": 594,
+     "fp_secs": 529,
+     "fp_per_hour": 79.31799252983289,
+     "precision": 0.41740088105726875,
+     "recall": 0.6380471380471381,
+     "f1": 0.5046604527296937
+    },
+    "test": {
+     "tp": 988,
+     "positives": 1095,
+     "fp_secs": 138,
+     "fp_per_hour": 100.13768714465171,
+     "precision": 0.8774422735346359,
+     "recall": 0.902283105022831,
+     "f1": 0.8896893291310222
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 1,
+   "label": "all / adaptive floor=0.5 m-level=1",
+   "thresholds": {
+    "syn_flood": {
+     "value": 50.0,
+     "multiplier": 1.5
+    },
+    "icmp_flood": {
+     "value": 50.0,
+     "multiplier": 1.5
+    },
+    "port_sweep": {
+     "value": 10.0,
+     "multiplier": 1.5
+    },
+    "victim_packet_flood": {
+     "value": 200.0,
+     "multiplier": 1.5
+    },
+    "victim_conn_flood": {
+     "value": 16.0,
+     "multiplier": 1.5
+    },
+    "half_open": {
+     "value": 0.6,
+     "multiplier": 1.05
+    },
+    "port_entropy": {
+     "value": 2.0,
+     "multiplier": 1.05
+    },
+    "rejected_probes": {
+     "value": 5.0,
+     "multiplier": 1.5
+    }
+   },
+   "detections": 2572,
+   "fp_by_rule": {
+    "victim_conn_flood": 7,
+    "victim_packet_flood": 100,
+    "syn_flood": 72
+   },
+   "fp_hosts": 10,
+   "fp_benign_hosts": 10,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     30
+    ],
+    [
+     "192.168.10.14",
+     23
+    ],
+    [
+     "192.168.10.15",
+     22
+    ],
+    [
+     "192.168.10.5",
+     21
+    ],
+    [
+     "192.168.10.19",
+     19
+    ],
+    [
+     "192.168.10.8",
+     13
+    ],
+    [
+     "192.168.10.9",
+     12
+    ],
+    [
+     "192.168.10.17",
+     8
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 534,
+     "recall": 0.898989898989899,
+     "ttd": 40.36965203285217
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 926,
+     "recall": 0.845662100456621,
+     "ttd": 41.53897500038147
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 534,
+     "positives": 594,
+     "fp_secs": 125,
+     "fp_per_hour": 18.742436798164672,
+     "precision": 0.8103186646433991,
+     "recall": 0.898989898989899,
+     "f1": 0.8523543495610534
+    },
+    "test": {
+     "tp": 926,
+     "positives": 1095,
+     "fp_secs": 32,
+     "fp_per_hour": 23.22033325093373,
+     "precision": 0.9665970772442589,
+     "recall": 0.845662100456621,
+     "f1": 0.9020944958597176
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 2,
+   "label": "all / adaptive floor=0.5 m-level=2",
+   "thresholds": {
+    "syn_flood": {
+     "value": 50.0,
+     "multiplier": 2
+    },
+    "icmp_flood": {
+     "value": 50.0,
+     "multiplier": 2
+    },
+    "port_sweep": {
+     "value": 10.0,
+     "multiplier": 2
+    },
+    "victim_packet_flood": {
+     "value": 200.0,
+     "multiplier": 2
+    },
+    "victim_conn_flood": {
+     "value": 16.0,
+     "multiplier": 2
+    },
+    "half_open": {
+     "value": 0.6,
+     "multiplier": 1.1
+    },
+    "port_entropy": {
+     "value": 2.0,
+     "multiplier": 1.1
+    },
+    "rejected_probes": {
+     "value": 5.0,
+     "multiplier": 2
+    }
+   },
+   "detections": 2155,
+   "fp_by_rule": {
+    "victim_conn_flood": 7,
+    "victim_packet_flood": 100,
+    "syn_flood": 72
+   },
+   "fp_hosts": 10,
+   "fp_benign_hosts": 10,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     30
+    ],
+    [
+     "192.168.10.14",
+     23
+    ],
+    [
+     "192.168.10.15",
+     22
+    ],
+    [
+     "192.168.10.5",
+     21
+    ],
+    [
+     "192.168.10.19",
+     19
+    ],
+    [
+     "192.168.10.8",
+     13
+    ],
+    [
+     "192.168.10.9",
+     12
+    ],
+    [
+     "192.168.10.17",
+     8
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 412,
+     "recall": 0.6936026936026936,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 926,
+     "recall": 0.845662100456621,
+     "ttd": 41.53897500038147
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 412,
+     "positives": 594,
+     "fp_secs": 125,
+     "fp_per_hour": 18.742436798164672,
+     "precision": 0.7672253258845437,
+     "recall": 0.6936026936026936,
+     "f1": 0.7285587975243146
+    },
+    "test": {
+     "tp": 926,
+     "positives": 1095,
+     "fp_secs": 32,
+     "fp_per_hour": 23.22033325093373,
+     "precision": 0.9665970772442589,
+     "recall": 0.845662100456621,
+     "f1": 0.9020944958597176
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 3,
+   "label": "all / adaptive floor=0.5 m-level=3",
+   "thresholds": {
+    "syn_flood": {
+     "value": 50.0,
+     "multiplier": 3
+    },
+    "icmp_flood": {
+     "value": 50.0,
+     "multiplier": 3
+    },
+    "port_sweep": {
+     "value": 10.0,
+     "multiplier": 3
+    },
+    "victim_packet_flood": {
+     "value": 200.0,
+     "multiplier": 3
+    },
+    "victim_conn_flood": {
+     "value": 16.0,
+     "multiplier": 3
+    },
+    "half_open": {
+     "value": 0.6,
+     "multiplier": 1.25
+    },
+    "port_entropy": {
+     "value": 2.0,
+     "multiplier": 1.25
+    },
+    "rejected_probes": {
+     "value": 5.0,
+     "multiplier": 3
+    }
+   },
+   "detections": 2061,
+   "fp_by_rule": {
+    "victim_conn_flood": 7,
+    "victim_packet_flood": 89,
+    "syn_flood": 65
+   },
+   "fp_hosts": 10,
+   "fp_benign_hosts": 10,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     30
+    ],
+    [
+     "192.168.10.14",
+     21
+    ],
+    [
+     "192.168.10.5",
+     21
+    ],
+    [
+     "192.168.10.15",
+     20
+    ],
+    [
+     "192.168.10.19",
+     15
+    ],
+    [
+     "192.168.10.8",
+     12
+    ],
+    [
+     "192.168.10.9",
+     9
+    ],
+    [
+     "192.168.10.16",
+     8
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 407,
+     "recall": 0.6851851851851852,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 865,
+     "recall": 0.7899543378995434,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 407,
+     "positives": 594,
+     "fp_secs": 112,
+     "fp_per_hour": 16.79322337115555,
+     "precision": 0.7842003853564548,
+     "recall": 0.6851851851851852,
+     "f1": 0.7313566936208445
+    },
+    "test": {
+     "tp": 865,
+     "positives": 1095,
+     "fp_secs": 32,
+     "fp_per_hour": 23.22033325093373,
+     "precision": 0.9643255295429208,
+     "recall": 0.7899543378995434,
+     "f1": 0.8684738955823293
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 4,
+   "label": "all / adaptive floor=0.5 m-level=4",
+   "thresholds": {
+    "syn_flood": {
+     "value": 50.0,
+     "multiplier": 4
+    },
+    "icmp_flood": {
+     "value": 50.0,
+     "multiplier": 4
+    },
+    "port_sweep": {
+     "value": 10.0,
+     "multiplier": 4
+    },
+    "victim_packet_flood": {
+     "value": 200.0,
+     "multiplier": 4
+    },
+    "victim_conn_flood": {
+     "value": 16.0,
+     "multiplier": 4
+    },
+    "half_open": {
+     "value": 0.6,
+     "multiplier": 1.5
+    },
+    "port_entropy": {
+     "value": 2.0,
+     "multiplier": 1.5
+    },
+    "rejected_probes": {
+     "value": 5.0,
+     "multiplier": 4
+    }
+   },
+   "detections": 1110,
+   "fp_by_rule": {
+    "victim_conn_flood": 7,
+    "victim_packet_flood": 78,
+    "syn_flood": 55
+   },
+   "fp_hosts": 10,
+   "fp_benign_hosts": 10,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     28
+    ],
+    [
+     "192.168.10.14",
+     20
+    ],
+    [
+     "192.168.10.15",
+     18
+    ],
+    [
+     "192.168.10.5",
+     15
+    ],
+    [
+     "192.168.10.8",
+     11
+    ],
+    [
+     "192.168.10.19",
+     11
+    ],
+    [
+     "192.168.10.9",
+     9
+    ],
+    [
+     "192.168.10.16",
+     7
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 400,
+     "recall": 0.6734006734006734,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 1,
+     "recall": 0.0009132420091324201,
+     "ttd": 636.309741973877
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 400,
+     "positives": 594,
+     "fp_secs": 95,
+     "fp_per_hour": 14.244251966605152,
+     "precision": 0.8080808080808081,
+     "recall": 0.6734006734006734,
+     "f1": 0.7346189164370983
+    },
+    "test": {
+     "tp": 1,
+     "positives": 1095,
+     "fp_secs": 30,
+     "fp_per_hour": 21.769062422750373,
+     "precision": 0.03225806451612903,
+     "recall": 0.0009132420091324201,
+     "f1": 0.0017761989342806393
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 0.5,
+   "level": 5,
+   "label": "all / adaptive floor=0.5 m-level=5",
+   "thresholds": {
+    "syn_flood": {
+     "value": 50.0,
+     "multiplier": 6
+    },
+    "icmp_flood": {
+     "value": 50.0,
+     "multiplier": 6
+    },
+    "port_sweep": {
+     "value": 10.0,
+     "multiplier": 6
+    },
+    "victim_packet_flood": {
+     "value": 200.0,
+     "multiplier": 6
+    },
+    "victim_conn_flood": {
+     "value": 16.0,
+     "multiplier": 6
+    },
+    "half_open": {
+     "value": 0.6,
+     "multiplier": 2
+    },
+    "port_entropy": {
+     "value": 2.0,
+     "multiplier": 2
+    },
+    "rejected_probes": {
+     "value": 5.0,
+     "multiplier": 6
+    }
+   },
+   "detections": 999,
+   "fp_by_rule": {
+    "victim_conn_flood": 7,
+    "victim_packet_flood": 44,
+    "syn_flood": 34
+   },
+   "fp_hosts": 9,
+   "fp_benign_hosts": 9,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     26
+    ],
+    [
+     "192.168.10.14",
+     11
+    ],
+    [
+     "192.168.10.5",
+     10
+    ],
+    [
+     "192.168.10.19",
+     9
+    ],
+    [
+     "192.168.10.15",
+     8
+    ],
+    [
+     "192.168.10.8",
+     5
+    ],
+    [
+     "192.168.10.9",
+     4
+    ],
+    [
+     "192.168.10.17",
+     2
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 379,
+     "recall": 0.6380471380471381,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 379,
+     "positives": 594,
+     "fp_secs": 53,
+     "fp_per_hour": 7.946793202421821,
+     "precision": 0.8773148148148148,
+     "recall": 0.6380471380471381,
+     "f1": 0.7387914230019492
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 23,
+     "fp_per_hour": 16.689614524108617,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 1,
+   "label": "all / adaptive floor=1 m-level=1",
+   "thresholds": {
+    "syn_flood": {
+     "value": 100.0,
+     "multiplier": 1.5
+    },
+    "icmp_flood": {
+     "value": 100.0,
+     "multiplier": 1.5
+    },
+    "port_sweep": {
+     "value": 20.0,
+     "multiplier": 1.5
+    },
+    "victim_packet_flood": {
+     "value": 400.0,
+     "multiplier": 1.5
+    },
+    "victim_conn_flood": {
+     "value": 32.0,
+     "multiplier": 1.5
+    },
+    "half_open": {
+     "value": 0.8,
+     "multiplier": 1.05
+    },
+    "port_entropy": {
+     "value": 4.0,
+     "multiplier": 1.05
+    },
+    "rejected_probes": {
+     "value": 10.0,
+     "multiplier": 1.5
+    }
+   },
+   "detections": 1883,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 11
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     11
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 393,
+     "recall": 0.6616161616161617,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 855,
+     "recall": 0.7808219178082192,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 393,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9974619289340102,
+     "recall": 0.6616161616161617,
+     "f1": 0.7955465587044535
+    },
+    "test": {
+     "tp": 855,
+     "positives": 1095,
+     "fp_secs": 11,
+     "fp_per_hour": 7.98198955500847,
+     "precision": 0.9872979214780601,
+     "recall": 0.7808219178082192,
+     "f1": 0.8720040795512495
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 2,
+   "label": "all / adaptive floor=1 m-level=2",
+   "thresholds": {
+    "syn_flood": {
+     "value": 100.0,
+     "multiplier": 2
+    },
+    "icmp_flood": {
+     "value": 100.0,
+     "multiplier": 2
+    },
+    "port_sweep": {
+     "value": 20.0,
+     "multiplier": 2
+    },
+    "victim_packet_flood": {
+     "value": 400.0,
+     "multiplier": 2
+    },
+    "victim_conn_flood": {
+     "value": 32.0,
+     "multiplier": 2
+    },
+    "half_open": {
+     "value": 0.8,
+     "multiplier": 1.1
+    },
+    "port_entropy": {
+     "value": 4.0,
+     "multiplier": 1.1
+    },
+    "rejected_probes": {
+     "value": 10.0,
+     "multiplier": 2
+    }
+   },
+   "detections": 1883,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 11
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     11
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 393,
+     "recall": 0.6616161616161617,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 855,
+     "recall": 0.7808219178082192,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 393,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9974619289340102,
+     "recall": 0.6616161616161617,
+     "f1": 0.7955465587044535
+    },
+    "test": {
+     "tp": 855,
+     "positives": 1095,
+     "fp_secs": 11,
+     "fp_per_hour": 7.98198955500847,
+     "precision": 0.9872979214780601,
+     "recall": 0.7808219178082192,
+     "f1": 0.8720040795512495
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 3,
+   "label": "all / adaptive floor=1 m-level=3",
+   "thresholds": {
+    "syn_flood": {
+     "value": 100.0,
+     "multiplier": 3
+    },
+    "icmp_flood": {
+     "value": 100.0,
+     "multiplier": 3
+    },
+    "port_sweep": {
+     "value": 20.0,
+     "multiplier": 3
+    },
+    "victim_packet_flood": {
+     "value": 400.0,
+     "multiplier": 3
+    },
+    "victim_conn_flood": {
+     "value": 32.0,
+     "multiplier": 3
+    },
+    "half_open": {
+     "value": 0.8,
+     "multiplier": 1.25
+    },
+    "port_entropy": {
+     "value": 4.0,
+     "multiplier": 1.25
+    },
+    "rejected_probes": {
+     "value": 10.0,
+     "multiplier": 3
+    }
+   },
+   "detections": 1881,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 11
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     11
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 393,
+     "recall": 0.6616161616161617,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 854,
+     "recall": 0.7799086757990867,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 393,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9974619289340102,
+     "recall": 0.6616161616161617,
+     "f1": 0.7955465587044535
+    },
+    "test": {
+     "tp": 854,
+     "positives": 1095,
+     "fp_secs": 11,
+     "fp_per_hour": 7.98198955500847,
+     "precision": 0.9872832369942196,
+     "recall": 0.7799086757990867,
+     "f1": 0.8714285714285714
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 4,
+   "label": "all / adaptive floor=1 m-level=4",
+   "thresholds": {
+    "syn_flood": {
+     "value": 100.0,
+     "multiplier": 4
+    },
+    "icmp_flood": {
+     "value": 100.0,
+     "multiplier": 4
+    },
+    "port_sweep": {
+     "value": 20.0,
+     "multiplier": 4
+    },
+    "victim_packet_flood": {
+     "value": 400.0,
+     "multiplier": 4
+    },
+    "victim_conn_flood": {
+     "value": 32.0,
+     "multiplier": 4
+    },
+    "half_open": {
+     "value": 0.8,
+     "multiplier": 1.5
+    },
+    "port_entropy": {
+     "value": 4.0,
+     "multiplier": 1.5
+    },
+    "rejected_probes": {
+     "value": 10.0,
+     "multiplier": 4
+    }
+   },
+   "detections": 981,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 11
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     11
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 393,
+     "recall": 0.6616161616161617,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 1,
+     "recall": 0.0009132420091324201,
+     "ttd": 636.309741973877
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 393,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9974619289340102,
+     "recall": 0.6616161616161617,
+     "f1": 0.7955465587044535
+    },
+    "test": {
+     "tp": 1,
+     "positives": 1095,
+     "fp_secs": 11,
+     "fp_per_hour": 7.98198955500847,
+     "precision": 0.08333333333333333,
+     "recall": 0.0009132420091324201,
+     "f1": 0.0018066847335140015
+    }
+   }
+  },
+  {
+   "family": "all",
+   "policy": "adaptive",
+   "floor": 1,
+   "level": 5,
+   "label": "all / adaptive floor=1 m-level=5",
+   "thresholds": {
+    "syn_flood": {
+     "value": 100.0,
+     "multiplier": 6
+    },
+    "icmp_flood": {
+     "value": 100.0,
+     "multiplier": 6
+    },
+    "port_sweep": {
+     "value": 20.0,
+     "multiplier": 6
+    },
+    "victim_packet_flood": {
+     "value": 400.0,
+     "multiplier": 6
+    },
+    "victim_conn_flood": {
+     "value": 32.0,
+     "multiplier": 6
+    },
+    "half_open": {
+     "value": 0.8,
+     "multiplier": 2
+    },
+    "port_entropy": {
+     "value": 4.0,
+     "multiplier": 2
+    },
+    "rejected_probes": {
+     "value": 10.0,
+     "multiplier": 6
+    }
+   },
+   "detections": 934,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 10
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     10
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 379,
+     "recall": 0.6380471380471381,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 379,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9973684210526316,
+     "recall": 0.6380471380471381,
+     "f1": 0.7782340862422998
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 10,
+     "fp_per_hour": 7.25635414091679,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   }
+  }
+ ]
+}

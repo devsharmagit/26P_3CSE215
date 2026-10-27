@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Transparent rule-based network intrusion detection and packet analyzer (code)"
+authors:
+  - name: "Surinder Pal Singh"
+  - name: "Dev Sharma"
+  - name: "Megha"
+  - name: "Vaibhav Sinha"
+preferred-citation:
+  type: article
+  title: "What a Rule Measures Matters More Than How Its Threshold Is Set: Port-Scan Evidence from a Transparent Rule-Based IDS on CICIDS2017"
+  authors:
+    - name: "Surinder Pal Singh"
+    - name: "Dev Sharma"
+    - name: "Megha"
+    - name: "Vaibhav Sinha"
+  notes: "Manuscript, School of Computer Science and Engineering, IILM University, Greater Noida, India."

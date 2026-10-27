@@ -1,0 +1,41 @@
+| Config | Conversion | DEV P | DEV R | DEV F1 | DEV FP/h | TEST P | TEST R | TEST F1 | TEST FP/h | PortScan recall | DDoS recall | TTD PortScan (s) | TTD DDoS (s) | notices attacker / others |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| default | strict | 100.0 | 0.2 | 0.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0.0 | 3405 | - | 1 / 0 |
+| default | epoch | 100.0 | 1.7 | 3.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1.7 | 0.0 | 3405 | - | 1 / 0 |
+| matched | strict | 100.0 | 0.2 | 0.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0.0 | 3405 | - | 1 / 0 |
+| matched | epoch | 100.0 | 1.7 | 3.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1.7 | 0.0 | 3405 | - | 1 / 0 |
+
+Our rows, copied programmatically from results/friday/results.md (line number = file line) and ttd from results/friday/results.json (by_score["1"].windows):
+results.md:13 | count / fixed | 99.3 | 23.7 | 38.3 | 0.1 | 98.7 | 78.1 | 87.2 | 8.0 | 23.7 | 78.1 |  ttd PortScan=3405 s, DDoS=44 s
+results.md:15 | behaviour / fixed | 100.0 | 84.7 | 91.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 84.7 | 0.0 |  ttd PortScan=51 s, DDoS=- s
+results.md:41 | only port_sweep | 100.0 | 23.7 | 38.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 23.7 | 0.0 |  ttd PortScan=3405 s, DDoS=- s
+results.md:46 | only rejected_probes | 100.0 | 84.7 | 91.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 84.7 | 0.0 |  ttd PortScan=52 s, DDoS=- s
+
+default: notices by type {'Scan::Port_Scan': 1}; suppressed 4 (attacker 4, others 0, by type {'Scan::Port_Scan': 4})
+  notice sources: {'172.16.0.1': 1}
+  attacker notice 1499449905.454 Scan::Port_Scan 172.16.0.1 scanned at least 15 unique ports of host 192.168.10.50 in 0m0s
+  suppressed 1499450088.035 Scan::Port_Scan 172.16.0.1
+  suppressed 1499450881.734 Scan::Port_Scan 172.16.0.1
+  suppressed 1499450992.638 Scan::Port_Scan 172.16.0.1
+  suppressed 1499451722.314 Scan::Port_Scan 172.16.0.1
+  POST-HOC incl. suppressed [strict] first segment P=100.0 R=0.8 F1=1.7 FP/h=0.0 windows={'PortScan': (5, 0.8), 'DDoS': (0, 0.0)}
+  POST-HOC incl. suppressed [epoch] first segment P=100.0 R=23.6 F1=38.1 FP/h=0.0 windows={'PortScan': (140, 23.6), 'DDoS': (0, 0.0)}
+  [strict] fp_top_sources=[] windows={'PortScan': {'positives': 594, 'covered': 1, 'recall': 0.0016835016835016834, 'ttd': 3405.4537880420685}, 'DDoS': {'positives': 1095, 'covered': 0, 'recall': 0.0, 'ttd': None}}
+  [epoch] fp_top_sources=[] windows={'PortScan': {'positives': 594, 'covered': 10, 'recall': 0.016835016835016835, 'ttd': 3105.4537880420685}, 'DDoS': {'positives': 1095, 'covered': 0, 'recall': 0.0, 'ttd': None}}
+matched: notices by type {'Scan::Port_Scan': 1}; suppressed 10 (attacker 10, others 0, by type {'Scan::Port_Scan': 10})
+  notice sources: {'172.16.0.1': 1}
+  attacker notice 1499449905.454 Scan::Port_Scan 172.16.0.1 scanned at least 10 unique ports of host 192.168.10.50 in 0m0s
+  suppressed 1499449961.674 Scan::Port_Scan 172.16.0.1
+  suppressed 1499450055.183 Scan::Port_Scan 172.16.0.1
+  suppressed 1499450082.778 Scan::Port_Scan 172.16.0.1
+  suppressed 1499450141.894 Scan::Port_Scan 172.16.0.1
+  suppressed 1499450881.734 Scan::Port_Scan 172.16.0.1
+  suppressed 1499450923.996 Scan::Port_Scan 172.16.0.1
+  suppressed 1499450992.635 Scan::Port_Scan 172.16.0.1
+  suppressed 1499451722.314 Scan::Port_Scan 172.16.0.1
+  suppressed 1499451763.358 Scan::Port_Scan 172.16.0.1
+  suppressed 1499451823.358 Scan::Port_Scan 172.16.0.1
+  POST-HOC incl. suppressed [strict] first segment P=100.0 R=1.7 F1=3.3 FP/h=0.0 windows={'PortScan': (10, 1.7), 'DDoS': (0, 0.0)}
+  POST-HOC incl. suppressed [epoch] first segment P=100.0 R=32.5 F1=49.0 FP/h=0.0 windows={'PortScan': (193, 32.5), 'DDoS': (0, 0.0)}
+  [strict] fp_top_sources=[] windows={'PortScan': {'positives': 594, 'covered': 1, 'recall': 0.0016835016835016834, 'ttd': 3405.45356798172}, 'DDoS': {'positives': 1095, 'covered': 0, 'recall': 0.0, 'ttd': None}}
+  [epoch] fp_top_sources=[] windows={'PortScan': {'positives': 594, 'covered': 10, 'recall': 0.016835016835016835, 'ttd': 3345.45356798172}, 'DDoS': {'positives': 1095, 'covered': 0, 'recall': 0.0, 'ttd': None}}

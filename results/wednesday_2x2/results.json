@@ -1,0 +1,653 @@
+[
+ {
+  "day": "wednesday",
+  "label": "count / fixed",
+  "segments": {
+   "all": {
+    "tp": 452,
+    "positives": 3050,
+    "fp_secs": 3,
+    "fp_per_hour": 0.3546509599444125,
+    "precision": 0.9934065934065934,
+    "recall": 0.1481967213114754,
+    "f1": 0.2579172610556348
+   }
+  },
+  "windows_overall": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "covered": 5,
+    "recall": 0.003837298541826554,
+    "ttd": 7.806519031524658
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "covered": 111,
+    "recall": 0.13454545454545455,
+    "ttd": 0.7968258857727051
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "covered": 251,
+    "recall": 0.502,
+    "ttd": 0.12398910522460938
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "covered": 85,
+    "recall": 0.2014218009478673,
+    "ttd": 6.2278220653533936
+   }
+  },
+  "per_attack": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "tp": 5,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.003837298541826554,
+    "f1": 0.007645259938837921,
+    "window_start": 1499258926.0,
+    "first_attack_second": 1499258926,
+    "ttd_from_window_start": 23.038088083267212,
+    "ttd_from_first_attack_second": 23.038088083267212
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "tp": 111,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.13454545454545455,
+    "f1": 0.2371794871794872,
+    "window_start": 1499260537.0,
+    "first_attack_second": 1499260537,
+    "ttd_from_window_start": 0.7968258857727051,
+    "ttd_from_first_attack_second": 0.7968258857727051
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "tp": 251,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.502,
+    "f1": 0.6684420772303595,
+    "window_start": 1499262203.0,
+    "first_attack_second": 1499262203,
+    "ttd_from_window_start": 0.12398910522460938,
+    "ttd_from_first_attack_second": 0.12398910522460938
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "tp": 85,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.2014218009478673,
+    "f1": 0.3353057199211046,
+    "window_start": 1499263803.0,
+    "first_attack_second": 1499263803,
+    "ttd_from_window_start": 6.2278220653533936,
+    "ttd_from_first_attack_second": 6.2278220653533936
+   }
+  },
+  "packets": 13705535,
+  "seconds": 57.460402965545654
+ },
+ {
+  "day": "wednesday",
+  "label": "count / adaptive",
+  "segments": {
+   "all": {
+    "tp": 452,
+    "positives": 3050,
+    "fp_secs": 3,
+    "fp_per_hour": 0.3546509599444125,
+    "precision": 0.9934065934065934,
+    "recall": 0.1481967213114754,
+    "f1": 0.2579172610556348
+   }
+  },
+  "windows_overall": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "covered": 5,
+    "recall": 0.003837298541826554,
+    "ttd": 7.806519031524658
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "covered": 111,
+    "recall": 0.13454545454545455,
+    "ttd": 0.7968258857727051
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "covered": 251,
+    "recall": 0.502,
+    "ttd": 0.12398910522460938
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "covered": 85,
+    "recall": 0.2014218009478673,
+    "ttd": 6.2278220653533936
+   }
+  },
+  "per_attack": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "tp": 5,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.003837298541826554,
+    "f1": 0.007645259938837921,
+    "window_start": 1499258926.0,
+    "first_attack_second": 1499258926,
+    "ttd_from_window_start": 23.038088083267212,
+    "ttd_from_first_attack_second": 23.038088083267212
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "tp": 111,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.13454545454545455,
+    "f1": 0.2371794871794872,
+    "window_start": 1499260537.0,
+    "first_attack_second": 1499260537,
+    "ttd_from_window_start": 0.7968258857727051,
+    "ttd_from_first_attack_second": 0.7968258857727051
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "tp": 251,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.502,
+    "f1": 0.6684420772303595,
+    "window_start": 1499262203.0,
+    "first_attack_second": 1499262203,
+    "ttd_from_window_start": 0.12398910522460938,
+    "ttd_from_first_attack_second": 0.12398910522460938
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "tp": 85,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.2014218009478673,
+    "f1": 0.3353057199211046,
+    "window_start": 1499263803.0,
+    "first_attack_second": 1499263803,
+    "ttd_from_window_start": 6.2278220653533936,
+    "ttd_from_first_attack_second": 6.2278220653533936
+   }
+  },
+  "packets": 13705535,
+  "seconds": 47.548418045043945
+ },
+ {
+  "day": "wednesday",
+  "label": "behaviour / fixed",
+  "segments": {
+   "all": {
+    "tp": 278,
+    "positives": 3050,
+    "fp_secs": 7,
+    "fp_per_hour": 0.8275189065369625,
+    "precision": 0.9754385964912281,
+    "recall": 0.09114754098360656,
+    "f1": 0.16671664167916042
+   }
+  },
+  "windows_overall": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "covered": 0,
+    "recall": 0.0,
+    "ttd": null
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "covered": 277,
+    "recall": 0.33575757575757575,
+    "ttd": 4.806382894515991
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "covered": 1,
+    "recall": 0.002,
+    "ttd": 1083.8853149414062
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "covered": 0,
+    "recall": 0.0,
+    "ttd": null
+   }
+  },
+  "per_attack": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "tp": 0,
+    "fp_secs_in_span": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "window_start": 1499258926.0,
+    "first_attack_second": 1499258926,
+    "ttd_from_window_start": null,
+    "ttd_from_first_attack_second": null
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "tp": 277,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.33575757575757575,
+    "f1": 0.5027223230490019,
+    "window_start": 1499260537.0,
+    "first_attack_second": 1499260537,
+    "ttd_from_window_start": 4.806382894515991,
+    "ttd_from_first_attack_second": 4.806382894515991
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "tp": 1,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.002,
+    "f1": 0.003992015968063872,
+    "window_start": 1499262203.0,
+    "first_attack_second": 1499262203,
+    "ttd_from_window_start": 1083.8853149414062,
+    "ttd_from_first_attack_second": 1083.8853149414062
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "tp": 0,
+    "fp_secs_in_span": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "window_start": 1499263803.0,
+    "first_attack_second": 1499263803,
+    "ttd_from_window_start": null,
+    "ttd_from_first_attack_second": null
+   }
+  },
+  "packets": 13705535,
+  "seconds": 52.54134917259216
+ },
+ {
+  "day": "wednesday",
+  "label": "behaviour / adaptive",
+  "segments": {
+   "all": {
+    "tp": 218,
+    "positives": 3050,
+    "fp_secs": 4,
+    "fp_per_hour": 0.47286794659255,
+    "precision": 0.9819819819819819,
+    "recall": 0.07147540983606557,
+    "f1": 0.13325183374083127
+   }
+  },
+  "windows_overall": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "covered": 0,
+    "recall": 0.0,
+    "ttd": null
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "covered": 218,
+    "recall": 0.2642424242424242,
+    "ttd": 4.806382894515991
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "covered": 0,
+    "recall": 0.0,
+    "ttd": null
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "covered": 0,
+    "recall": 0.0,
+    "ttd": null
+   }
+  },
+  "per_attack": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "tp": 0,
+    "fp_secs_in_span": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "window_start": 1499258926.0,
+    "first_attack_second": 1499258926,
+    "ttd_from_window_start": null,
+    "ttd_from_first_attack_second": null
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "tp": 218,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.2642424242424242,
+    "f1": 0.41802492809204217,
+    "window_start": 1499260537.0,
+    "first_attack_second": 1499260537,
+    "ttd_from_window_start": 4.806382894515991,
+    "ttd_from_first_attack_second": 4.806382894515991
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "tp": 0,
+    "fp_secs_in_span": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "window_start": 1499262203.0,
+    "first_attack_second": 1499262203,
+    "ttd_from_window_start": null,
+    "ttd_from_first_attack_second": null
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "tp": 0,
+    "fp_secs_in_span": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "window_start": 1499263803.0,
+    "first_attack_second": 1499263803,
+    "ttd_from_window_start": null,
+    "ttd_from_first_attack_second": null
+   }
+  },
+  "packets": 13705535,
+  "seconds": 49.93416714668274
+ },
+ {
+  "day": "wednesday",
+  "label": "all / fixed",
+  "segments": {
+   "all": {
+    "tp": 683,
+    "positives": 3050,
+    "fp_secs": 10,
+    "fp_per_hour": 1.182169866481375,
+    "precision": 0.9855699855699855,
+    "recall": 0.2239344262295082,
+    "f1": 0.3649479027518034
+   }
+  },
+  "windows_overall": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "covered": 5,
+    "recall": 0.003837298541826554,
+    "ttd": 7.806519031524658
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "covered": 341,
+    "recall": 0.41333333333333333,
+    "ttd": 0.7968258857727051
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "covered": 252,
+    "recall": 0.504,
+    "ttd": 0.12398910522460938
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "covered": 85,
+    "recall": 0.2014218009478673,
+    "ttd": 6.2278220653533936
+   }
+  },
+  "per_attack": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "tp": 5,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.003837298541826554,
+    "f1": 0.007645259938837921,
+    "window_start": 1499258926.0,
+    "first_attack_second": 1499258926,
+    "ttd_from_window_start": 23.038088083267212,
+    "ttd_from_first_attack_second": 23.038088083267212
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "tp": 341,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.41333333333333333,
+    "f1": 0.5849056603773585,
+    "window_start": 1499260537.0,
+    "first_attack_second": 1499260537,
+    "ttd_from_window_start": 0.7968258857727051,
+    "ttd_from_first_attack_second": 0.7968258857727051
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "tp": 252,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.504,
+    "f1": 0.6702127659574468,
+    "window_start": 1499262203.0,
+    "first_attack_second": 1499262203,
+    "ttd_from_window_start": 0.12398910522460938,
+    "ttd_from_first_attack_second": 0.12398910522460938
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "tp": 85,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.2014218009478673,
+    "f1": 0.3353057199211046,
+    "window_start": 1499263803.0,
+    "first_attack_second": 1499263803,
+    "ttd_from_window_start": 6.2278220653533936,
+    "ttd_from_first_attack_second": 6.2278220653533936
+   }
+  },
+  "packets": 13705535,
+  "seconds": 53.112284898757935
+ },
+ {
+  "day": "wednesday",
+  "label": "all / adaptive",
+  "segments": {
+   "all": {
+    "tp": 629,
+    "positives": 3050,
+    "fp_secs": 7,
+    "fp_per_hour": 0.8275189065369625,
+    "precision": 0.9889937106918238,
+    "recall": 0.2062295081967213,
+    "f1": 0.3412913727618014
+   }
+  },
+  "windows_overall": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "covered": 5,
+    "recall": 0.003837298541826554,
+    "ttd": 7.806519031524658
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "covered": 288,
+    "recall": 0.3490909090909091,
+    "ttd": 0.7968258857727051
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "covered": 251,
+    "recall": 0.502,
+    "ttd": 0.12398910522460938
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "covered": 85,
+    "recall": 0.2014218009478673,
+    "ttd": 6.2278220653533936
+   }
+  },
+  "per_attack": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "tp": 5,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.003837298541826554,
+    "f1": 0.007645259938837921,
+    "window_start": 1499258926.0,
+    "first_attack_second": 1499258926,
+    "ttd_from_window_start": 23.038088083267212,
+    "ttd_from_first_attack_second": 23.038088083267212
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "tp": 288,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.3490909090909091,
+    "f1": 0.5175202156334232,
+    "window_start": 1499260537.0,
+    "first_attack_second": 1499260537,
+    "ttd_from_window_start": 0.7968258857727051,
+    "ttd_from_first_attack_second": 0.7968258857727051
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "tp": 251,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.502,
+    "f1": 0.6684420772303595,
+    "window_start": 1499262203.0,
+    "first_attack_second": 1499262203,
+    "ttd_from_window_start": 0.12398910522460938,
+    "ttd_from_first_attack_second": 0.12398910522460938
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "tp": 85,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.2014218009478673,
+    "f1": 0.3353057199211046,
+    "window_start": 1499263803.0,
+    "first_attack_second": 1499263803,
+    "ttd_from_window_start": 6.2278220653533936,
+    "ttd_from_first_attack_second": 6.2278220653533936
+   }
+  },
+  "packets": 13705535,
+  "seconds": 52.0662260055542
+ },
+ {
+  "day": "wednesday",
+  "label": "all / adaptive, no freeze",
+  "segments": {
+   "all": {
+    "tp": 536,
+    "positives": 3050,
+    "fp_secs": 6,
+    "fp_per_hour": 0.709301919888825,
+    "precision": 0.988929889298893,
+    "recall": 0.17573770491803278,
+    "f1": 0.29844097995545654
+   }
+  },
+  "windows_overall": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "covered": 2,
+    "recall": 0.0015349194167306216,
+    "ttd": 7.806519031524658
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "covered": 233,
+    "recall": 0.2824242424242424,
+    "ttd": 0.7968258857727051
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "covered": 251,
+    "recall": 0.502,
+    "ttd": 0.12398910522460938
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "covered": 50,
+    "recall": 0.11848341232227488,
+    "ttd": 6.2278220653533936
+   }
+  },
+  "per_attack": {
+   "DoS slowloris": {
+    "positives": 1303,
+    "tp": 2,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.0015349194167306216,
+    "f1": 0.003065134099616858,
+    "window_start": 1499258926.0,
+    "first_attack_second": 1499258926,
+    "ttd_from_window_start": 24.04618000984192,
+    "ttd_from_first_attack_second": 24.04618000984192
+   },
+   "DoS Slowhttptest": {
+    "positives": 825,
+    "tp": 233,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.2824242424242424,
+    "f1": 0.44045368620037806,
+    "window_start": 1499260537.0,
+    "first_attack_second": 1499260537,
+    "ttd_from_window_start": 0.7968258857727051,
+    "ttd_from_first_attack_second": 0.7968258857727051
+   },
+   "DoS Hulk": {
+    "positives": 500,
+    "tp": 251,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.502,
+    "f1": 0.6684420772303595,
+    "window_start": 1499262203.0,
+    "first_attack_second": 1499262203,
+    "ttd_from_window_start": 0.12398910522460938,
+    "ttd_from_first_attack_second": 0.12398910522460938
+   },
+   "DoS GoldenEye": {
+    "positives": 422,
+    "tp": 50,
+    "fp_secs_in_span": 0,
+    "precision": 1.0,
+    "recall": 0.11848341232227488,
+    "f1": 0.211864406779661,
+    "window_start": 1499263803.0,
+    "first_attack_second": 1499263803,
+    "ttd_from_window_start": 6.2278220653533936,
+    "ttd_from_first_attack_second": 6.2278220653533936
+   }
+  },
+  "packets": 13705535,
+  "seconds": 52.17294907569885
+ }
+]

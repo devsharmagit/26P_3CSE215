@@ -1,0 +1,475 @@
+{
+ "day": "friday",
+ "positives": {
+  "PortScan": 594,
+  "DDoS": 1095
+ },
+ "hours": {
+  "dev": 6.669356890254551,
+  "test": 1.378102529976103
+ },
+ "runs": {
+  "default": {
+   "out_dir": "zeek/out_default",
+   "notices": 1,
+   "notices_attacker": 1,
+   "notices_other": 0,
+   "notices_by_type": {
+    "Scan::Port_Scan": 1
+   },
+   "notice_sources": {
+    "172.16.0.1": 1
+   },
+   "attacker_notices": [
+    {
+     "ts": 1499449905.453788,
+     "note": "Scan::Port_Scan",
+     "dst": "192.168.10.50",
+     "msg": "172.16.0.1 scanned at least 15 unique ports of host 192.168.10.50 in 0m0s"
+    }
+   ],
+   "suppressed": 4,
+   "suppressed_attacker": 4,
+   "suppressed_other": 0,
+   "suppressed_by_type": {
+    "Scan::Port_Scan": 4
+   },
+   "conversions": {
+    "strict": {
+     "detections": 1,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "PortScan": {
+       "positives": 594,
+       "covered": 1,
+       "recall": 0.0016835016835016834,
+       "ttd": 3405.4537880420685
+      },
+      "DDoS": {
+       "positives": 1095,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "dev": {
+       "tp": 1,
+       "positives": 594,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 1.0,
+       "recall": 0.0016835016835016834,
+       "f1": 0.003361344537815126
+      },
+      "test": {
+       "tp": 0,
+       "positives": 1095,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "epoch": {
+     "detections": 301,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "PortScan": {
+       "positives": 594,
+       "covered": 10,
+       "recall": 0.016835016835016835,
+       "ttd": 3105.4537880420685
+      },
+      "DDoS": {
+       "positives": 1095,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "dev": {
+       "tp": 10,
+       "positives": 594,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 1.0,
+       "recall": 0.016835016835016835,
+       "f1": 0.03311258278145695
+      },
+      "test": {
+       "tp": 0,
+       "positives": 1095,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "posthoc_with_suppressed": {
+    "strict": {
+     "detections": 5,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "PortScan": {
+       "positives": 594,
+       "covered": 5,
+       "recall": 0.008417508417508417,
+       "ttd": 3405.4537880420685
+      },
+      "DDoS": {
+       "positives": 1095,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "dev": {
+       "tp": 5,
+       "positives": 594,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 1.0,
+       "recall": 0.008417508417508417,
+       "f1": 0.01669449081803005
+      },
+      "test": {
+       "tp": 0,
+       "positives": 1095,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "epoch": {
+     "detections": 1505,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "PortScan": {
+       "positives": 594,
+       "covered": 140,
+       "recall": 0.2356902356902357,
+       "ttd": 3105.4537880420685
+      },
+      "DDoS": {
+       "positives": 1095,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "dev": {
+       "tp": 140,
+       "positives": 594,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 1.0,
+       "recall": 0.2356902356902357,
+       "f1": 0.3814713896457766
+      },
+      "test": {
+       "tp": 0,
+       "positives": 1095,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "suppressed_ts": [
+    [
+     1499450088.034511,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ],
+    [
+     1499450881.734383,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ],
+    [
+     1499450992.637595,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ],
+    [
+     1499451722.313806,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ]
+   ]
+  },
+  "matched": {
+   "out_dir": "zeek/out_matched",
+   "notices": 1,
+   "notices_attacker": 1,
+   "notices_other": 0,
+   "notices_by_type": {
+    "Scan::Port_Scan": 1
+   },
+   "notice_sources": {
+    "172.16.0.1": 1
+   },
+   "attacker_notices": [
+    {
+     "ts": 1499449905.453568,
+     "note": "Scan::Port_Scan",
+     "dst": "192.168.10.50",
+     "msg": "172.16.0.1 scanned at least 10 unique ports of host 192.168.10.50 in 0m0s"
+    }
+   ],
+   "suppressed": 10,
+   "suppressed_attacker": 10,
+   "suppressed_other": 0,
+   "suppressed_by_type": {
+    "Scan::Port_Scan": 10
+   },
+   "conversions": {
+    "strict": {
+     "detections": 1,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "PortScan": {
+       "positives": 594,
+       "covered": 1,
+       "recall": 0.0016835016835016834,
+       "ttd": 3405.45356798172
+      },
+      "DDoS": {
+       "positives": 1095,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "dev": {
+       "tp": 1,
+       "positives": 594,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 1.0,
+       "recall": 0.0016835016835016834,
+       "f1": 0.003361344537815126
+      },
+      "test": {
+       "tp": 0,
+       "positives": 1095,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "epoch": {
+     "detections": 61,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "PortScan": {
+       "positives": 594,
+       "covered": 10,
+       "recall": 0.016835016835016835,
+       "ttd": 3345.45356798172
+      },
+      "DDoS": {
+       "positives": 1095,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "dev": {
+       "tp": 10,
+       "positives": 594,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 1.0,
+       "recall": 0.016835016835016835,
+       "f1": 0.03311258278145695
+      },
+      "test": {
+       "tp": 0,
+       "positives": 1095,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "posthoc_with_suppressed": {
+    "strict": {
+     "detections": 11,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "PortScan": {
+       "positives": 594,
+       "covered": 10,
+       "recall": 0.016835016835016835,
+       "ttd": 3405.45356798172
+      },
+      "DDoS": {
+       "positives": 1095,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "dev": {
+       "tp": 10,
+       "positives": 594,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 1.0,
+       "recall": 0.016835016835016835,
+       "f1": 0.03311258278145695
+      },
+      "test": {
+       "tp": 0,
+       "positives": 1095,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "epoch": {
+     "detections": 671,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "PortScan": {
+       "positives": 594,
+       "covered": 193,
+       "recall": 0.32491582491582494,
+       "ttd": 3345.45356798172
+      },
+      "DDoS": {
+       "positives": 1095,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "dev": {
+       "tp": 193,
+       "positives": 594,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 1.0,
+       "recall": 0.32491582491582494,
+       "f1": 0.4904701397712834
+      },
+      "test": {
+       "tp": 0,
+       "positives": 1095,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   },
+   "suppressed_ts": [
+    [
+     1499449961.674111,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ],
+    [
+     1499450055.182681,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ],
+    [
+     1499450082.777711,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ],
+    [
+     1499450141.893665,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ],
+    [
+     1499450881.734062,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ],
+    [
+     1499450923.995917,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ],
+    [
+     1499450992.634716,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ],
+    [
+     1499451722.313604,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ],
+    [
+     1499451763.358351,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ],
+    [
+     1499451823.358497,
+     "Scan::Port_Scan",
+     "172.16.0.1"
+    ]
+   ]
+  }
+ }
+}

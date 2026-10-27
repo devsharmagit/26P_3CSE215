@@ -1,0 +1,119 @@
+# Rule file for the rule-based NIDS (read by rule_set.py / engine.py).
+#
+# A rule says WHAT to measure (measure), WHO it is measured for (scope), and HOW the alert line is set
+# (threshold.policy):
+#   policy: fixed     -> alert when  measure  >  value          (or >= when op: ">=")
+#   policy: adaptive  -> alert when  measure  >  max(value, multiplier * baseline)
+#                        baseline = exponential moving average of the measure for that host (alpha),
+#                        frozen while the host is alerting and for freeze_seconds afterwards, so an
+#                        attack cannot teach the engine that it is normal.
+# kind is the research label used in the 2x2 experiment:
+#   count     = how MUCH traffic (packets, connections or ports per window)
+#   behaviour = HOW the traffic behaves (handshakes left open, port spread, probes the network rejects)
+# weight is what the rule adds to a host's score when it fires; the score of a host in a window is the
+# sum of the weights of the rules that fired for it, and every point is listed in the alert evidence.
+#
+# Built-in measures (implemented in engine.py):
+#   syn_rate          SYN-only packets a source sends per window
+#   icmp_rate         ICMP packets a source sends per window
+#   distinct_ports    distinct destination ports a source opens connections to (SYN-only) per window
+#   port_entropy      Shannon entropy (bits) of a source's destination ports, counts halved every window
+#   half_open_ratio   share of a source's tracked TCP connections that never completed the handshake
+#   rejected_probes   probes a protected host REJECTED (TCP RST answering a SYN, ICMP unreachable answering
+#                     a UDP/IP datagram), counted for the prober over the last window_seconds (sliding)
+#   victim_pps        service-port (<1024) packets per window to one protected host, from all sources
+#   victim_conn_rate  new connections (SYN-only) per window to one protected host, from all sources
+# Victim-scope alerts are attributed to the source sending most of that host's traffic.
+
+version: 1
+
+settings:
+  window_seconds: 1.0
+  home_net: ["192.168.0.0/16"]      # protected network (like HOME_NET in Snort/Suricata)
+  connection_timeout_seconds: 30    # half-open and probe tracking forget connections after this
+  adaptive_defaults:                # used by any rule that does not set its own values
+    multiplier: 3.0
+    alpha: 0.2
+    freeze_seconds: 60
+
+rules:
+  - id: syn_flood
+    name: SYN flood
+    description: One source opens connections faster than a normal host does.
+    kind: count
+    scope: source
+    measure: syn_rate
+    threshold: {policy: fixed, value: 100}
+    weight: 1
+
+  - id: icmp_flood
+    name: ICMP flood
+    description: One source sends ICMP (ping) packets faster than a normal host does.
+    kind: count
+    scope: source
+    measure: icmp_rate
+    threshold: {policy: fixed, value: 100}
+    weight: 1
+
+  - id: port_sweep
+    name: Port sweep
+    description: One source opens connections to many different ports within one window.
+    kind: count
+    scope: source
+    measure: distinct_ports
+    threshold: {policy: fixed, value: 20}
+    weight: 1
+
+  - id: victim_packet_flood
+    name: Victim packet flood
+    description: One protected host receives an unusual packet rate on its service ports (all sources combined).
+    kind: count
+    scope: victim
+    measure: victim_pps
+    threshold: {policy: fixed, value: 400}
+    weight: 1
+
+  - id: victim_conn_flood
+    name: Victim connection flood
+    description: One protected host receives an unusual rate of new connections (all sources combined).
+    kind: count
+    scope: victim
+    measure: victim_conn_rate
+    threshold: {policy: fixed, value: 32}
+    weight: 1
+
+  - id: half_open
+    name: Half-open connections
+    description: Most of a source's TCP connections never complete the handshake (SYN flood, SYN scan, low-and-slow DoS).
+    kind: behaviour
+    scope: source
+    measure: half_open_ratio
+    threshold: {policy: fixed, value: 0.8, op: ">=", multiplier: 1.25}
+    min_support: 20                 # need at least 20 tracked connections before judging the ratio
+    weight: 1
+
+  - id: port_entropy
+    name: Port entropy scan
+    description: A source spreads its connection attempts evenly over many ports, as scanners do.
+    kind: behaviour
+    scope: source
+    measure: port_entropy
+    threshold: {policy: fixed, value: 4.0, multiplier: 1.25}
+    min_support: 10                 # need at least 10 distinct ports
+    params: {decay: 0.5}
+    weight: 1
+
+  - id: rejected_probes
+    name: Rejected probes (slow scan)
+    description: Protected hosts keep refusing a source's connection attempts and datagrams, even slowly.
+    kind: behaviour
+    scope: source
+    measure: rejected_probes
+    threshold: {policy: fixed, value: 10}
+    params: {window_seconds: 60, direction: inbound}   # inbound = prober outside home_net, target inside
+    weight: 1
+
+# Optional per-rule key (revision 2): window_seconds: W measures a count rule (syn_rate, icmp_rate, distinct_ports,
+# victim_pps, victim_conn_rate) over a sliding window of the last W seconds instead of the engine's 1 s window
+# (victim alerts are then attributed to the main sender in those W seconds); for rejected_probes it overrides
+# params.window_seconds. Not set on any rule here, so every rule above behaves exactly as before.

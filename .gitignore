@@ -1,0 +1,23 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Datasets and anything built from them (see data/README.md)
+data/*
+!data/README.md
+*.pcap
+*.pcapng
+*.cache
+!tests/data/large_evaluation_dataset.pcap
+
+# Generated at run time
+report/
+alerts.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

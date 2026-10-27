@@ -1,0 +1,3722 @@
+{
+ "preregistration": "paper_completion/revision2/PREREGISTRATION.md",
+ "wall_seconds": 140.3325548171997,
+ "results": [
+  {
+   "detections": 158,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 125,
+     "recall": 0.21043771043771045,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 125,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.21043771043771045,
+     "f1": 0.34770514603616137
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "PortScan": 3405.2135388851166,
+    "DDoS": null
+   },
+   "label": "rejected_probes @1s (u)",
+   "day": "friday",
+   "seconds": 16.211371898651123,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 33,
+     "precision": 0.7911392405063291,
+     "f1": 0.33244680851063835
+    },
+    "test": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 214,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 175,
+     "recall": 0.2946127946127946,
+     "ttd": 40.36965203285217
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 175,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.2946127946127946,
+     "f1": 0.45513654096228867
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "PortScan": 40.36965203285217,
+    "DDoS": null
+   },
+   "label": "rejected_probes @1s (s)",
+   "day": "friday",
+   "seconds": 16.311593770980835,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 1.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 39,
+     "precision": 0.8177570093457944,
+     "f1": 0.43316831683168316
+    },
+    "test": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 427,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 339,
+     "recall": 0.5707070707070707,
+     "ttd": 33.1215341091156
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 339,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.5707070707070707,
+     "f1": 0.7266881028938906
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "PortScan": 33.1215341091156,
+    "DDoS": null
+   },
+   "label": "rejected_probes @1s (e)",
+   "day": "friday",
+   "seconds": 16.38599395751953,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 0.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 88,
+     "precision": 0.7939110070257611,
+     "f1": 0.6640548481880509
+    },
+    "test": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 1089,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 11
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     11
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 141,
+     "recall": 0.23737373737373738,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 855,
+     "recall": 0.7808219178082192,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 141,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9929577464788732,
+     "recall": 0.23737373737373738,
+     "f1": 0.38315217391304346
+    },
+    "test": {
+     "tp": 855,
+     "positives": 1095,
+     "fp_secs": 11,
+     "fp_per_hour": 7.98198955500847,
+     "precision": 0.9872979214780601,
+     "recall": 0.7808219178082192,
+     "f1": 0.8720040795512495
+    }
+   },
+   "ttd_true": {
+    "PortScan": 3405.2135388851166,
+    "DDoS": 43.54152989387512
+   },
+   "label": "count @1s",
+   "day": "friday",
+   "seconds": 17.06848406791687,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 100.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 100.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 20.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 400.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 32.0,
+     "op": ">",
+     "window_seconds": null
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 33,
+     "precision": 0.8057142857142857,
+     "f1": 0.3667100130039012
+    },
+    "test": {
+     "ignored": 48,
+     "precision": 0.9354485776805251,
+     "f1": 0.8511697361871576
+    }
+   }
+  },
+  {
+   "detections": 1501,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 206,
+     "recall": 0.3468013468013468,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 1039,
+     "recall": 0.9488584474885845,
+     "ttd": 47.56669592857361
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 206,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.3468013468013468,
+     "f1": 0.5149999999999999
+    },
+    "test": {
+     "tp": 1039,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.9488584474885845,
+     "f1": 0.9737582005623243
+    }
+   },
+   "ttd_true": {
+    "PortScan": 3405.2135388851166,
+    "DDoS": 47.56669592857361
+   },
+   "label": "count @10s (p)",
+   "day": "friday",
+   "seconds": 21.8191921710968,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 1000.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 1000.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 200.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 4000.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 320.0,
+     "op": ">",
+     "window_seconds": 10.0
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 177,
+     "precision": 0.5378590078328982,
+     "f1": 0.4216990788126919
+    },
+    "test": {
+     "ignored": 79,
+     "precision": 0.9293381037567084,
+     "f1": 0.938996836873023
+    }
+   }
+  },
+  {
+   "detections": 1503,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 207,
+     "recall": 0.3484848484848485,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 1039,
+     "recall": 0.9488584474885845,
+     "ttd": 47.56669592857361
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 207,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.3484848484848485,
+     "f1": 0.5168539325842696
+    },
+    "test": {
+     "tp": 1039,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.9488584474885845,
+     "f1": 0.9737582005623243
+    }
+   },
+   "ttd_true": {
+    "PortScan": 3405.2135388851166,
+    "DDoS": 47.56669592857361
+   },
+   "label": "count @10s (u)",
+   "day": "friday",
+   "seconds": 21.90410590171814,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 1000.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 1000.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 20.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 4000.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 320.0,
+     "op": ">",
+     "window_seconds": 10.0
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 178,
+     "precision": 0.5376623376623376,
+     "f1": 0.4228804902962206
+    },
+    "test": {
+     "ignored": 79,
+     "precision": 0.9293381037567084,
+     "f1": 0.938996836873023
+    }
+   }
+  },
+  {
+   "detections": 1827,
+   "fp_by_rule": {
+    "port_sweep": 58
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.51",
+     58
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 233,
+     "recall": 0.39225589225589225,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 1021,
+     "recall": 0.9324200913242009,
+     "ttd": 65.67042398452759
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 233,
+     "positives": 594,
+     "fp_secs": 58,
+     "fp_per_hour": 8.696490674348409,
+     "precision": 0.8006872852233677,
+     "recall": 0.39225589225589225,
+     "f1": 0.5265536723163842
+    },
+    "test": {
+     "tp": 1021,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.9324200913242009,
+     "f1": 0.9650283553875236
+    }
+   },
+   "ttd_true": {
+    "PortScan": 3405.2135388851166,
+    "DDoS": 65.67042398452759
+   },
+   "label": "count @60s (u)",
+   "day": "friday",
+   "seconds": 22.070750951766968,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 20.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 24000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 1920.0,
+     "op": ">",
+     "window_seconds": 60.0
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 408,
+     "precision": 0.3333333333333333,
+     "f1": 0.36040216550657383
+    },
+    "test": {
+     "ignored": 107,
+     "precision": 0.9051418439716312,
+     "f1": 0.918578497525866
+    }
+   }
+  },
+  {
+   "detections": 1711,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 215,
+     "recall": 0.36195286195286197,
+     "ttd": 3406.2224400043488
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 1021,
+     "recall": 0.9324200913242009,
+     "ttd": 65.67042398452759
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 215,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.36195286195286197,
+     "f1": 0.5315203955500618
+    },
+    "test": {
+     "tp": 1021,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.9324200913242009,
+     "f1": 0.9650283553875236
+    }
+   },
+   "ttd_true": {
+    "PortScan": 3406.2224400043488,
+    "DDoS": 65.67042398452759
+   },
+   "label": "count @60s (p)",
+   "day": "friday",
+   "seconds": 22.32131028175354,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 1200.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 24000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 1920.0,
+     "op": ">",
+     "window_seconds": 60.0
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 368,
+     "precision": 0.3687821612349914,
+     "f1": 0.3653355989804588
+    },
+    "test": {
+     "ignored": 107,
+     "precision": 0.9051418439716312,
+     "f1": 0.918578497525866
+    }
+   }
+  },
+  {
+   "detections": 843,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 475,
+     "recall": 0.7996632996632996,
+     "ttd": 34.25477910041809
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 475,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.7996632996632996,
+     "f1": 0.8886810102899906
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "PortScan": 34.25477910041809,
+    "DDoS": null
+   },
+   "label": "rejected_probes @10s (s)",
+   "day": "friday",
+   "seconds": 17.0485680103302,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 2.0,
+     "op": ">",
+     "window_seconds": 10
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 368,
+     "precision": 0.5634638196915777,
+     "f1": 0.6610995128740431
+    },
+    "test": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 405,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 227,
+     "recall": 0.38215488215488214,
+     "ttd": 3405.2135388851166
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 227,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.38215488215488214,
+     "f1": 0.5529841656516443
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "PortScan": 3405.2135388851166,
+    "DDoS": null
+   },
+   "label": "rejected_probes @10s (u)",
+   "day": "friday",
+   "seconds": 17.094170093536377,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 10
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 178,
+     "precision": 0.5604938271604938,
+     "f1": 0.4544544544544544
+    },
+    "test": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 1316,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 503,
+     "recall": 0.8468013468013468,
+     "ttd": 51.85433506965637
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 503,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.8468013468013468,
+     "f1": 0.9170464904284411
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "PortScan": 51.85433506965637,
+    "DDoS": null
+   },
+   "label": "rejected_probes @60s",
+   "day": "friday",
+   "seconds": 17.23697519302368,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 60
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 813,
+     "precision": 0.3822188449848024,
+     "f1": 0.5267015706806282
+    },
+    "test": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 660,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 290,
+     "recall": 0.4882154882154882,
+     "ttd": 40.36965203285217
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 290,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.4882154882154882,
+     "f1": 0.6561085972850679
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "PortScan": 40.36965203285217,
+    "DDoS": null
+   },
+   "label": "behaviour @1s (s)",
+   "day": "friday",
+   "seconds": 20.45039200782776,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 1.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 370,
+     "precision": 0.4393939393939394,
+     "f1": 0.4625199362041467
+    },
+    "test": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 638,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 269,
+     "recall": 0.45286195286195285,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 269,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.45286195286195285,
+     "f1": 0.6234067207415991
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "PortScan": 51.85433506965637,
+    "DDoS": null
+   },
+   "label": "behaviour @1s (u)",
+   "day": "friday",
+   "seconds": 20.883680820465088,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 369,
+     "precision": 0.4216300940438871,
+     "f1": 0.43668831168831174
+    },
+    "test": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 836,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 435,
+     "recall": 0.7323232323232324,
+     "ttd": 33.1215341091156
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 435,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.7323232323232324,
+     "f1": 0.8454810495626823
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "PortScan": 33.1215341091156,
+    "DDoS": null
+   },
+   "label": "behaviour @1s (e)",
+   "day": "friday",
+   "seconds": 21.11018991470337,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 0.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 401,
+     "precision": 0.5203349282296651,
+     "f1": 0.6083916083916084
+    },
+    "test": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 1011,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 498,
+     "recall": 0.8383838383838383,
+     "ttd": 34.25477910041809
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 498,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.8383838383838383,
+     "f1": 0.9120879120879121
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "PortScan": 34.25477910041809,
+    "DDoS": null
+   },
+   "label": "behaviour @10s (s)",
+   "day": "friday",
+   "seconds": 21.12505006790161,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 2.0,
+     "op": ">",
+     "window_seconds": 10
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 513,
+     "precision": 0.49258160237388726,
+     "f1": 0.6205607476635514
+    },
+    "test": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 658,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 289,
+     "recall": 0.48653198653198654,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 289,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.48653198653198654,
+     "f1": 0.6545866364665911
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "PortScan": 51.85433506965637,
+    "DDoS": null
+   },
+   "label": "behaviour @10s (u)",
+   "day": "friday",
+   "seconds": 21.17595863342285,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 10
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 369,
+     "precision": 0.439209726443769,
+     "f1": 0.4616613418530352
+    },
+    "test": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 1317,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 503,
+     "recall": 0.8468013468013468,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 503,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.8468013468013468,
+     "f1": 0.9170464904284411
+    },
+    "test": {
+     "tp": 0,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "PortScan": 51.85433506965637,
+    "DDoS": null
+   },
+   "label": "behaviour @60s",
+   "day": "friday",
+   "seconds": 21.163590908050537,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 60
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 814,
+     "precision": 0.3819286256643888,
+     "f1": 0.5264259549973836
+    },
+    "test": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 1575,
+   "fp_by_rule": {
+    "victim_conn_flood": 1,
+    "victim_packet_flood": 11
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.12",
+     11
+    ],
+    [
+     "192.168.10.8",
+     1
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 290,
+     "recall": 0.4882154882154882,
+     "ttd": 40.36965203285217
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 855,
+     "recall": 0.7808219178082192,
+     "ttd": 43.54152989387512
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 290,
+     "positives": 594,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1499394943853174,
+     "precision": 0.9965635738831615,
+     "recall": 0.4882154882154882,
+     "f1": 0.655367231638418
+    },
+    "test": {
+     "tp": 855,
+     "positives": 1095,
+     "fp_secs": 11,
+     "fp_per_hour": 7.98198955500847,
+     "precision": 0.9872979214780601,
+     "recall": 0.7808219178082192,
+     "f1": 0.8720040795512495
+    }
+   },
+   "ttd_true": {
+    "PortScan": 40.36965203285217,
+    "DDoS": 43.54152989387512
+   },
+   "label": "all @1s",
+   "day": "friday",
+   "seconds": 22.831611156463623,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 100.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 100.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 20.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 400.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 32.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 1.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 370,
+     "precision": 0.43872919818456885,
+     "f1": 0.4621513944223108
+    },
+    "test": {
+     "ignored": 48,
+     "precision": 0.9354485776805251,
+     "f1": 0.8511697361871576
+    }
+   }
+  },
+  {
+   "detections": 2445,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 503,
+     "recall": 0.8468013468013468,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 1021,
+     "recall": 0.9324200913242009,
+     "ttd": 65.67042398452759
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 503,
+     "positives": 594,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.8468013468013468,
+     "f1": 0.9170464904284411
+    },
+    "test": {
+     "tp": 1021,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.9324200913242009,
+     "f1": 0.9650283553875236
+    }
+   },
+   "ttd_true": {
+    "PortScan": 51.85433506965637,
+    "DDoS": 65.67042398452759
+   },
+   "label": "all @60s (p)",
+   "day": "friday",
+   "seconds": 28.460663080215454,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 1200.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 24000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 1920.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 60
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 814,
+     "precision": 0.3819286256643888,
+     "f1": 0.5264259549973836
+    },
+    "test": {
+     "ignored": 107,
+     "precision": 0.9051418439716312,
+     "f1": 0.918578497525866
+    }
+   }
+  },
+  {
+   "detections": 2503,
+   "fp_by_rule": {
+    "port_sweep": 58
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.51",
+     58
+    ]
+   ],
+   "windows": {
+    "PortScan": {
+     "positives": 594,
+     "covered": 503,
+     "recall": 0.8468013468013468,
+     "ttd": 50.8542320728302
+    },
+    "DDoS": {
+     "positives": 1095,
+     "covered": 1021,
+     "recall": 0.9324200913242009,
+     "ttd": 65.67042398452759
+    }
+   },
+   "segments": {
+    "dev": {
+     "tp": 503,
+     "positives": 594,
+     "fp_secs": 58,
+     "fp_per_hour": 8.696490674348409,
+     "precision": 0.8966131907308378,
+     "recall": 0.8468013468013468,
+     "f1": 0.870995670995671
+    },
+    "test": {
+     "tp": 1021,
+     "positives": 1095,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.9324200913242009,
+     "f1": 0.9650283553875236
+    }
+   },
+   "ttd_true": {
+    "PortScan": 51.85433506965637,
+    "DDoS": 65.67042398452759
+   },
+   "label": "all @60s (u)",
+   "day": "friday",
+   "seconds": 28.17768907546997,
+   "packets": 9915501,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 20.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 24000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 1920.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 60
+    }
+   ],
+   "strict": {
+    "dev": {
+     "ignored": 814,
+     "precision": 0.3658181818181818,
+     "f1": 0.5109192483494159
+    },
+    "test": {
+     "ignored": 107,
+     "precision": 0.9051418439716312,
+     "f1": 0.918578497525866
+    }
+   }
+  },
+  {
+   "detections": 477,
+   "fp_by_rule": {
+    "syn_flood": 3,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     2
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 111,
+     "recall": 0.13454545454545455,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 251,
+     "recall": 0.502,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 452,
+     "positives": 3050,
+     "fp_secs": 3,
+     "fp_per_hour": 0.3546509599444125,
+     "precision": 0.9934065934065934,
+     "recall": 0.1481967213114754,
+     "f1": 0.2579172610556348
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": 23.038088083267212,
+    "DoS Slowhttptest": 0.7968258857727051,
+    "DoS Hulk": 0.12398910522460938,
+    "DoS GoldenEye": 6.2278220653533936
+   },
+   "label": "count @1s",
+   "day": "wednesday",
+   "seconds": 26.076623916625977,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 100.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 100.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 20.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 400.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 32.0,
+     "op": ">",
+     "window_seconds": null
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 22,
+     "precision": 0.9475890985324947,
+     "f1": 0.2563084774595974
+    }
+   }
+  },
+  {
+   "detections": 928,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 1,
+     "recall": 0.0007674597083653108,
+     "ttd": 8.818932056427002
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 183,
+     "recall": 0.22181818181818183,
+     "ttd": 1.797724962234497
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 441,
+     "recall": 0.882,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 26,
+     "recall": 0.061611374407582936,
+     "ttd": 169.8886170387268
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 651,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.21344262295081967,
+     "f1": 0.3517968116725209
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": 8.818932056427002,
+    "DoS Slowhttptest": 1.797724962234497,
+    "DoS Hulk": 0.12398910522460938,
+    "DoS GoldenEye": 169.8886170387268
+   },
+   "label": "count @10s (p)",
+   "day": "wednesday",
+   "seconds": 32.98607897758484,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 1000.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 1000.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 200.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 4000.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 320.0,
+     "op": ">",
+     "window_seconds": 10.0
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 277,
+     "precision": 0.7015086206896551,
+     "f1": 0.3273001508295626
+    }
+   }
+  },
+  {
+   "detections": 928,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 1,
+     "recall": 0.0007674597083653108,
+     "ttd": 8.818932056427002
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 183,
+     "recall": 0.22181818181818183,
+     "ttd": 1.797724962234497
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 441,
+     "recall": 0.882,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 26,
+     "recall": 0.061611374407582936,
+     "ttd": 169.8886170387268
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 651,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.21344262295081967,
+     "f1": 0.3517968116725209
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": 8.818932056427002,
+    "DoS Slowhttptest": 1.797724962234497,
+    "DoS Hulk": 0.12398910522460938,
+    "DoS GoldenEye": 169.8886170387268
+   },
+   "label": "count @10s (u)",
+   "day": "wednesday",
+   "seconds": 32.99494409561157,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 1000.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 1000.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 20.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 4000.0,
+     "op": ">",
+     "window_seconds": 10.0
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 320.0,
+     "op": ">",
+     "window_seconds": 10.0
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 277,
+     "precision": 0.7015086206896551,
+     "f1": 0.3273001508295626
+    }
+   }
+  },
+  {
+   "detections": 1321,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 280,
+     "recall": 0.3393939393939394,
+     "ttd": 5.806391000747681
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 483,
+     "recall": 0.966,
+     "ttd": 1.1241788864135742
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 763,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 1.0,
+     "recall": 0.25016393442622953,
+     "f1": 0.40020980854969845
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": 5.806391000747681,
+    "DoS Hulk": 1.1241788864135742,
+    "DoS GoldenEye": null
+   },
+   "label": "count @60s (p)",
+   "day": "wednesday",
+   "seconds": 33.558624029159546,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 1200.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 24000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 1920.0,
+     "op": ">",
+     "window_seconds": 60.0
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 558,
+     "precision": 0.5775927327781983,
+     "f1": 0.3491191946922901
+    }
+   }
+  },
+  {
+   "detections": 1,
+   "fp_by_rule": {
+    "rejected_probes": 1
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 1,
+     "fp_per_hour": 0.1182169866481375,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": null,
+    "DoS Hulk": null,
+    "DoS GoldenEye": null
+   },
+   "label": "rejected_probes @1s (s)",
+   "day": "wednesday",
+   "seconds": 25.342494010925293,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 1.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": null,
+    "DoS Hulk": null,
+    "DoS GoldenEye": null
+   },
+   "label": "rejected_probes @1s (u)",
+   "day": "wednesday",
+   "seconds": 25.49573302268982,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 1378,
+   "fp_by_rule": {
+    "port_sweep": 57
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.51",
+     57
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 280,
+     "recall": 0.3393939393939394,
+     "ttd": 5.806391000747681
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 483,
+     "recall": 0.966,
+     "ttd": 1.1241788864135742
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 763,
+     "positives": 3050,
+     "fp_secs": 57,
+     "fp_per_hour": 6.7383682389438375,
+     "precision": 0.9304878048780488,
+     "recall": 0.25016393442622953,
+     "f1": 0.3943152454780362
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": 5.806391000747681,
+    "DoS Hulk": 1.1241788864135742,
+    "DoS GoldenEye": null
+   },
+   "label": "count @60s (u)",
+   "day": "wednesday",
+   "seconds": 33.305285930633545,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 20.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 24000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 1920.0,
+     "op": ">",
+     "window_seconds": 60.0
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 558,
+     "precision": 0.5537010159651669,
+     "f1": 0.3446251129177958
+    }
+   }
+  },
+  {
+   "detections": 5,
+   "fp_by_rule": {
+    "rejected_probes": 5
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     5
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 5,
+     "fp_per_hour": 0.5910849332406874,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": null,
+    "DoS Hulk": null,
+    "DoS GoldenEye": null
+   },
+   "label": "rejected_probes @1s (e)",
+   "day": "wednesday",
+   "seconds": 25.05822229385376,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 0.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 9,
+   "fp_by_rule": {
+    "rejected_probes": 9
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     9
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 9,
+     "fp_per_hour": 1.0639528798332374,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": null,
+    "DoS Hulk": null,
+    "DoS GoldenEye": null
+   },
+   "label": "rejected_probes @10s (s)",
+   "day": "wednesday",
+   "seconds": 25.111139059066772,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 2.0,
+     "op": ">",
+     "window_seconds": 10
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": null,
+    "DoS Hulk": null,
+    "DoS GoldenEye": null
+   },
+   "label": "rejected_probes @10s (u)",
+   "day": "wednesday",
+   "seconds": 25.31704592704773,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 10
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 0,
+   "fp_by_rule": {},
+   "fp_hosts": 0,
+   "fp_benign_hosts": 0,
+   "fp_top_sources": [],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 0,
+     "positives": 3050,
+     "fp_secs": 0,
+     "fp_per_hour": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": null,
+    "DoS Hulk": null,
+    "DoS GoldenEye": null
+   },
+   "label": "rejected_probes @60s",
+   "day": "wednesday",
+   "seconds": 25.388521909713745,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 60
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 0,
+     "precision": 0.0,
+     "f1": 0.0
+    }
+   }
+  },
+  {
+   "detections": 287,
+   "fp_by_rule": {
+    "half_open": 7,
+    "rejected_probes": 1
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ],
+    [
+     "172.16.0.1",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 277,
+     "recall": 0.33575757575757575,
+     "ttd": 4.806382894515991
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 1,
+     "recall": 0.002,
+     "ttd": 1083.8853149414062
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 278,
+     "positives": 3050,
+     "fp_secs": 8,
+     "fp_per_hour": 0.9457358931851,
+     "precision": 0.972027972027972,
+     "recall": 0.09114754098360656,
+     "f1": 0.16666666666666666
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": 4.806382894515991,
+    "DoS Hulk": 1083.8853149414062,
+    "DoS GoldenEye": null
+   },
+   "label": "behaviour @1s (s)",
+   "day": "wednesday",
+   "seconds": 29.50034999847412,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 1.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 1,
+     "precision": 0.9686411149825784,
+     "f1": 0.16661672160623314
+    }
+   }
+  },
+  {
+   "detections": 286,
+   "fp_by_rule": {
+    "half_open": 7
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 277,
+     "recall": 0.33575757575757575,
+     "ttd": 4.806382894515991
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 1,
+     "recall": 0.002,
+     "ttd": 1083.8853149414062
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 278,
+     "positives": 3050,
+     "fp_secs": 7,
+     "fp_per_hour": 0.8275189065369625,
+     "precision": 0.9754385964912281,
+     "recall": 0.09114754098360656,
+     "f1": 0.16671664167916042
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": 4.806382894515991,
+    "DoS Hulk": 1083.8853149414062,
+    "DoS GoldenEye": null
+   },
+   "label": "behaviour @1s (u)",
+   "day": "wednesday",
+   "seconds": 29.258830070495605,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 1,
+     "precision": 0.972027972027972,
+     "f1": 0.16666666666666666
+    }
+   }
+  },
+  {
+   "detections": 291,
+   "fp_by_rule": {
+    "half_open": 7,
+    "rejected_probes": 5
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ],
+    [
+     "172.16.0.1",
+     5
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 277,
+     "recall": 0.33575757575757575,
+     "ttd": 4.806382894515991
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 1,
+     "recall": 0.002,
+     "ttd": 1083.8853149414062
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 278,
+     "positives": 3050,
+     "fp_secs": 12,
+     "fp_per_hour": 1.41860383977765,
+     "precision": 0.9586206896551724,
+     "recall": 0.09114754098360656,
+     "f1": 0.1664670658682635
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": 4.806382894515991,
+    "DoS Hulk": 1083.8853149414062,
+    "DoS GoldenEye": null
+   },
+   "label": "behaviour @1s (e)",
+   "day": "wednesday",
+   "seconds": 29.109097957611084,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 0.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 1,
+     "precision": 0.9553264604810997,
+     "f1": 0.16641724034720143
+    }
+   }
+  },
+  {
+   "detections": 295,
+   "fp_by_rule": {
+    "half_open": 7,
+    "rejected_probes": 9
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "172.16.0.1",
+     9
+    ],
+    [
+     "192.168.10.15",
+     7
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 277,
+     "recall": 0.33575757575757575,
+     "ttd": 4.806382894515991
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 1,
+     "recall": 0.002,
+     "ttd": 1083.8853149414062
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 278,
+     "positives": 3050,
+     "fp_secs": 16,
+     "fp_per_hour": 1.8914717863702,
+     "precision": 0.9455782312925171,
+     "recall": 0.09114754098360656,
+     "f1": 0.16626794258373206
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": 4.806382894515991,
+    "DoS Hulk": 1083.8853149414062,
+    "DoS GoldenEye": null
+   },
+   "label": "behaviour @10s (s)",
+   "day": "wednesday",
+   "seconds": 29.031258821487427,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 2.0,
+     "op": ">",
+     "window_seconds": 10
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 1,
+     "precision": 0.9423728813559322,
+     "f1": 0.16621823617339315
+    }
+   }
+  },
+  {
+   "detections": 286,
+   "fp_by_rule": {
+    "half_open": 7
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 277,
+     "recall": 0.33575757575757575,
+     "ttd": 4.806382894515991
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 1,
+     "recall": 0.002,
+     "ttd": 1083.8853149414062
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 278,
+     "positives": 3050,
+     "fp_secs": 7,
+     "fp_per_hour": 0.8275189065369625,
+     "precision": 0.9754385964912281,
+     "recall": 0.09114754098360656,
+     "f1": 0.16671664167916042
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": 4.806382894515991,
+    "DoS Hulk": 1083.8853149414062,
+    "DoS GoldenEye": null
+   },
+   "label": "behaviour @10s (u)",
+   "day": "wednesday",
+   "seconds": 28.431102991104126,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 10
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 1,
+     "precision": 0.972027972027972,
+     "f1": 0.16666666666666666
+    }
+   }
+  },
+  {
+   "detections": 286,
+   "fp_by_rule": {
+    "half_open": 7
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 277,
+     "recall": 0.33575757575757575,
+     "ttd": 4.806382894515991
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 1,
+     "recall": 0.002,
+     "ttd": 1083.8853149414062
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 278,
+     "positives": 3050,
+     "fp_secs": 7,
+     "fp_per_hour": 0.8275189065369625,
+     "precision": 0.9754385964912281,
+     "recall": 0.09114754098360656,
+     "f1": 0.16671664167916042
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": 4.806382894515991,
+    "DoS Hulk": 1083.8853149414062,
+    "DoS GoldenEye": null
+   },
+   "label": "behaviour @60s",
+   "day": "wednesday",
+   "seconds": 27.914422035217285,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 60
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 1,
+     "precision": 0.972027972027972,
+     "f1": 0.16666666666666666
+    }
+   }
+  },
+  {
+   "detections": 717,
+   "fp_by_rule": {
+    "half_open": 7,
+    "syn_flood": 3,
+    "victim_conn_flood": 2,
+    "victim_packet_flood": 2,
+    "rejected_probes": 1
+   },
+   "fp_hosts": 3,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ],
+    [
+     "172.16.0.1",
+     3
+    ],
+    [
+     "192.168.10.17",
+     1
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 5,
+     "recall": 0.003837298541826554,
+     "ttd": 7.806519031524658
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 341,
+     "recall": 0.41333333333333333,
+     "ttd": 0.7968258857727051
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 252,
+     "recall": 0.504,
+     "ttd": 0.12398910522460938
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 85,
+     "recall": 0.2014218009478673,
+     "ttd": 6.2278220653533936
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 683,
+     "positives": 3050,
+     "fp_secs": 11,
+     "fp_per_hour": 1.3003868531295124,
+     "precision": 0.984149855907781,
+     "recall": 0.2239344262295082,
+     "f1": 0.36485042735042733
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": 23.038088083267212,
+    "DoS Slowhttptest": 0.7968258857727051,
+    "DoS Hulk": 0.12398910522460938,
+    "DoS GoldenEye": 6.2278220653533936
+   },
+   "label": "all @1s",
+   "day": "wednesday",
+   "seconds": 27.077610969543457,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 100.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 100.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 20.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 400.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 32.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 1.0,
+     "op": ">",
+     "window_seconds": 1
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 23,
+     "precision": 0.9525801952580195,
+     "f1": 0.36262277674542076
+    }
+   }
+  },
+  {
+   "detections": 1411,
+   "fp_by_rule": {
+    "half_open": 7
+   },
+   "fp_hosts": 1,
+   "fp_benign_hosts": 1,
+   "fp_top_sources": [
+    [
+     "192.168.10.15",
+     7
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 362,
+     "recall": 0.4387878787878788,
+     "ttd": 4.806382894515991
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 483,
+     "recall": 0.966,
+     "ttd": 1.1241788864135742
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 845,
+     "positives": 3050,
+     "fp_secs": 7,
+     "fp_per_hour": 0.8275189065369625,
+     "precision": 0.9917840375586855,
+     "recall": 0.27704918032786885,
+     "f1": 0.43311122501281385
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": 4.806382894515991,
+    "DoS Hulk": 1.1241788864135742,
+    "DoS GoldenEye": null
+   },
+   "label": "all @60s (p)",
+   "day": "wednesday",
+   "seconds": 31.46022891998291,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 1200.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 24000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 1920.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 60
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 559,
+     "precision": 0.5988660524450744,
+     "f1": 0.37883882537547636
+    }
+   }
+  },
+  {
+   "detections": 1468,
+   "fp_by_rule": {
+    "half_open": 7,
+    "port_sweep": 57
+   },
+   "fp_hosts": 2,
+   "fp_benign_hosts": 2,
+   "fp_top_sources": [
+    [
+     "192.168.10.51",
+     57
+    ],
+    [
+     "192.168.10.15",
+     7
+    ]
+   ],
+   "windows": {
+    "DoS slowloris": {
+     "positives": 1303,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    },
+    "DoS Slowhttptest": {
+     "positives": 825,
+     "covered": 362,
+     "recall": 0.4387878787878788,
+     "ttd": 4.806382894515991
+    },
+    "DoS Hulk": {
+     "positives": 500,
+     "covered": 483,
+     "recall": 0.966,
+     "ttd": 1.1241788864135742
+    },
+    "DoS GoldenEye": {
+     "positives": 422,
+     "covered": 0,
+     "recall": 0.0,
+     "ttd": null
+    }
+   },
+   "segments": {
+    "all": {
+     "tp": 845,
+     "positives": 3050,
+     "fp_secs": 64,
+     "fp_per_hour": 7.5658871454808,
+     "precision": 0.9295929592959296,
+     "recall": 0.27704918032786885,
+     "f1": 0.4268754736044456
+    }
+   },
+   "ttd_true": {
+    "DoS slowloris": null,
+    "DoS Slowhttptest": 4.806382894515991,
+    "DoS Hulk": 1.1241788864135742,
+    "DoS GoldenEye": null
+   },
+   "label": "all @60s (u)",
+   "day": "wednesday",
+   "seconds": 29.27406096458435,
+   "packets": 13705535,
+   "rules": [
+    {
+     "id": "syn_flood",
+     "measure": "syn_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "icmp_flood",
+     "measure": "icmp_rate",
+     "value": 6000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "port_sweep",
+     "measure": "distinct_ports",
+     "value": 20.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_packet_flood",
+     "measure": "victim_pps",
+     "value": 24000.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "victim_conn_flood",
+     "measure": "victim_conn_rate",
+     "value": 1920.0,
+     "op": ">",
+     "window_seconds": 60.0
+    },
+    {
+     "id": "half_open",
+     "measure": "half_open_ratio",
+     "value": 0.8,
+     "op": ">=",
+     "window_seconds": null
+    },
+    {
+     "id": "port_entropy",
+     "measure": "port_entropy",
+     "value": 4.0,
+     "op": ">",
+     "window_seconds": null
+    },
+    {
+     "id": "rejected_probes",
+     "measure": "rejected_probes",
+     "value": 10.0,
+     "op": ">",
+     "window_seconds": 60
+    }
+   ],
+   "strict": {
+    "all": {
+     "ignored": 559,
+     "precision": 0.5756130790190735,
+     "f1": 0.37405931828242583
+    }
+   }
+  }
+ ]
+}

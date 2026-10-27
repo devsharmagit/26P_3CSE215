@@ -1,0 +1,170 @@
+{
+ "out_et/eve.json": {
+  "alerts": 1412662,
+  "no_src": 7279,
+  "ttd": {
+   "portscan": 57.949429988861084,
+   "ddos": 42.264535903930664
+  },
+  "sig_tp": [
+   [
+    "SURICATA STREAM Packet with invalid ack",
+    1198
+   ],
+   [
+    "SURICATA STREAM SHUTDOWN RST invalid ack",
+    1198
+   ],
+   [
+    "ET SCAN Suspicious inbound to mySQL port 3306",
+    40
+   ],
+   [
+    "ET SCAN Suspicious inbound to MSSQL port 1433",
+    40
+   ],
+   [
+    "ET SCAN Suspicious inbound to Oracle SQL port 1521",
+    40
+   ],
+   [
+    "ET SCAN Suspicious inbound to PostgreSQL port 5432",
+    40
+   ]
+  ],
+  "sig_fp": [
+   [
+    "SURICATA TCPv4 invalid checksum",
+    1390304
+   ],
+   [
+    "SURICATA HTTP Response excessive header repetition",
+    7571
+   ],
+   [
+    "SURICATA STREAM CLOSEWAIT FIN out of window",
+    1145
+   ],
+   [
+    "SURICATA STREAM FIN out of window",
+    718
+   ],
+   [
+    "SURICATA Kerberos 5 weak encryption parameters",
+    569
+   ],
+   [
+    "ET INFO GNU/Linux APT User-Agent Outbound likely related to package management",
+    343
+   ]
+  ],
+  "fp_src": [
+   [
+    "13.107.4.50",
+    649277
+   ],
+   [
+    "192.168.10.50",
+    191405
+   ],
+   [
+    "8.253.104.126",
+    113953
+   ],
+   [
+    "192.99.204.26",
+    40824
+   ],
+   [
+    "162.125.4.6",
+    20603
+   ]
+  ],
+  "dev": {
+   "precision": 0.005910280011626781,
+   "recall": 0.1020066889632107,
+   "f1": 0.011173184357541898,
+   "fp_secs": 10260,
+   "fp_per_hour": 1538.3792123933563,
+   "tp": 61,
+   "pos": 598
+  },
+  "test": {
+   "precision": 0.10748932867675592,
+   "recall": 0.25204731574158323,
+   "f1": 0.15070729053318824,
+   "fp_secs": 2300,
+   "fp_per_hour": 1668.9614524108617,
+   "tp": 277,
+   "pos": 1099
+  }
+ },
+ "out_custom/eve.json": {
+  "alerts": 9481,
+  "no_src": 0,
+  "ttd": {
+   "portscan": 3405.45703291893,
+   "ddos": 45.689614057540894
+  },
+  "sig_tp": [
+   [
+    "CUSTOM victim connection flood",
+    7500
+   ],
+   [
+    "CUSTOM SYN flood per source",
+    1975
+   ]
+  ],
+  "sig_fp": [
+   [
+    "CUSTOM victim connection flood",
+    5
+   ],
+   [
+    "CUSTOM SYN flood per source",
+    1
+   ]
+  ],
+  "fp_src": [
+   [
+    "192.168.10.8",
+    2
+   ],
+   [
+    "192.168.10.5",
+    1
+   ],
+   [
+    "192.168.10.9",
+    1
+   ],
+   [
+    "192.168.10.19",
+    1
+   ],
+   [
+    "192.168.10.14",
+    1
+   ]
+  ],
+  "dev": {
+   "precision": 0.9767441860465116,
+   "recall": 0.2809364548494983,
+   "f1": 0.43636363636363634,
+   "fp_secs": 4,
+   "fp_per_hour": 0.5997579775412696,
+   "tp": 168,
+   "pos": 598
+  },
+  "test": {
+   "precision": 0.9977876106194691,
+   "recall": 0.8207461328480437,
+   "f1": 0.9006490264603095,
+   "fp_secs": 2,
+   "fp_per_hour": 1.4512708281833582,
+   "tp": 902,
+   "pos": 1099
+  }
+ }
+}

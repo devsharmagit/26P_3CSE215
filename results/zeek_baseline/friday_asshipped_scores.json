@@ -1,0 +1,315 @@
+{
+ "day": "friday",
+ "positives": {
+  "PortScan": 594,
+  "DDoS": 1095
+ },
+ "hours": {
+  "dev": 6.669356890254551,
+  "test": 1.378102529976103
+ },
+ "runs": {
+  "default_asshipped": {
+   "out_dir": "zeek/out_default_asshipped",
+   "notices": 5,
+   "notices_attacker": 1,
+   "notices_other": 4,
+   "notices_by_type": {
+    "Scan::Address_Scan": 4,
+    "Scan::Port_Scan": 1
+   },
+   "notice_sources": {
+    "192.168.10.9": 1,
+    "192.168.10.12": 1,
+    "172.16.0.1": 1,
+    "192.168.10.5": 1,
+    "192.168.10.25": 1
+   },
+   "attacker_notices": [
+    {
+     "ts": 1499449905.45361,
+     "note": "Scan::Port_Scan",
+     "dst": "192.168.10.50",
+     "msg": "172.16.0.1 scanned at least 15 unique ports of host 192.168.10.50 in 56m13s"
+    }
+   ],
+   "suppressed": 0,
+   "suppressed_attacker": 0,
+   "suppressed_other": 0,
+   "suppressed_by_type": {},
+   "conversions": {
+    "strict": {
+     "detections": 5,
+     "fp_by_rule": {
+      "zeek_scan": 4
+     },
+     "fp_hosts": 4,
+     "fp_benign_hosts": 4,
+     "fp_top_sources": [
+      [
+       "192.168.10.9",
+       1
+      ],
+      [
+       "192.168.10.12",
+       1
+      ],
+      [
+       "192.168.10.5",
+       1
+      ],
+      [
+       "192.168.10.25",
+       1
+      ]
+     ],
+     "windows": {
+      "PortScan": {
+       "positives": 594,
+       "covered": 1,
+       "recall": 0.0016835016835016834,
+       "ttd": 3405.45360994339
+      },
+      "DDoS": {
+       "positives": 1095,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "dev": {
+       "tp": 1,
+       "positives": 594,
+       "fp_secs": 2,
+       "fp_per_hour": 0.2998789887706348,
+       "precision": 0.3333333333333333,
+       "recall": 0.0016835016835016834,
+       "f1": 0.0033500837520938024
+      },
+      "test": {
+       "tp": 0,
+       "positives": 1095,
+       "fp_secs": 2,
+       "fp_per_hour": 1.4512708281833582,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "epoch": {
+     "detections": 1505,
+     "fp_by_rule": {
+      "zeek_scan": 1204
+     },
+     "fp_hosts": 4,
+     "fp_benign_hosts": 4,
+     "fp_top_sources": [
+      [
+       "192.168.10.9",
+       301
+      ],
+      [
+       "192.168.10.12",
+       301
+      ],
+      [
+       "192.168.10.5",
+       301
+      ],
+      [
+       "192.168.10.25",
+       301
+      ]
+     ],
+     "windows": {
+      "PortScan": {
+       "positives": 594,
+       "covered": 10,
+       "recall": 0.016835016835016835,
+       "ttd": 3105.45360994339
+      },
+      "DDoS": {
+       "positives": 1095,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "dev": {
+       "tp": 10,
+       "positives": 594,
+       "fp_secs": 795,
+       "fp_per_hour": 119.20189803632732,
+       "precision": 0.012422360248447204,
+       "recall": 0.016835016835016835,
+       "f1": 0.01429592566118656
+      },
+      "test": {
+       "tp": 0,
+       "positives": 1095,
+       "fp_secs": 241,
+       "fp_per_hour": 174.87813479609466,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   }
+  },
+  "matched_asshipped": {
+   "out_dir": "zeek/out_matched_asshipped",
+   "notices": 5,
+   "notices_attacker": 1,
+   "notices_other": 4,
+   "notices_by_type": {
+    "Scan::Address_Scan": 4,
+    "Scan::Port_Scan": 1
+   },
+   "notice_sources": {
+    "192.168.10.9": 1,
+    "192.168.10.12": 1,
+    "172.16.0.1": 1,
+    "192.168.10.5": 1,
+    "192.168.10.25": 1
+   },
+   "attacker_notices": [
+    {
+     "ts": 1499449905.450888,
+     "note": "Scan::Port_Scan",
+     "dst": "192.168.10.50",
+     "msg": "172.16.0.1 scanned at least 10 unique ports of host 192.168.10.50 in 56m13s"
+    }
+   ],
+   "suppressed": 0,
+   "suppressed_attacker": 0,
+   "suppressed_other": 0,
+   "suppressed_by_type": {},
+   "conversions": {
+    "strict": {
+     "detections": 5,
+     "fp_by_rule": {
+      "zeek_scan": 4
+     },
+     "fp_hosts": 4,
+     "fp_benign_hosts": 4,
+     "fp_top_sources": [
+      [
+       "192.168.10.9",
+       1
+      ],
+      [
+       "192.168.10.12",
+       1
+      ],
+      [
+       "192.168.10.5",
+       1
+      ],
+      [
+       "192.168.10.25",
+       1
+      ]
+     ],
+     "windows": {
+      "PortScan": {
+       "positives": 594,
+       "covered": 1,
+       "recall": 0.0016835016835016834,
+       "ttd": 3405.4508879184723
+      },
+      "DDoS": {
+       "positives": 1095,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "dev": {
+       "tp": 1,
+       "positives": 594,
+       "fp_secs": 2,
+       "fp_per_hour": 0.2998789887706348,
+       "precision": 0.3333333333333333,
+       "recall": 0.0016835016835016834,
+       "f1": 0.0033500837520938024
+      },
+      "test": {
+       "tp": 0,
+       "positives": 1095,
+       "fp_secs": 2,
+       "fp_per_hour": 1.4512708281833582,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "epoch": {
+     "detections": 1265,
+     "fp_by_rule": {
+      "zeek_scan": 1204
+     },
+     "fp_hosts": 4,
+     "fp_benign_hosts": 4,
+     "fp_top_sources": [
+      [
+       "192.168.10.9",
+       301
+      ],
+      [
+       "192.168.10.12",
+       301
+      ],
+      [
+       "192.168.10.5",
+       301
+      ],
+      [
+       "192.168.10.25",
+       301
+      ]
+     ],
+     "windows": {
+      "PortScan": {
+       "positives": 594,
+       "covered": 10,
+       "recall": 0.016835016835016835,
+       "ttd": 3345.4508879184723
+      },
+      "DDoS": {
+       "positives": 1095,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "dev": {
+       "tp": 10,
+       "positives": 594,
+       "fp_secs": 795,
+       "fp_per_hour": 119.20189803632732,
+       "precision": 0.012422360248447204,
+       "recall": 0.016835016835016835,
+       "f1": 0.01429592566118656
+      },
+      "test": {
+       "tp": 0,
+       "positives": 1095,
+       "fp_secs": 241,
+       "fp_per_hour": 174.87813479609466,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   }
+  }
+ }
+}

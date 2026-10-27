@@ -1,0 +1,109 @@
+129 configurations; running on a process pool...
+  10/129 done (34s)
+  20/129 done (60s)
+  30/129 done (85s)
+  40/129 done (112s)
+  50/129 done (149s)
+  60/129 done (182s)
+  70/129 done (205s)
+  80/129 done (235s)
+  90/129 done (272s)
+  100/129 done (308s)
+  110/129 done (346s)
+  120/129 done (386s)
+
+================ ABLATION (per-second metrics) ================
+abl:static-legacy                                          DEV P=  7.7 R= 27.1 F1= 12.0 FP/h= 291.6 | TEST P= 29.6 R= 41.8 F1= 34.7 FP/h= 790.9
+abl:static-fixed-ports                                     DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P=100.0 R= 41.8 F1= 58.9 FP/h=   0.0
+abl:static+victim                                          DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P= 97.9 R= 68.7 F1= 80.7 FP/h=  11.6
+abl:adaptive syn [freeze]                                  DEV P= 71.4 R= 23.4 F1= 35.3 FP/h=   8.4 | TEST P= 98.8 R= 68.4 F1= 80.9 FP/h=   6.5
+abl:adaptive syn+icmp [freeze]                             DEV P= 71.4 R= 23.4 F1= 35.3 FP/h=   8.4 | TEST P= 98.8 R= 68.4 F1= 80.9 FP/h=   6.5
+abl:adaptive +half_open [freeze]                           DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 98.8 R= 68.4 F1= 80.9 FP/h=   6.5
+abl:adaptive +entropy [freeze]                             DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 98.8 R= 68.4 F1= 80.9 FP/h=   6.5
+abl:adaptive +victim (full) [freeze]                       DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+abl:adaptive full [NO freeze]                              DEV P= 84.9 R= 45.0 F1= 58.8 FP/h=   7.2 | TEST P= 52.6 R=  1.8 F1=  3.5 FP/h=  13.1
+abl:adaptive only syn                                      DEV P= 71.4 R= 23.4 F1= 35.3 FP/h=   8.4 | TEST P= 98.8 R= 68.4 F1= 80.9 FP/h=   6.5
+abl:adaptive only icmp                                     DEV P=  0.0 R=  0.0 F1=  0.0 FP/h=   0.0 | TEST P=  0.0 R=  0.0 F1=  0.0 FP/h=   0.0
+abl:adaptive only half_open                                DEV P=100.0 R= 45.0 F1= 62.1 FP/h=   0.0 | TEST P=  0.0 R=  0.0 F1=  0.0 FP/h=   0.0
+abl:adaptive only entropy                                  DEV P=100.0 R= 29.6 F1= 45.7 FP/h=   0.0 | TEST P=  0.0 R=  0.0 F1=  0.0 FP/h=   0.0
+abl:adaptive only victim                                   DEV P=100.0 R= 23.4 F1= 37.9 FP/h=   0.0 | TEST P= 98.3 R= 56.2 F1= 71.5 FP/h=   8.0
+
+================ ONE-AT-A-TIME SENSITIVITY ================
+oat:SYN_MULTIPLIER=1.5                                     DEV P= 81.0 R= 45.0 F1= 57.8 FP/h=   9.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:SYN_MULTIPLIER=2.0                                     DEV P= 81.0 R= 45.0 F1= 57.8 FP/h=   9.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:SYN_MULTIPLIER=3.0                                     DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:SYN_MULTIPLIER=5.0                                     DEV P= 88.2 R= 45.0 F1= 59.6 FP/h=   5.4 | TEST P= 97.5 R= 56.2 F1= 71.3 FP/h=  11.6
+oat:SYN_MULTIPLIER=8.0                                     DEV P= 92.4 R= 45.0 F1= 60.5 FP/h=   3.3 | TEST P= 97.8 R= 56.2 F1= 71.4 FP/h=  10.2
+oat:MIN_SYN_THRESHOLD=25                                   DEV P= 30.8 R= 45.0 F1= 36.6 FP/h=  90.4 | TEST P= 90.5 R= 78.3 F1= 83.9 FP/h=  65.3
+oat:MIN_SYN_THRESHOLD=50                                   DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_SYN_THRESHOLD=75                                   DEV P= 99.3 R= 45.0 F1= 61.9 FP/h=   0.3 | TEST P= 98.3 R= 56.9 F1= 72.0 FP/h=   8.0
+oat:MIN_SYN_THRESHOLD=100                                  DEV P=100.0 R= 45.0 F1= 62.1 FP/h=   0.0 | TEST P= 98.3 R= 56.2 F1= 71.5 FP/h=   8.0
+oat:MIN_SYN_THRESHOLD=200                                  DEV P=100.0 R= 45.0 F1= 62.1 FP/h=   0.0 | TEST P= 98.3 R= 56.2 F1= 71.5 FP/h=   8.0
+oat:alpha=0.05                                             DEV P= 81.0 R= 45.0 F1= 57.8 FP/h=   9.4 | TEST P= 97.4 R= 69.2 F1= 81.0 FP/h=  14.5
+oat:alpha=0.1                                              DEV P= 81.3 R= 45.0 F1= 57.9 FP/h=   9.3 | TEST P= 97.4 R= 69.2 F1= 81.0 FP/h=  14.5
+oat:alpha=0.2                                              DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:alpha=0.4                                              DEV P= 85.4 R= 45.0 F1= 58.9 FP/h=   6.9 | TEST P= 85.8 R=  9.4 F1= 16.9 FP/h=  12.3
+oat:ENTROPY_THRESHOLD=2.0                                  DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:ENTROPY_THRESHOLD=3.0                                  DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:ENTROPY_THRESHOLD=4.0                                  DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:ENTROPY_THRESHOLD=5.0                                  DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:ENTROPY_THRESHOLD=6.0                                  DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_PORTS_FOR_ENTROPY=5                                DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_PORTS_FOR_ENTROPY=10                               DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_PORTS_FOR_ENTROPY=20                               DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_PORTS_FOR_ENTROPY=50                               DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:HALF_OPEN_RATIO_THRESHOLD=0.5                          DEV P= 84.3 R= 50.3 F1= 63.0 FP/h=   8.4 | TEST P= 93.9 R= 69.0 F1= 79.5 FP/h=  35.6
+oat:HALF_OPEN_RATIO_THRESHOLD=0.7                          DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:HALF_OPEN_RATIO_THRESHOLD=0.8                          DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:HALF_OPEN_RATIO_THRESHOLD=0.9                          DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:HALF_OPEN_RATIO_THRESHOLD=0.95                         DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_CONNECTIONS_FOR_RATIO=10                           DEV P= 70.5 R= 45.7 F1= 55.4 FP/h=  17.1 | TEST P= 97.3 R= 69.0 F1= 80.7 FP/h=  15.2
+oat:MIN_CONNECTIONS_FOR_RATIO=20                           DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_CONNECTIONS_FOR_RATIO=50                           DEV P= 80.1 R= 37.6 F1= 51.2 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_CONNECTIONS_FOR_RATIO=100                          DEV P= 80.1 R= 37.6 F1= 51.2 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:freeze_seconds=10.0                                    DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:freeze_seconds=30.0                                    DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:freeze_seconds=60.0                                    DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:freeze_seconds=120.0                                   DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:freeze_seconds=300.0                                   DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_VICTIM_PPS=150                                     DEV P= 58.6 R= 45.0 F1= 50.9 FP/h=  28.5 | TEST P= 94.6 R= 82.8 F1= 88.3 FP/h=  37.7
+oat:MIN_VICTIM_PPS=250                                     DEV P= 79.8 R= 45.0 F1= 57.5 FP/h=  10.2 | TEST P= 97.3 R= 76.0 F1= 85.3 FP/h=  16.7
+oat:MIN_VICTIM_PPS=400                                     DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_VICTIM_PPS=600                                     DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 98.3 R= 68.4 F1= 80.7 FP/h=   9.4
+oat:MIN_VICTIM_PPS=1000                                    DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 98.8 R= 68.4 F1= 80.9 FP/h=   6.5
+oat:MIN_VICTIM_CONN_RATE=32                                DEV P= 82.5 R= 45.0 F1= 58.2 FP/h=   8.5 | TEST P= 97.7 R= 77.7 F1= 86.6 FP/h=  14.5
+oat:MIN_VICTIM_CONN_RATE=48                                DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_VICTIM_CONN_RATE=64                                DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_VICTIM_CONN_RATE=96                                DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:MIN_VICTIM_CONN_RATE=128                               DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:VICTIM_PPS_MULTIPLIER=1.5                              DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.2 F1= 81.0 FP/h=  14.5
+oat:VICTIM_PPS_MULTIPLIER=3.0                              DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.4 R= 69.0 F1= 80.8 FP/h=  14.5
+oat:VICTIM_PPS_MULTIPLIER=6.0                              DEV P= 82.8 R= 45.0 F1= 58.3 FP/h=   8.4 | TEST P= 97.5 R= 68.4 F1= 80.4 FP/h=  13.8
+oat-static:SYN_THRESHOLD=25                                DEV P= 18.8 R= 26.9 F1= 22.2 FP/h= 104.1 | TEST P= 88.1 R= 79.2 F1= 83.4 FP/h=  84.9
+oat-static:SYN_THRESHOLD=50                                DEV P= 69.7 R= 26.9 F1= 38.8 FP/h=  10.5 | TEST P= 96.6 R= 67.2 F1= 79.2 FP/h=  18.9
+oat-static:SYN_THRESHOLD=100                               DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P= 97.9 R= 68.7 F1= 80.7 FP/h=  11.6
+oat-static:SYN_THRESHOLD=200                               DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P= 97.8 R= 64.0 F1= 77.3 FP/h=  11.6
+oat-static:SYN_THRESHOLD=400                               DEV P=100.0 R= 27.3 F1= 42.8 FP/h=   0.0 | TEST P= 97.8 R= 63.8 F1= 77.2 FP/h=  11.6
+oat-static:PORT_SCAN_THRESHOLD=10                          DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P= 97.9 R= 68.7 F1= 80.7 FP/h=  11.6
+oat-static:PORT_SCAN_THRESHOLD=20                          DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P= 97.9 R= 68.7 F1= 80.7 FP/h=  11.6
+oat-static:PORT_SCAN_THRESHOLD=50                          DEV P=100.0 R= 26.8 F1= 42.2 FP/h=   0.0 | TEST P= 97.9 R= 68.7 F1= 80.7 FP/h=  11.6
+oat-static:PORT_SCAN_THRESHOLD=100                         DEV P=100.0 R= 26.8 F1= 42.2 FP/h=   0.0 | TEST P= 97.9 R= 68.7 F1= 80.7 FP/h=  11.6
+oat-static:PORT_SCAN_THRESHOLD=200                         DEV P=100.0 R= 26.8 F1= 42.2 FP/h=   0.0 | TEST P= 97.9 R= 68.7 F1= 80.7 FP/h=  11.6
+oat-static:VICTIM_PPS_THRESHOLD=150                        DEV P= 47.0 R= 27.9 F1= 35.0 FP/h=  28.2 | TEST P= 94.1 R= 83.2 F1= 88.3 FP/h=  41.4
+oat-static:VICTIM_PPS_THRESHOLD=250                        DEV P= 86.1 R= 26.9 F1= 41.0 FP/h=   3.9 | TEST P= 97.9 R= 77.3 F1= 86.4 FP/h=  13.1
+oat-static:VICTIM_PPS_THRESHOLD=400                        DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P= 97.9 R= 68.7 F1= 80.7 FP/h=  11.6
+oat-static:VICTIM_PPS_THRESHOLD=600                        DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P= 99.1 R= 67.2 F1= 80.1 FP/h=   5.1
+oat-static:VICTIM_PPS_THRESHOLD=1000                       DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P= 99.9 R= 66.6 F1= 79.9 FP/h=   0.7
+oat-static:VICTIM_CONN_THRESHOLD=32                        DEV P= 99.4 R= 26.9 F1= 42.4 FP/h=   0.1 | TEST P= 98.1 R= 78.6 F1= 87.3 FP/h=  12.3
+oat-static:VICTIM_CONN_THRESHOLD=48                        DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P= 98.2 R= 73.2 F1= 83.8 FP/h=  10.9
+oat-static:VICTIM_CONN_THRESHOLD=64                        DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P= 97.9 R= 68.7 F1= 80.7 FP/h=  11.6
+oat-static:VICTIM_CONN_THRESHOLD=96                        DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P= 97.9 R= 68.2 F1= 80.4 FP/h=  11.6
+oat-static:VICTIM_CONN_THRESHOLD=128                       DEV P=100.0 R= 26.9 F1= 42.4 FP/h=   0.0 | TEST P= 98.1 R= 69.1 F1= 81.0 FP/h=  10.9
+
+================ HELD-OUT CHECK (2-fold) ================
+tuned on DEV : best = oat:HALF_OPEN_RATIO_THRESHOLD=0.5
+    DEV F1 63.0% (default 58.3%)   ->   held-out TEST F1 79.5% (default 80.8%)
+tuned on TEST: best = oat:MIN_VICTIM_PPS=150
+    TEST F1 88.3% (default 80.8%)   ->   held-out DEV F1 50.9% (default 58.3%)
+
+(Segments hold different attack types; DEV = PortScan, TEST = DDoS.)

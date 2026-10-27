@@ -1,0 +1,15 @@
+# The rule set of the original AdaptiveRuleEngine (adaptive_engine.py, all defaults) written as a rule file.
+# Used by test_engine.py / experiments.py to check that engine.py reproduces the legacy engine exactly.
+version: 1
+settings:
+  window_seconds: 1.0
+  home_net: ["192.168.0.0/16"]
+  connection_timeout_seconds: 30
+  adaptive_defaults: {multiplier: 3.0, alpha: 0.2, freeze_seconds: 60}
+rules:
+  - {id: syn_flood, kind: count, measure: syn_rate, threshold: {policy: adaptive, value: 50}}
+  - {id: icmp_flood, kind: count, measure: icmp_rate, threshold: {policy: adaptive, value: 50}}
+  - {id: victim_packet_flood, kind: count, measure: victim_pps, threshold: {policy: adaptive, value: 400}}
+  - {id: victim_conn_flood, kind: count, measure: victim_conn_rate, threshold: {policy: adaptive, value: 32}}
+  - {id: half_open, kind: behaviour, measure: half_open_ratio, threshold: {policy: fixed, value: 0.8, op: ">="}, min_support: 20}
+  - {id: port_entropy, kind: behaviour, measure: port_entropy, threshold: {policy: fixed, value: 4.0}, min_support: 10, params: {decay: 0.5}}

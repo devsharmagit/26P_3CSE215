@@ -1,0 +1,117 @@
+{
+ "day": "wednesday",
+ "positives": {
+  "DoS slowloris": 1303,
+  "DoS Slowhttptest": 825,
+  "DoS Hulk": 500,
+  "DoS GoldenEye": 422
+ },
+ "hours": {
+  "all": 8.459021231664552
+ },
+ "runs": {
+  "wednesday_default": {
+   "out_dir": "zeek/out_wednesday_default",
+   "notices": 0,
+   "notices_attacker": 0,
+   "notices_other": 0,
+   "notices_by_type": {},
+   "notice_sources": {},
+   "attacker_notices": [],
+   "suppressed": 0,
+   "suppressed_attacker": 0,
+   "suppressed_other": 0,
+   "suppressed_by_type": {},
+   "conversions": {
+    "strict": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    },
+    "epoch": {
+     "detections": 0,
+     "fp_by_rule": {},
+     "fp_hosts": 0,
+     "fp_benign_hosts": 0,
+     "fp_top_sources": [],
+     "windows": {
+      "DoS slowloris": {
+       "positives": 1303,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Slowhttptest": {
+       "positives": 825,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS Hulk": {
+       "positives": 500,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      },
+      "DoS GoldenEye": {
+       "positives": 422,
+       "covered": 0,
+       "recall": 0.0,
+       "ttd": null
+      }
+     },
+     "segments": {
+      "all": {
+       "tp": 0,
+       "positives": 3050,
+       "fp_secs": 0,
+       "fp_per_hour": 0.0,
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      }
+     }
+    }
+   }
+  }
+ }
+}
